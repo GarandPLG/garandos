@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  system,
   ...
 }:
 {
@@ -34,7 +35,7 @@
 
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
-    brave # Brave Browser
+    librewolf # Brave Browser
     brightnessctl # For Screen Brightness Control
     cliphist # Clipboard manager using rofi menu
     cmatrix # Matrix Movie Effect In Terminal
@@ -49,7 +50,7 @@
     #gemini-cli # CLI AI client ONLY (optional)
     gimp # Great Photo Editor
     glxinfo # needed for inxi diag util
-    greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
+    tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
     hyprpicker # Color Picker
     eog # For Image Viewing
@@ -81,5 +82,6 @@
     warp-terminal # Terminal with AI support build in
     wget # Tool For Fetching Files With Links
     ytmdl # Tool For Downloading Audio From YouTube
+    inputs.prismlauncher-cracked.packages.${system}.default
   ];
 }
