@@ -1,13 +1,13 @@
-{ profile, ... }:
+{ host, ... }:
 {
   programs.bash = {
     shellAliases = {
       # NixOS aliases
-      upd = "nh os switch --hostname ${profile}";
-      upg = "nh os switch --hostname ${profile} --update";
-      upd-bt = "nh os boot --hostname ${profile}";
-      upd-ts = "nh os test --hostname ${profile}";
-      upd-bd = "nh os build --hostname ${profile}";
+      upd = "nh os switch --hostname ${host}";
+      upg = "nh os switch --hostname ${host} --update";
+      upd-bt = "nh os boot --hostname ${host}";
+      upd-ts = "nh os test --hostname ${host}";
+      upd-bd = "nh os build --hostname ${host}";
       ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
 
       # Development aliases

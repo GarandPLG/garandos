@@ -35,14 +35,18 @@
       ...
     }@inputs:
     let
-      system = "x86_64-linux";
-      host = "Garand-Desktop";
-      profile = "nvidia";
-      username = "garand_plg";
+      hostDirs = builtins.attrNames (builtins.readDir ./hosts);
 
-      # Deduplicate nixosConfigurations while preserving the top-level 'profile'
-      mkNixosConfig =
-        gpuProfile:
+      mkHost =
+        hostName:
+        let
+          inherit (import ./hosts/${hostName}/variables.nix)
+            host
+            username
+            profile
+            system
+            ;
+        in
         nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = {
@@ -53,18 +57,12 @@
             inherit system;
           };
           modules = [
-            ./profiles/${gpuProfile}
+            ./profiles/${profile}
             nix-flatpak.nixosModules.nix-flatpak
           ];
         };
     in
     {
-      nixosConfigurations = {
-        amd = mkNixosConfig "amd";
-        nvidia = mkNixosConfig "nvidia";
-        nvidia-laptop = mkNixosConfig "nvidia-laptop";
-        intel = mkNixosConfig "intel";
-        vm = mkNixosConfig "vm";
-      };
+      nixosConfigurations = nixpkgs.lib.genAttrs hostDirs mkHost;
     };
 }

@@ -1,13 +1,19 @@
 {
-  # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "Tyler Kelley";
-  gitEmail = "tylerzanekelley@gmail.com";
+  # CPU Architecture
+  # Available options: "x86_64-linux", "aarch64-linux", etc.
+  system = "x86_64-linux";
 
-  # Set Displau Manager
-  # `tui` for Text login
-  # `sddm` for graphical GUI (default)
-  # SDDM background is set with stylixImage
-  displayManager = "sddm";
+  # Host Configuration
+  host = "My-Desktop";
+  username = "my_username";
+
+  # GPU Profile
+  # Available options: "amd", "nvidia", "nvidia-laptop", "intel", "vm"
+  profile = "nvidia";
+
+  # Git Configuration ( For Pulling Software Repos )
+  gitUsername = "GarandPLG";
+  gitEmail = "my@email.com";
 
   # Hyprland Settings
   # Examples:
@@ -20,23 +26,20 @@
     ";
 
   # Waybar Settings
-  clock24h = false;
+  clock24h = true;
 
   # Program Options
   # Set Default Browser (google-chrome-stable for google-chrome)
   # This does NOT install your browser
   # You need to install it by adding it to the `packages.nix`
   # or as a flatpak
-  browser = "brave";
+  browser = "librewolf";
 
-  # Available Options:
-  # Kitty, ghostty, wezterm, aalacrity
-  # Note: kitty, wezterm, alacritty have to be enabled in `variables.nix`
   # Setting it here does not enable it. Kitty is installed by default
   terminal = "kitty"; # Set Default System Terminal
 
-  keyboardLayout = "us";
-  consoleKeyMap = "us";
+  keyboardLayout = "pl";
+  consoleKeyMap = "pl";
 
   # For Nvidia Prime support
   intelID = "PCI:1:0:0";

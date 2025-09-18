@@ -1,13 +1,19 @@
 {
+  # CPU Architecture
+  # Available options: "x86_64-linux", "aarch64-linux", etc.
+  system = "x86_64-linux";
+
+  # Host Configuration
+  host = "Garand-Desktop";
+  username = "garand_plg";
+
+  # GPU Profile
+  # Available options: "amd", "nvidia", "nvidia-laptop", "intel", "vm"
+  profile = "nvidia";
+
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "GarandPLG";
   gitEmail = "garandplg@garandplg.com";
-
-  # Set Displau Manager
-  # `tui` for Text login
-  # `sddm` for graphical GUI (default)
-  # SDDM background is set with stylixImage
-  displayManager = "tui";
 
   # Hyprland Settings
   # Examples:
@@ -27,9 +33,6 @@
   # or as a flatpak
   browser = "librewolf";
 
-  # Available Options:
-  # Kitty, ghostty, wezterm, aalacrity
-  # Note: kitty, wezterm, alacritty have to be enabled in `variables.nix`
   # Setting it here does not enable it. Kitty is installed by default
   terminal = "kitty"; # Set Default System Terminal
 
