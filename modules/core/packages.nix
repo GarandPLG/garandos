@@ -6,13 +6,9 @@
 }:
 {
   programs = {
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
-    firefox.enable = false; # Firefox is not installed by default
+    nano.enable = true;
     hyprland = {
-      enable = true; # set this so desktop file is created
+      enable = true;
       withUWSM = false;
     };
     dconf.enable = true;
@@ -33,9 +29,9 @@
     # Hyprland systeminfo QT  (Optional)
     #inputs.hyprsysteminfo.packages.${pkgs.system}.default
 
+    discord
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
-    librewolf # Brave Browser
     brightnessctl # For Screen Brightness Control
     cliphist # Clipboard manager using rofi menu
     cmatrix # Matrix Movie Effect In Terminal
@@ -78,10 +74,33 @@
     usbutils # Good Tools For USB Devices
     uwsm # Universal Wayland Session Manager (optional must be enabled)
     v4l-utils # Used For Things Like OBS Virtual Camera
-    waypaper  # wallpaper changer
+    waypaper # wallpaper changer
     warp-terminal # Terminal with AI support build in
     wget # Tool For Fetching Files With Links
     ytmdl # Tool For Downloading Audio From YouTube
+    nextcloud-client
+    plexamp
+    bitwarden-desktop
+    tutanota-desktop
+    slack
+    ungoogled-chromium
+    anki-bin
+    onlyoffice-bin
+    freetube
+    mattermost-desktop
+    kdePackages.kdenlive
+    wineWowPackages.waylandFull # wine64
+    lutris
+    space-cadet-pinball
+    dex
+    exercism
+    tty-solitaire
+    cmatrix
+    cowsay
+    sl
+    fortune
+    ookla-speedtest
+    kronometer
     inputs.prismlauncher-cracked.packages.${system}.default
   ];
 }

@@ -1,7 +1,8 @@
-{ pkgs
-, config
-, lib
-, ...
+{
+  pkgs,
+  config,
+  lib,
+  ...
 }:
 let
   terminal = "kitty";
@@ -20,7 +21,8 @@ let
   base0E = "D2A6FF";
   base0F = "E6B673";
 in
-with lib; {
+with lib;
+{
   # Configure & Theme Waybar
   programs.waybar = {
     enable = true;
@@ -30,9 +32,20 @@ with lib; {
         layer = "top";
         position = "top";
 
-        modules-left = [ "custom/startmenu" "tray" "hyprland/window" ];
+        modules-left = [
+          "custom/startmenu"
+          "tray"
+          "hyprland/window"
+        ];
         modules-center = [ "hyprland/workspaces" ];
-        modules-right = [ "idle_inhibitor" "custom/notification" "pulseaudio" "battery" "clock" "custom/exit" ];
+        modules-right = [
+          "idle_inhibitor"
+          "custom/notification"
+          "pulseaudio"
+          "battery"
+          "clock"
+          "custom/exit"
+        ];
 
         "hyprland/workspaces" = {
           format = "{name}";
@@ -46,9 +59,7 @@ with lib; {
         };
         "clock" = {
           format = '' {:%H:%M}'';
-          /*
-            ''{: %I:%M %p}'';
-            */
+          # ''{: %I:%M %p}'';
           tooltip = true;
           tooltip-format = "<big>{:%A, %d.%B %Y }</big><tt><small>{calendar}</small></tt>";
         };
@@ -71,11 +82,17 @@ with lib; {
         "disk" = {
           format = " {free}";
           tooltip = true;
-          # Not working with zaneyos window open then closes
+          # Not working with garandos window open then closes
           #on-click = "${terminal} -e sh -c df -h ; read";
         };
         "network" = {
-          format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
+          format-icons = [
+            "󰤯"
+            "󰤟"
+            "󰤢"
+            "󰤥"
+            "󰤨"
+          ];
           format-ethernet = " {bandwidthDownBits}";
           format-wifi = " {bandwidthDownBits}";
           format-disconnected = "󰤮";
@@ -99,7 +116,11 @@ with lib; {
             phone = "";
             portable = "";
             car = "";
-            default = [ "" "" "" ];
+            default = [
+              ""
+              ""
+              ""
+            ];
           };
           on-click = "pavucontrol";
         };
@@ -149,7 +170,18 @@ with lib; {
           format = "{icon} {capacity}%";
           format-charging = "󰂄 {capacity}%";
           format-plugged = "󱘖 {capacity}%";
-          format-icons = [ "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
+          format-icons = [
+            "󰁺"
+            "󰁻"
+            "󰁼"
+            "󰁽"
+            "󰁾"
+            "󰁿"
+            "󰂀"
+            "󰂁"
+            "󰂂"
+            "󰁹"
+          ];
           on-click = "";
           tooltip = false;
         };

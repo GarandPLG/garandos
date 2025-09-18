@@ -9,17 +9,6 @@
   # SDDM background is set with stylixImage
   displayManager = "sddm";
 
-  # Emable/disable bundled applications
-  tmuxEnable = false;
-  alacrittyEnable = false;
-  weztermEnable = false;
-  ghosttyEnable = false;
-  vscodeEnable = false;
-  # Note: This is evil-helix with VIM keybindings by default
-  helixEnable = false;
-  #To install: Enable here, zcli rebuild, then run zcli doom install
-  doomEmacsEnable = false;
-
   # Hyprland Settings
   # Examples:
   # extraMonitorSettings = "monitor = Virtual-1,1920x1080@60,auto,1";
@@ -59,10 +48,6 @@
   # Enable Printing Support
   printEnable = false;
 
-  # Enable Thunar GUI File Manager
-  # Yazi is default File Manager
-  thunarEnable = false;
-
   # Themes, waybar and animation.
   #  Only uncomment your selection
   # The others much be commented out.
@@ -70,14 +55,18 @@
   # Set Stylix Image
   # This will set your color palette
   # Default background
-  # Add new images to ~/zaneyos/wallpapers
-  stylixImage = ../../wallpapers/mountainscapedark.jpg;
-  #stylixImage = ../../wallpapers/AnimeGirlNightSky.jpg;
-  #stylixImage = ../../wallpapers/Anime-Purple-eyes.png;
-  #stylixImage = ../../wallpapers/Rainnight.jpg;
-  #stylixImage = ../../wallpapers/zaney-wallpaper.jpg;
-  #stylixImage = ../../wallpapers/nix-wallpapers-strips-logo.jpg;
-  #stylixImage = ../../wallpapers/beautifulmountainscape.jpg;
+  # Add new images to ~/garandos/wallpapers
+  stylixImage = ../../wallpapers/attack-on-titan-mikasa-ackerman.jpg;
+  #stylixImage = ../../wallpapers/DW_Pacts.jpg;
+  #stylixImage = ../../wallpapers/edward-elric-fullmetal-alchemist.jpg;
+  #stylixImage = ../../wallpapers/fire-nation.jpg;
+  #stylixImage = ../../wallpapers/four-elements.jpg;
+  #stylixImage = ../../wallpapers/Grounded_Wallpaper_4K.jpg;
+  #stylixImage = ../../wallpapers/jablon.jpg;
+  #stylixImage = ../../wallpapers/rammstein-log-two.jpg;
+  #stylixImage = ../../wallpapers/rammstein-log-one.jpg;
+  #stylixImage = ../../wallpapers/rammstein-log-three.jpg;
+  #stylixImage = ../../wallpapers/rammstein-one.jpg;
 
   # Set Waybar
   #  Available Options:
@@ -85,7 +74,7 @@
   #waybarChoice = ../../modules/home/waybar/waybar-ddubs.nix;
   #waybarChoice = ../../modules/home/waybar/waybar-ddubs-2.nix;
   #waybarChoice = ../../modules/home/waybar/waybar-simple.nix;
-  # Throwback to ZaneyOS v1.0
+  # Throwback to GarandOS v1.0
   #waybarChoice = ../../modules/home/waybar/waybar-jerry.nix;
   # Very colorful and bright colors
   #waybarChoice = ../../modules/home/waybar/waybar-nekodyke.nix;

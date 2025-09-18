@@ -30,8 +30,8 @@ in
   };
   environment.variables = {
     NIXOS_OZONE_WL = "1";
-    ZANEYOS_VERSION = "2.4";
-    ZANEYOS = "true";
+    GARANDOS_VERSION = "1.0";
+    GARANDOS = "true";
   };
   console.keyMap = "${consoleKeyMap}";
   system.stateVersion = "23.11"; # Do not change!

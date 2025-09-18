@@ -1,8 +1,10 @@
-{ pkgs
-, username
-, profile
-, ...
-}: {
+{
+  pkgs,
+  username,
+  profile,
+  ...
+}:
+{
   home.packages = [
     (import ./emopicker9000.nix { inherit pkgs; })
     (import ./hm-find.nix { inherit pkgs; })
@@ -19,11 +21,5 @@
       inherit username;
     })
     (import ./web-search.nix { inherit pkgs; })
-    (import ./zcli.nix {
-      inherit pkgs profile;
-      backupFiles = [
-        ".config/mimeapps.list.backup"
-      ];
-    })
   ];
 }

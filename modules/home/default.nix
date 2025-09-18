@@ -1,21 +1,14 @@
 { host, ... }:
 let
-  inherit (import ../../hosts/${host}/variables.nix)
-    alacrittyEnable
-    ghosttyEnable
-    tmuxEnable
-    waybarChoice
-    weztermEnable
-    vscodeEnable
-    helixEnable
-    doomEmacsEnable
-    ;
+  inherit (import ../../hosts/${host}/variables.nix) waybarChoice;
 in
 {
   imports = [
+    waybarChoice
     ./amfora.nix
     ./bash.nix
-    ./bashrc-personal.nix
+    ./bash-aliases.nix
+    ./bash-functions.nix
     ./bat.nix
     ./btop.nix
     ./bottom.nix
@@ -31,40 +24,24 @@ in
     ./hyprland
     ./kitty.nix
     ./lazygit.nix
+    ./librewolf.nix
     ./obs-studio.nix
-    ./nvf.nix
     ./obs-studio.nix
     ./rofi
     ./qt.nix
+    ./ssh.nix
     ./scripts
     ./scripts/gemini-cli.nix
-    #./starship.nix
-    #./starship-ddubs-1.nix
+    ./starship.nix
     ./stylix.nix
     ./swappy.nix
     ./swaync.nix
     ./tealdeer.nix
     ./virtmanager.nix
-    waybarChoice
     ./wlogout
     ./xdg.nix
-    ./yazi
     ./zoxide.nix
-    ./zsh
-  ]
-  ++ (if helixEnable then [ ./evil-helix.nix ] else [ ])
-  ++ (if vscodeEnable then [ ./vscode.nix ] else [ ])
-  ++ (
-    if doomEmacsEnable then
-      [
-        ./editors/doom-emacs-install.nix
-        ./editors/doom-emacs.nix
-      ]
-    else
-      [ ]
-  )
-  ++ (if weztermEnable then [ ./wezterm.nix ] else [ ])
-  ++ (if ghosttyEnable then [ ./ghostty.nix ] else [ ])
-  ++ (if tmuxEnable then [ ./tmux.nix ] else [ ])
-  ++ (if alacrittyEnable then [ ./alacritty.nix ] else [ ]);
+    ./vscode.nix
+    # ./zed.nix
+  ];
 }

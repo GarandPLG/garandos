@@ -16,7 +16,7 @@ pkgs.writeShellScriptBin "note" ''
   # XDG-compliant notes directory and file
   NOTES_DIR="$HOME/.local/share/notes"
   NOTES_FILE="$NOTES_DIR/notes.txt"
-  
+
   # Create notes directory if it doesn't exist
   mkdir -p "$NOTES_DIR"
 

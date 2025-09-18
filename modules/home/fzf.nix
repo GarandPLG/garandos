@@ -1,7 +1,8 @@
 # Fzf is a general-purpose command-line fuzzy finder.
-{ config
-, lib
-, ...
+{
+  config,
+  lib,
+  ...
 }:
 let
   accent = "#" + config.lib.stylix.colors.base0D;
@@ -11,7 +12,7 @@ in
 {
   programs.fzf = {
     enable = true;
-    enableZshIntegration = true;
+    enableBashIntegration = true;
     colors = lib.mkForce {
       "fg+" = accent;
       "bg+" = "-1";
@@ -29,7 +30,7 @@ in
       "--prompt='/ '"
       "-i"
       "--no-bold"
-      "--bind='enter:execute(nvim {})'"
+      "--bind='enter:execute(nano {})'"
       "--preview='bat --style=numbers --color=always --line-range :500 {}'"
       "--preview-window=right:60%:wrap"
     ];
