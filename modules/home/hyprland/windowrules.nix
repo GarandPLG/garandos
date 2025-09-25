@@ -57,6 +57,7 @@ in
         "float, class:^(com.heroicgameslauncher.hgl)$, title:negative:(Heroic Games Launcher)"
         "float, class:^([Ss]team)$, title:negative:^([Ss]team)$"
         "float, class:([Tt]hunar), title:negative:(.*[Tt]hunar.*)"
+        "float, class:^(galculator)$"
         "float, initialTitle:(Add Folder to Workspace)"
         "float, initialTitle:(Open Files)"
         "float, initialTitle:(wants to save)"

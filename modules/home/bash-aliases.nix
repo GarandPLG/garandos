@@ -15,6 +15,7 @@
       srvenv = "source .venv/bin/activate";
       "..srvenv" = "source ../.venv/bin/activate";
       pm = "uv run manage.py";
+      f8 = "uv run flake8 .";
       bbr = "bun --bun run";
       mkgidf = "git add . --intent-to-add . && git diff > git-diff.txt";
       snano = "sudo nano";

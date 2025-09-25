@@ -22,7 +22,7 @@ in
       "$modifier, T, exec, thunar"
       "$modifier, V, exec, codium"
       "$modifier, W, exec, ${browser}"
-      "$modifier, Z, exec, zed-editor"
+      "$modifier, Z, exec, zeditor"
 
       # =============================================================================
       # APLIKACJE - Z SHIFT
@@ -50,6 +50,7 @@ in
       "$modifier, E, exec, emopicker9000"
       "$modifier, K, exec, galculator"
       "$modifier, P, exec, hyprpicker -a"
+      "$modifier ALT, K, exec, kronometer"
       "$modifier ALT, W, exec, wallsetter"
       "$modifier SHIFT, K, exec, list-keybinds"
       "$modifier SHIFT, P, exec, pavucontrol"

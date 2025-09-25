@@ -4,6 +4,7 @@
 }:
 {
   imports = [
+    ./packages
     ./boot.nix
     ./flatpak.nix
     ./fonts.nix
@@ -11,7 +12,6 @@
     ./network.nix
     ./nfs.nix
     ./nh.nix
-    ./packages.nix
     ./printing.nix
     ./greetd.nix
     ./security.nix
