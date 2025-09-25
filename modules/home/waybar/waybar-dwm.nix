@@ -4,10 +4,9 @@
   ...
 }:
 {
-  home.packages = with pkgs; [ waybar ];
-
   programs.waybar = {
     enable = true;
+    package = pkgs.waybar;
     settings = {
       mainBar = {
         layer = "top";

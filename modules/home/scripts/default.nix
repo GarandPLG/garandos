@@ -1,20 +1,30 @@
 {
   pkgs,
   username,
-  profile,
   ...
 }:
 {
-  home.packages = [
+  home.packages = with pkgs; [
+    # hyprland
+    swww
+    grim
+    slurp
+    wl-clipboard
+    swappy
+    ydotool
+    hyprpolkitagent
+    hyprland-qtutils # needed for banners and ANR messages
+    # pyprland
+    pyprland
+
     (import ./emopicker9000.nix { inherit pkgs; })
     (import ./hm-find.nix { inherit pkgs; })
-    (import ./keybinds.nix { inherit pkgs; })
+    (import ./keybinds.nix { inherit pkgs username; })
     (import ./note.nix { inherit pkgs; })
     (import ./note-from-clipboard.nix { inherit pkgs; })
     (import ./nvidia-offload.nix { inherit pkgs; })
     (import ./rofi-launcher.nix { inherit pkgs; })
     (import ./screenshootin.nix { inherit pkgs; })
-    (import ./squirtle.nix { inherit pkgs; })
     (import ./task-waybar.nix { inherit pkgs; })
     (import ./wallsetter.nix {
       inherit pkgs;

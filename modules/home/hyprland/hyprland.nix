@@ -5,23 +5,9 @@
   ...
 }:
 let
-  inherit (import ../../../hosts/${host}/variables.nix)
-    extraMonitorSettings
-    keyboardLayout
-    stylixImage
-    ;
+  inherit (import ../../../hosts/${host}/variables.nix) extraMonitorSettings keyboardLayout;
 in
 {
-  home.packages = with pkgs; [
-    swww
-    grim
-    slurp
-    wl-clipboard
-    swappy
-    ydotool
-    hyprpolkitagent
-    hyprland-qtutils # needed for banners and ANR messages
-  ];
   systemd.user.targets.hyprland-session.Unit.Wants = [
     "xdg-desktop-autostart.target"
   ];
@@ -94,7 +80,8 @@ in
         key_press_enables_dpms = false;
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
-        enable_swallow = false;
+        enable_swallow = true;
+        swallow_regex = "^(kitty)$";
         vfr = true; # Variable Frame Rate
         vrr = 2; # Variable Refresh Rate  Might need to set to 0 for NVIDIA/AQ_DRM_DEVICES
         # Screen flashing to black momentarily or going black when app is fullscreen

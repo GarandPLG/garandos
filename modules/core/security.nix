@@ -18,5 +18,11 @@ _: {
     pam.services.swaylock = {
       text = ''auth include login '';
     };
+    sudo = {
+      enable = true;
+      extraConfig = ''
+        Defaults	pwfeedback
+      '';
+    };
   };
 }

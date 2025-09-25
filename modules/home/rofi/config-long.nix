@@ -2,18 +2,24 @@
 {
   home.file.".config/rofi/config-long.rasi".text = ''
     @import "~/.config/rofi/config.rasi"
+    * {
+      font: "JetBrainsMono Nerd Font Mono 12";
+    }
     window {
       width: 750px;
-      border-radius: 20px;
+      border-radius: 10px;
     }
     mainbox {
       orientation: vertical;
       children: [ "inputbar", "listbox" ];
     }
+    listview {
+      lines: 13;
+    }
     inputbar {
-      padding: 75px 40px;
+      padding: 55px 30px;
       background-color: transparent;
-      background-image: url("~/Pictures/Wallpapers/Rainnight.jpg", width);
+      background-image: url("~/Pictures/Wallpapers/attack-on-titan-mikasa-ackerman.jpg", width);
       text-color: @foreground;
       children: [ "textbox-prompt-colon", "entry" ];
     }
@@ -31,12 +37,12 @@
       text-color: @foreground;
     }
     button {
-      padding: 12px;
+      padding: 2px;
       border-radius: 100%;
     }
     element {
-      spacing: 10px;
-      padding: 12px;
+      spacing: 2px;
+      padding: 2px;
       border-radius: 100%;
     }
     textbox {

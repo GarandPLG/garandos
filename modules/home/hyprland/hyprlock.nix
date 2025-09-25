@@ -11,7 +11,7 @@
       };
       background = [
         {
-          path = "/home/${username}/Pictures/Wallpapers/beautifulmountainscape.jpg";
+          path = "/home/${username}/Pictures/Wallpapers/four-elements.jpg";
           blur_passes = 3;
           blur_size = 8;
         }

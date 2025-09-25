@@ -1,5 +1,4 @@
 {
-  pkgs,
   username,
   ...
 }:
@@ -12,9 +11,4 @@
     };
     flake = "/home/${username}/garandos";
   };
-
-  environment.systemPackages = with pkgs; [
-    nix-output-monitor
-    nvd
-  ];
 }

@@ -4,51 +4,53 @@
 {
   config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
-
 {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  boot.initrd.availableKernelModules = [
-    "nvme"
-    "xhci_pci"
-    "ahci"
-    "usbhid"
-    "usb_storage"
-    "sd_mod"
-  ];
-  boot.initrd.kernelModules = [ "dm-snapshot" ];
-  boot.initrd.luks.devices = {
-    cryptroot = {
-      device = "/dev/disk/by-uuid/7c018698-d35c-4ee6-92a8-5e4edf914065";
-      preLVM = true;
+  boot = {
+    initrd = {
+      availableKernelModules = [
+        "nvme"
+        "xhci_pci"
+        "ahci"
+        "usbhid"
+        "usb_storage"
+        "sd_mod"
+      ];
+      kernelModules = [ "dm-snapshot" ];
+      luks.devices = {
+        cryptroot = {
+          device = "/dev/disk/by-uuid/7c018698-d35c-4ee6-92a8-5e4edf914065";
+          preLVM = true;
+        };
+      };
     };
-  };
-  boot.kernelModules = [ "kvm-amd" ];
-  boot.extraModulePackages = [ ];
-
-  fileSystems."/" = {
-    device = "/dev/disk/by-uuid/e3ac1df3-ce8f-44cd-901f-a8cd3f6955b7";
-    fsType = "ext4";
+    kernelModules = [ "kvm-amd" ];
+    extraModulePackages = [ ];
   };
 
-  fileSystems."/home" = {
-    device = "/dev/disk/by-uuid/0713b82c-bf8c-424f-96e1-5d883e50b451";
-    fsType = "ext4";
-  };
-
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/783D-A507";
-    fsType = "vfat";
-    options = [
-      "fmask=0022"
-      "dmask=0022"
-    ];
+  fileSystems = {
+    "/" = {
+      device = "/dev/disk/by-uuid/e3ac1df3-ce8f-44cd-901f-a8cd3f6955b7";
+      fsType = "ext4";
+    };
+    "/home" = {
+      device = "/dev/disk/by-uuid/0713b82c-bf8c-424f-96e1-5d883e50b451";
+      fsType = "ext4";
+    };
+    "/boot" = {
+      device = "/dev/disk/by-uuid/783D-A507";
+      fsType = "vfat";
+      options = [
+        "fmask=0022"
+        "dmask=0022"
+      ];
+    };
   };
 
   swapDevices = lib.mkForce [

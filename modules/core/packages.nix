@@ -26,10 +26,20 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    # Hyprland systeminfo QT  (Optional)
-    #inputs.hyprsysteminfo.packages.${pkgs.system}.default
-
+    nixd
+    nil
     discord
+    trash-cli
+    eddie
+    dex
+    galculator
+    networkmanagerapplet
+    nix-output-monitor
+    nvd
+    ffmpegthumbnailer # Need For Video / Image Preview
+    virt-viewer # View Virtual Machines
+    lazydocker
+    docker-client
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
     brightnessctl # For Screen Brightness Control
@@ -43,8 +53,7 @@
     ffmpeg # Terminal Video / Audio Editing
     file-roller # Archive Manager
     gedit # Simple Graphical Text Editor
-    #gemini-cli # CLI AI client ONLY (optional)
-    gimp # Great Photo Editor
+    gimp3 # Great Photo Editor
     glxinfo # needed for inxi diag util
     tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
@@ -92,7 +101,6 @@
     wineWowPackages.waylandFull # wine64
     lutris
     space-cadet-pinball
-    dex
     exercism
     tty-solitaire
     cmatrix
@@ -102,5 +110,7 @@
     ookla-speedtest
     kronometer
     inputs.prismlauncher-cracked.packages.${system}.default
+    zed-editor
+    distrobox
   ];
 }

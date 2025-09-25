@@ -4,7 +4,7 @@ let
 in
 {
   services.xserver = {
-    enable = false;
+    enable = true;
     xkb = {
       layout = "${keyboardLayout}";
       variant = "";

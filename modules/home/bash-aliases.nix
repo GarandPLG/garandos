@@ -1,8 +1,9 @@
-{ host, ... }:
+{ host, username, ... }:
 {
   programs.bash = {
     shellAliases = {
       # NixOS aliases
+      pullos = "git -C /home/${username}/garandos pull";
       upd = "nh os switch --hostname ${host}";
       upg = "nh os switch --hostname ${host} --update";
       upd-bt = "nh os boot --hostname ${host}";
@@ -17,7 +18,7 @@
       bbr = "bun --bun run";
       mkgidf = "git add . --intent-to-add . && git diff > git-diff.txt";
       snano = "sudo nano";
-      zed = "MANGOHUD=0 /home/garand_plg/.local/bin/zed";
+      zed = "MANGOHUD=0 /home/${username}/.local/bin/zed";
 
       # System aliases
       flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";
