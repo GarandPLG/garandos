@@ -5,6 +5,7 @@
 {
   imports = [
     ./packages
+    ./auto-cpufreq.nix
     ./boot.nix
     ./flatpak.nix
     ./fonts.nix

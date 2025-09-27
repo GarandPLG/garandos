@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,6 +37,7 @@
       nixpkgs,
       home-manager,
       nix-flatpak,
+      auto-cpufreq,
       ...
     }@inputs:
     let
@@ -59,6 +65,7 @@
           modules = [
             ./profiles/${profile}
             nix-flatpak.nixosModules.nix-flatpak
+            auto-cpufreq.nixosModules.default
           ];
         };
     in
