@@ -42,5 +42,9 @@
     libnotify
     v4l-utils
     kronometer
+    # Language dicts for Iotas
+    hunspell
+    hunspellDicts.pl_PL
+    hunspellDicts.en_US
   ];
 }

@@ -24,7 +24,6 @@ in
     ./gh.nix
     ./git.nix
     ./gtk.nix
-    ./htop.nix
     ./kitty.nix
     ./lazygit.nix
     ./librewolf.nix

@@ -10,6 +10,7 @@
     tutanota-desktop
     anki-bin
     onlyoffice-bin
+    iotas
     # Cloud
     nextcloud-client
     # Browsers

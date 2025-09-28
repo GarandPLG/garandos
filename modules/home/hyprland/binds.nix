@@ -10,7 +10,6 @@ in
       # APLIKACJE - GŁÓWNE
       # =============================================================================
       "$modifier, A, exec, anki"
-      # "$modifier, B, exec, btop"
       "$modifier, B, exec, bitwarden"
       "$modifier, C, exec, chromium"
       "$modifier, D, exec, discord"
@@ -41,6 +40,7 @@ in
       # =============================================================================
       # APLIKACJE - Z ALT I CONTROL
       # =============================================================================
+      "$modifier ALT, B, exec, btop"
       "$modifier ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop"
       "$modifier ALT, S, exec, slack"
       "$modifier CONTROL, M, exec, mattermost-desktop"
