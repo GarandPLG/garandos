@@ -10,7 +10,8 @@ in
       # APLIKACJE - GŁÓWNE
       # =============================================================================
       "$modifier, A, exec, anki"
-      "$modifier, B, exec, btop"
+      # "$modifier, B, exec, btop"
+      "$modifier, B, exec, bitwarden"
       "$modifier, C, exec, chromium"
       "$modifier, D, exec, discord"
       "$modifier, G, exec, gimp"
