@@ -14,6 +14,7 @@ in
       "$modifier, C, exec, chromium"
       "$modifier, D, exec, discord"
       "$modifier, G, exec, gimp"
+      "$modifier, I, exec, iotas"
       "$modifier, M, exec, plexamp"
       "$modifier, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop"
       "$modifier, O, exec, obs"
