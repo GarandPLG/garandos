@@ -54,8 +54,8 @@ sudo vgcreate vg0 /dev/mapper/cryptroot
 # Create Logical Volumes
 # (Up to max 16GB)
 sudo lvcreate -L 12G -n swap vg0       # 12GB SWAP
-# (For ROOT partition it's best to give at least 1/4 of the disk, but from experience I recommend roughly 100-200GB. System takes about 70GB, but it's worth leaving some extra space)
-sudo lvcreate -L 175G -n root vg0      # 175GB ROOT
+# (For ROOT partition it's best to give at least 1/4 of the disk. System takes about 45GB, but around 1,5x more is necessary)
+sudo lvcreate -L 75GB -n root vg0      # 75GB ROOT
 sudo lvcreate -l 100%FREE -n home vg0  # rest HOME
 ```
 
