@@ -6,13 +6,17 @@
       extraBackends = [ pkgs.sane-airscan ];
       disabledDefaultBackends = [ "escl" ];
     };
-    logitech.wireless.enable = false;
-    logitech.wireless.enableGraphical = false;
+    logitech.wireless = {
+      enable = false;
+      enableGraphical = false;
+    };
     graphics.enable = true;
     enableRedistributableFirmware = true;
     keyboard.qmk.enable = true;
-    bluetooth.enable = true;
-    bluetooth.powerOnBoot = true;
+    bluetooth = {
+      enable = true;
+      powerOnBoot = false;
+    };
   };
   local.hardware-clock.enable = false;
 }
