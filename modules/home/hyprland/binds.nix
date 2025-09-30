@@ -42,6 +42,7 @@ in
       # APLIKACJE - Z ALT I CONTROL
       # =============================================================================
       "$modifier ALT, B, exec, btop"
+      "$modifier ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop"
       "$modifier ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop"
       "$modifier ALT, S, exec, slack"
       "$modifier CONTROL, M, exec, mattermost-desktop"

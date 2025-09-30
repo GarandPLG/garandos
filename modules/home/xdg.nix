@@ -20,6 +20,10 @@ let
     url = "https://registry.npmmirror.com/@lobehub/icons-static-png/1.65.0/files/dark/claude-color.png";
     sha256 = "sha256-wmYmbmT2/bR4JrnZJu2stjRZm//O5TB9EPE2NQWdGkQ=";
   };
+  glanceIcon = pkgs.fetchurl {
+    url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/glance.png";
+    sha256 = "sha256-xyFlmPpt+DABoGX5oBqj/aQVdxtmNflat9Jb2BE7SOY=";
+  };
 in
 {
   xdg = {
@@ -69,6 +73,14 @@ in
         genericName = "Claude";
         exec = "chromium --profile-directory=Default --app=https://claude.ai/";
         icon = "${claudeIcon}";
+        terminal = false;
+        type = "Application";
+      };
+      "glance" = {
+        name = "Glance";
+        genericName = "Glance";
+        exec = "chromium --profile-directory=Default --app=https://glance.garandplg.com/";
+        icon = "${glanceIcon}";
         terminal = false;
         type = "Application";
       };
