@@ -65,6 +65,7 @@ in
       "$modifier, Escape, exec, hyprlock"
       "$modifier, F, fullscreen,"
       "$modifier, Q, killactive,"
+      "$modifier CONTROL, Escape, exec, wlogout"
       "$modifier SHIFT, Escape, exit,"
       "$modifier SHIFT, I, togglesplit,"
 
