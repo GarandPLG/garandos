@@ -36,15 +36,17 @@ in
         truncate_to_repo = false;
         substitutions = {
           "Documents" = "󰈙";
-          "Downloads" = " ";
-          "Music" = " ";
-          "Pictures" = " ";
+          "Downloads" = "";
+          "Music" = "";
+          "Pictures" = "";
+          "Projects" = "";
+          "nix" = "";
         };
       };
 
       character = {
-        success_symbol = "[❯](${accent})";
-        error_symbol = "[❯](red)";
+        success_symbol = "[ ](${accent})";
+        error_symbol = "[ ](red)";
       };
 
       nix_shell = {
