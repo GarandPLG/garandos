@@ -78,7 +78,7 @@
         }
         {
           type = "os";
-          key = "│  OS";
+          key = "│  OS";
           keyColor = "31";
         }
         {

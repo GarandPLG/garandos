@@ -136,7 +136,7 @@ with lib;
         };
         "custom/startmenu" = {
           tooltip = false;
-          format = " ";
+          format = " ";
           # exec = "rofi -show drun";
           on-click = "rofi -show drun";
         };

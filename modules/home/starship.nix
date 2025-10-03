@@ -35,12 +35,13 @@ in
         truncation_symbol = "…/";
         truncate_to_repo = false;
         substitutions = {
-          "Documents" = "󰈙";
-          "Downloads" = "";
-          "Music" = "";
-          "Pictures" = "";
-          "Projects" = "";
-          "nix" = "";
+          "Documents" = "󰈙 ";
+          "Downloads" = " ";
+          "Music" = " ";
+          "Pictures" = " ";
+          "Projects" = " ";
+          "nix" = " ";
+          "nixos" = " ";
         };
       };
 
@@ -51,7 +52,7 @@ in
 
       nix_shell = {
         format = "[$symbol]($style) ";
-        symbol = " ";
+        symbol = " ";
         style = "";
       };
 
