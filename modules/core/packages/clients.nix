@@ -11,6 +11,7 @@
     anki-bin
     onlyoffice-bin
     iotas
+    logseq
     # Cloud
     nextcloud-client
     # Browsers

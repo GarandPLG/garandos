@@ -41,7 +41,7 @@
     appimage-run
     libnotify
     v4l-utils
-    kronometer
+    # kronometer
     # Language dicts for Iotas
     hunspell
     hunspellDicts.pl_PL
