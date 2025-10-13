@@ -128,7 +128,6 @@
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
-          "stylix",
           "nixpkgs"
         ]
       },
@@ -254,7 +253,6 @@
           "flake-parts"
         ],
         "nixpkgs": [
-          "stylix",
           "nixpkgs"
         ]
       },

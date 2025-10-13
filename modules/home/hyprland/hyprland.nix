@@ -135,6 +135,10 @@ in
         direct_scanout = 0;
       };
 
+      debug = {
+        full_cm_proto = true;
+      };
+
       master = {
         new_status = "master";
         new_on_top = 1;
