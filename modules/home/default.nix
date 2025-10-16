@@ -11,6 +11,7 @@ in
     waybarChoice
     ./wlogout
     ./amfora.nix
+    ./anki.nix
     ./bash.nix
     ./bash-aliases.nix
     ./bash-functions.nix
@@ -18,16 +19,20 @@ in
     ./btop.nix
     ./bottom.nix
     ./cava.nix
+    ./chromium.nix
     ./emoji.nix
     ./eza.nix
     ./fzf.nix
     ./gh.nix
     ./git.nix
     ./gtk.nix
+    ./kdeConnect.nix
     ./kitty.nix
-    ./lazygit.nix
     ./librewolf.nix
+    ./lutris.nix
+    ./nextcloud.nix
     ./obs-studio.nix
+    ./onlyoffice.nix
     ./qt.nix
     ./ssh.nix
     ./starship.nix
@@ -35,10 +40,11 @@ in
     ./swappy.nix
     ./swaync.nix
     ./tealdeer.nix
+    ./vesktop.nix
     ./virtmanager.nix
     ./xdg.nix
     ./zoxide.nix
     ./vscode.nix
-    # ./zed.nix
+    ./zed.nix
   ];
 }

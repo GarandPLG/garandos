@@ -4,7 +4,6 @@
     virt-viewer
     lazydocker
     docker-client
-    docker-compose
     distrobox
   ];
 }

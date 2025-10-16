@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 let
   messengerIcon = pkgs.fetchurl {
     url = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c526.png";
@@ -32,8 +32,23 @@ in
     mimeApps.enable = true;
     portal = {
       enable = true;
-      extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
-      configPackages = [ pkgs.hyprland ];
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-gtk
+        kdePackages.xdg-desktop-portal-kde
+      ];
+      configPackages = [ config.wayland.windowManager.hyprland.package ];
+      config = {
+        common.default = "*";
+        hyprland = {
+          default = [
+            "hyprland"
+            "gtk"
+          ];
+          "org.freedesktop.impl.portal.FileChooser" = "kde";
+          "org.freedesktop.impl.portal.Print" = "kde";
+        };
+      };
     };
     desktopEntries = {
       "messenger" = {
