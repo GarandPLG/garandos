@@ -25,7 +25,7 @@
       "deputy"
     ];
 
-    extraPackages = [ ];
+    extraPackages = with pkgs; [ biome ];
 
     userSettings = {
       agent = {
