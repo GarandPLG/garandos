@@ -11,10 +11,14 @@
 
     stylix = {
       url = "github:danth/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
-      inputs.nur.inputs.nixpkgs.follows = "nixpkgs";
-      inputs.nur.inputs.flake-parts.follows = "stylix/flake-parts";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
+        nur.inputs = {
+          nixpkgs.follows = "nixpkgs";
+          flake-parts.follows = "stylix/flake-parts";
+        };
+      };
     };
 
     auto-cpufreq = {
@@ -38,7 +42,6 @@
   outputs =
     {
       nixpkgs,
-      home-manager,
       nix-flatpak,
       auto-cpufreq,
       ...

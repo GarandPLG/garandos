@@ -8,7 +8,7 @@ in
     userName = "${gitUsername}";
     userEmail = "${gitEmail}";
 
-    extraConfig = {
+    settings = {
       # FOSS-friendly settings
       push.default = "simple"; # Match modern push behavior
       credential.helper = "cache --timeout=7200";

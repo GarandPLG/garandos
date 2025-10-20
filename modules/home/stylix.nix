@@ -8,6 +8,7 @@
     hyprlock.enable = false;
     vscode.enable = false;
     zed.enable = false;
+    vesktop.enable = false;
     qt = {
       enable = true;
       platform = "qtct";
