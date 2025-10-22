@@ -64,12 +64,12 @@
   #stylixImage = ../../wallpapers/edward-elric-fullmetal-alchemist.jpg;
   #stylixImage = ../../wallpapers/fire-nation.jpg;
   #stylixImage = ../../wallpapers/four-elements.jpg;
-  # stylixImage = ../../wallpapers/fullmetal-alchemist-5120x2880-10399.png;
+  #stylixImage = ../../wallpapers/fullmetal-alchemist-5120x2880-10399.png;
   #stylixImage = ../../wallpapers/Grounded_Wallpaper_4K.jpg;
   #stylixImage = ../../wallpapers/jablon.jpg;
   #stylixImage = ../../wallpapers/rammstein-log-two.jpg;
-  #stylixImage = ../../wallpapers/rammstein-log-one.jpg;
-  #stylixImage = ../../wallpapers/rammstein-log-three.jpg;
+  #stylixImage = ../../wallpapers/rammstein-logo-one.jpg;
+  #stylixImage = ../../wallpapers/rammstein-logo-three.jpg;
   #stylixImage = ../../wallpapers/rammstein-one.jpg;
 
   # Set Waybar
