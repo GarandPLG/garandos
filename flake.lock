@@ -301,7 +301,8 @@
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs",
         "prismlauncher-cracked": "prismlauncher-cracked",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "winboat": "winboat"
       }
     },
     "stylix": {
@@ -431,6 +432,26 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
+        "type": "github"
+      }
+    },
+    "winboat": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761401704,
+        "narHash": "sha256-zIaF3MEMNR17uiLLb+9bFjxar7EkOI6QyaOIxAhs/gQ=",
+        "owner": "TibixDev",
+        "repo": "winboat",
+        "rev": "aa868ea63512ab984c70c8a9e60ffe841a194167",
+        "type": "github"
+      },
+      "original": {
+        "owner": "TibixDev",
+        "repo": "winboat",
         "type": "github"
       }
     }

@@ -215,5 +215,5 @@ sudo nixos-rebuild switch --flake .#your-system-hostname
 - `upd-ts` - rebuild system and switch to it, but won't be added to bootloader.
 - `upd-bd` - only builds new configuration.
 
-## TODO:
-- Add instruction for needed PWA
+## Winboat
+I highly recommend using [Ghost Spectre 11](https://tech-latest.com/ghost-spectre-windows-11/#Download_Ghost_Spectre_Windows_11_Superlite_Version) as windows ISO for **winboat**.
