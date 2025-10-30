@@ -24,6 +24,10 @@ let
     url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/glance.png";
     sha256 = "sha256-xyFlmPpt+DABoGX5oBqj/aQVdxtmNflat9Jb2BE7SOY=";
   };
+  microsoftTeamsIcon = pkgs.fetchurl {
+    url = "https://i.pinimg.com/236x/e6/b6/28/e6b628706696320cd0ede93f7053abd8.jpg";
+    sha256 = "sha256-bZVmoWHeG8rycS8lj7LQaxFggXINjUx/7NWKPVhPTFw=";
+  };
 in
 {
   xdg = {
@@ -96,6 +100,14 @@ in
         genericName = "Glance";
         exec = "chromium --profile-directory=Default --app=https://glance.garandplg.com/";
         icon = "${glanceIcon}";
+        terminal = false;
+        type = "Application";
+      };
+      "microsoftTeams" = {
+        name = "Microsoft Teams";
+        genericName = "Microsoft Teams";
+        exec = "chromium --profile-directory=Default --app=https://teams.microsoft.com/v2/";
+        icon = "${microsoftTeamsIcon}";
         terminal = false;
         type = "Application";
       };
