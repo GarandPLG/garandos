@@ -12,8 +12,8 @@
       #  style = "numbers,changes,headers,rule,grid";
       style = "full";
       # Bat has other thems as well
-      # ansi,Catppuccin,base16,base16-256,GitHub,Nord,etc
-      theme = lib.mkForce "Dracula";
+      # Dracula,ansi,Catppuccin,base16,base16-256,GitHub,Nord,etc
+      theme = lib.mkForce "base16";
     };
     extraPackages = with pkgs.bat-extras; [
       batman
