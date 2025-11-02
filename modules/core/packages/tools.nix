@@ -12,7 +12,7 @@
     lshw
     pciutils
     usbutils
-    glxinfo
+    mesa-demos
     nix-output-monitor
     nvd
     onefetch

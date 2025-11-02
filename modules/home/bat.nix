@@ -18,7 +18,7 @@
     extraPackages = with pkgs.bat-extras; [
       batman
       batpipe
-      batgrep
+      # batgrep
     ];
   };
   home.sessionVariables = {

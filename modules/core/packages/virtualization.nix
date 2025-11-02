@@ -1,9 +1,4 @@
-{
-  pkgs,
-  inputs,
-  system,
-  ...
-}:
+{ pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
     virt-viewer
@@ -12,6 +7,6 @@
     distrobox
     boxbuddy
     freerdp
-    inputs.winboat.packages.${system}.winboat
+    winboat
   ];
 }
