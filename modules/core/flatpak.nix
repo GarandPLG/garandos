@@ -8,18 +8,6 @@
       xdg-desktop-portal-gtk
     ];
     configPackages = [ pkgs.hyprland ];
-    config.common = {
-      default = [
-        "hyprland"
-        "gtk"
-      ];
-      "org.freedesktop.impl.portal.Settings" = [
-        "hyprland"
-      ];
-      "org.freedesktop.impl.portal.FileChooser" = [
-        "gtk"
-      ];
-    };
   };
   services = {
     flatpak = {
@@ -29,7 +17,6 @@
         "io.github.flattool.Warehouse"
         "com.github.tchx84.Flatseal"
       ];
-
       update.onActivation = true;
     };
   };

@@ -57,7 +57,7 @@
   # This will set your color palette
   # Default background
   # Add new images to ~/garandos/wallpapers
-  #stylixImage = ../../wallpapers/attack-on-titan-mikasa-ackerman.jpg;
+  stylixImage = ../../wallpapers/attack-on-titan-mikasa-ackerman.jpg;
   #stylixImage = ../../wallpapers/DW_Pacts.jpg;
   #stylixImage = ../../wallpapers/edward-elric-fullmetal-alchemist.jpg;
   #stylixImage = ../../wallpapers/fire-nation.jpg;
@@ -69,7 +69,7 @@
   #stylixImage = ../../wallpapers/rammstein-logo-one.jpg;
   #stylixImage = ../../wallpapers/rammstein-logo-three.jpg;
   #stylixImage = ../../wallpapers/rammstein-one.jpg;
-  stylixImage = ../../wallpapers/1346530.jpeg;
+  #stylixImage = ../../wallpapers/1346530.jpeg;
 
   # Set Waybar
   #  Available Options:
