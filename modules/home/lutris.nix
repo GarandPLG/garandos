@@ -1,7 +1,7 @@
 { pkgs, osConfig, ... }:
 {
   programs.lutris = {
-    enable = true;
+    enable = false;
     package = pkgs.lutris;
     protonPackages = [ pkgs.proton-ge-bin ];
     winePackages = [ pkgs.wineWowPackages.waylandFull ];

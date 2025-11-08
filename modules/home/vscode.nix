@@ -1,9 +1,9 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
 
   programs.vscode = {
-    enable = true;
+    enable = false;
     package = pkgs.vscodium;
     profiles = {
       default = {
