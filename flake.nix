@@ -36,6 +36,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    affinity-nix = {
+      url = "github:mrshmllow/affinity-nix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
+        git-hooks.inputs = {
+          nixpkgs.follows = "nixpkgs";
+          gitignore.inputs.nixpkgs.follows = "nixpkgs";
+        };
+      };
+    };
+
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
   };
 

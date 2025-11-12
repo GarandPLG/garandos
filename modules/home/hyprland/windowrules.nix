@@ -1,17 +1,14 @@
-{ host, ... }:
-let
-  inherit (import ../../../hosts/${host}/variables.nix)
-    extraMonitorSettings
-    ;
-in
-{
+_: {
   wayland.windowManager.hyprland = {
     settings = {
       windowrule = [
+        # XWayland specific rules
         #"noblur, xwayland:1" # Helps prevent odd borders/shadows for xwayland apps
         # downside it can impact other xwayland apps
         # This rule is a template for a more targeted approach
         "noblur, class:^(\bresolve\b)$, xwayland:1" # Window rule for just resolve
+
+        # Application tags
         "tag +file-manager, class:^([Tt]hunar|org.gnome.Nautilus|[Pp]cmanfm-qt)$"
         "tag +terminal, class:^(com.mitchellh.ghostty|org.wezfurlong.wezterm|Alacritty|kitty|kitty-dropterm)$"
         "tag +browser, class:^(Brave-browser(-beta|-dev|-unstable)?)$"
@@ -39,15 +36,21 @@ in
         "tag +settings, class:(xdg-desktop-portal-gtk)"
         "tag +settings, class:(.blueman-manager-wrapped)"
         "tag +settings, class:(nwg-displays)"
+
+        # Position and movement rules
         "move 72% 7%,title:^(Picture-in-Picture)$"
         "center, class:^([Ff]erdium)$"
-        "float, class:^([Ww]aypaper)$"
         "center, class:^(pavucontrol|org.pulseaudio.pavucontrol|com.saivert.pwvucontrol)$"
         "center, class:([Tt]hunar), title:negative:(.*[Tt]hunar.*)"
         "center, title:^(Authentication Required)$"
+
+        # Idle inhibit rules
         "idleinhibit fullscreen, class:^(*)$"
         "idleinhibit fullscreen, title:^(*)$"
         "idleinhibit fullscreen, fullscreen:1"
+
+        # Float rules
+        "float, class:^([Ww]aypaper)$"
         "float, tag:settings*"
         "float, class:^([Ff]erdium)$"
         "float, title:^(Picture-in-Picture)$"
@@ -61,10 +64,17 @@ in
         "float, initialTitle:(Add Folder to Workspace)"
         "float, initialTitle:(Open Files)"
         "float, initialTitle:(wants to save)"
+
+        # Size rules
         "size 70% 60%, initialTitle:(Open Files)"
         "size 70% 60%, initialTitle:(Add Folder to Workspace)"
         "size 70% 70%, tag:settings*"
         "size 60% 70%, class:^([Ff]erdium)$"
+
+        # Tile rules
+        "tile, class:^(affinity.exe)$"
+
+        # Opacity rules
         "opacity 1.0 1.0, tag:browser*"
         "opacity 0.9 0.8, tag:projects*"
         "opacity 0.94 0.86, tag:im*"
@@ -74,8 +84,12 @@ in
         "opacity 0.8 0.7, class:^(gedit|org.gnome.TextEditor|mousepad)$"
         "opacity 0.9 0.8, class:^(seahorse)$ # gnome-keyring gui"
         "opacity 0.95 0.75, title:^(Picture-in-Picture)$"
+
+        # Picture-in-Picture specific rules
         "pin, title:^(Picture-in-Picture)$"
         "keepaspectratio, title:^(Picture-in-Picture)$"
+
+        # Games specific rules
         "noblur, tag:games*"
         "fullscreen, tag:games*"
       ];

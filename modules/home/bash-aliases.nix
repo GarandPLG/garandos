@@ -19,14 +19,13 @@
       f8 = "uv run flake8 .";
       bbr = "bun --bun run";
       mkgidf = "git add . --intent-to-add . && git diff > git-diff.txt";
-      snano = "sudo nano";
       zed = "MANGOHUD=0 /home/${username}/.local/bin/zed";
 
       # System aliases
-      flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";
+      # flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";
       kys = "shutdown now";
       ookla = "speedtest";
-      snala = "sudo nala";
+      hypr-cli = "hyprctl clients";
 
       # Navigation aliases
       "~" = "cd ~";
@@ -112,7 +111,8 @@
       fc = "fortune | cowsay";
 
       # Network aliases
-      ssh-server = "kssh garand_plg@192.168.1.156 -i ~/.ssh/hp-t640-homeserver";
+      kssh-server = "kssh garand_plg@192.168.1.156 -i ~/.ssh/hp-t640-homeserver";
+      ssh-server = "ssh garand_plg@192.168.1.156 -i ~/.ssh/hp-t640-homeserver";
     };
   };
 }

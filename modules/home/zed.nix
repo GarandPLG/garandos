@@ -41,7 +41,7 @@
         diagnostics = false;
         metrics = false;
       };
-      icon_theme = "VSCode Icons (Dark)";
+      icon_theme = "VSCode Icons for Zed (Dark)";
       ui_font_size = 16;
       buffer_font_size = 15;
       theme = {

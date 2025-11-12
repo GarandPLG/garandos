@@ -13,7 +13,7 @@ in
       "$modifier, B, exec, bitwarden"
       "$modifier, C, exec, chromium"
       "$modifier, D, exec, vesktop"
-      "$modifier, G, exec, gimp"
+      "$modifier, G, exec, affinity-v3"
       "$modifier, I, exec, iotas"
       "$modifier, L, exec, logseq"
       "$modifier, M, exec, plexamp"
