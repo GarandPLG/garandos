@@ -46,6 +46,7 @@ in
       "$modifier ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop"
       "$modifier ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop"
       "$modifier ALT, S, exec, slack"
+      "$modifier ALT, T, exec, gnome-text-editor"
       "$modifier CONTROL, M, exec, mattermost-desktop"
 
       # =============================================================================

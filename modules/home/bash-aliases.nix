@@ -2,7 +2,7 @@
 {
   programs.bash = {
     shellAliases = {
-      # NixOS aliases
+      # GarandOS aliases
       pullos = "git -C /home/${username}/garandos pull";
       upd = "nh os switch --hostname ${host}";
       upg = "nh os switch --hostname ${host} --update";
@@ -20,6 +20,13 @@
       bbr = "bun --bun run";
       mkgidf = "git add . --intent-to-add . && git diff > git-diff.txt";
       zed = "MANGOHUD=0 /home/${username}/.local/bin/zed";
+
+      # Development aliases for nix flake
+      nd = "nix develop";
+      nb = "nix build";
+      nr = "nix run";
+      nbd = "nix build .#develop";
+      nrd = "nix run .#develop";
 
       # System aliases
       # flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";

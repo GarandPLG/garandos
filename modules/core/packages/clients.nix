@@ -13,5 +13,6 @@
     galculator
     gedit
     eddie
+    gnome-text-editor
   ];
 }
