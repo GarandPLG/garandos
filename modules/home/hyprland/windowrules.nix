@@ -56,6 +56,7 @@ _: {
         "float, title:^(Picture-in-Picture)$"
         "float, class:^(mpv|com.github.rafostar.Clapper)$"
         "float, title:^(Authentication Required)$"
+        "float, title:^(war-in-tunnels)$"
         "float, class:(codium|codium-url-handler|VSCodium), title:negative:(.*codium.*|.*VSCodium.*)"
         "float, class:^(com.heroicgameslauncher.hgl)$, title:negative:(Heroic Games Launcher)"
         "float, class:^([Ss]team)$, title:negative:^([Ss]team)$"

@@ -25,8 +25,10 @@
       nd = "nix develop";
       nb = "nix build";
       nr = "nix run";
+      nbr = "nix build && nix run";
       nbd = "nix build .#develop";
       nrd = "nix run .#develop";
+      nbrd = "nix build .#develop && nix run .#develop";
 
       # System aliases
       # flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";

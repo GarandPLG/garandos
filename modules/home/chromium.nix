@@ -3,9 +3,7 @@
   programs.chromium = {
     enable = true;
     package = pkgs.ungoogled-chromium;
-    commandLineArgs = [
-      "--disable-gpu" # Do czasu aż naprawią problemy
-    ];
+    # commandLineArgs = [ ];
     dictionaries = with pkgs; [
       hunspellDictsChromium.en_US
       # hunspellDictsChromium.pl_PL Jeśli się taka pojawi
