@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.zed-editor = {
     enable = true;
@@ -26,7 +26,10 @@
       "biome"
     ];
 
-    extraPackages = with pkgs; [ biome ];
+    extraPackages = with pkgs; [
+      biome
+      rust-analyzer
+    ];
 
     userSettings = {
       agent = {
@@ -49,13 +52,24 @@
         light = "One Light";
         dark = "One Dark Pro Monokai Darker";
       };
+      diagnostics.inline = {
+        enabled = true;
+        max_severity = "error";
+      };
+      lsp = {
+        rust-analyzer = {
+          binary = {
+            path = lib.getExe pkgs.bash;
+            arguments = [
+              "-c"
+              "if [ -e flake.nix ]; then nix develop --command rust-analyzer; else rust-analyzer; fi"
+            ];
+          };
+        };
+      };
       languages = {
-        Python = {
-          language_servers = [ "!basedpyright" ];
-        };
-        YAML = {
-          tab_size = 2;
-        };
+        Python.language_servers = [ "!basedpyright" ];
+        YAML.tab_size = 2;
         JavaScript = {
           formatter.language_server.name = "biome";
           code_actions_on_format = {
