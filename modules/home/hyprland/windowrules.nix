@@ -56,7 +56,7 @@ _: {
         "float, title:^(Picture-in-Picture)$"
         "float, class:^(mpv|com.github.rafostar.Clapper)$"
         "float, title:^(Authentication Required)$"
-        "float, title:^(war-in-tunnels)$"
+        "float, title:^(War in Tunnels)$"
         "float, class:(codium|codium-url-handler|VSCodium), title:negative:(.*codium.*|.*VSCodium.*)"
         "float, class:^(com.heroicgameslauncher.hgl)$, title:negative:(Heroic Games Launcher)"
         "float, class:^([Ss]team)$, title:negative:^([Ss]team)$"
@@ -74,6 +74,7 @@ _: {
 
         # Tile rules
         "tile, class:^(affinity.exe)$"
+        "tile, class:^(dev.zed.Zed)$"
 
         # Opacity rules
         "opacity 1.0 1.0, tag:browser*"
