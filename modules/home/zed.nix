@@ -29,6 +29,8 @@
     extraPackages = with pkgs; [
       biome
       rust-analyzer
+      nixd
+      nil
     ];
 
     userSettings = {

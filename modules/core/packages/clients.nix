@@ -5,10 +5,10 @@
     slack
     mattermost-desktop
     # Productivity & Office
-    bitwarden-desktop
+    # bitwarden-desktop
     tutanota-desktop
     iotas
-    logseq
+    # logseq
     # Utilities
     galculator
     gedit

@@ -24,6 +24,7 @@
     ./thunar.nix
     ./user.nix
     ./virtualisation.nix
+    ./xdg.nix
     ./xserver.nix
     inputs.stylix.nixosModules.stylix
   ];

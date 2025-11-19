@@ -10,20 +10,17 @@ in
     ./scripts
     waybarChoice
     ./wlogout
-    ./amfora.nix
     ./anki.nix
     ./bash.nix
     ./bash-aliases.nix
     ./bash-functions.nix
     ./bat.nix
     ./btop.nix
-    ./bottom.nix
     ./cava.nix
     ./chromium.nix
     ./emoji.nix
     ./eza.nix
     ./fzf.nix
-    ./gh.nix
     ./git.nix
     ./gtk.nix
     ./kdeConnect.nix

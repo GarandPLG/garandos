@@ -1,7 +1,7 @@
 {
   pkgs,
-  inputs,
-  system,
+  # inputs,
+  # system,
   ...
 }:
 {
@@ -11,9 +11,9 @@
     ffmpegthumbnailer
     mpv
     # gimp3
-    inputs.affinity-nix.packages.${system}.v3
+    # inputs.affinity-nix.packages.${system}.v3
     eog
-    kdePackages.kdenlive
+    # kdePackages.kdenlive
     # Audio
     rhythmbox
     plexamp
@@ -21,7 +21,7 @@
     pavucontrol
     playerctl
     # Media downloaders & clients
-    freetube
-    ytmdl
+    # freetube
+    # ytmdl
   ];
 }

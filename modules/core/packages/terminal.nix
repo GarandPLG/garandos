@@ -7,6 +7,5 @@
     fortune
     lolcat
     eza
-    amfora
   ];
 }

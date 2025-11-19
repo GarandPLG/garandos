@@ -1,6 +1,6 @@
 _: {
   programs.cava = {
-    enable = true;
+    enable = false;
     settings = {
       general = {
         bar_spacing = 1;

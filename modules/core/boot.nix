@@ -1,4 +1,9 @@
-{ pkgs, config, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 
 {
   boot = {
@@ -16,7 +21,7 @@
           wallpapers = [
             ./../../wallpapers/attack-on-titan-mikasa-ackerman.jpg
           ];
-          wallpaperStyle = "centered";
+          wallpaperStyle = lib.mkDefault "centered";
           backdrop = "${config.stylix.base16Scheme.base00}";
           interface = {
             branding = "GarandOS Bootloader";

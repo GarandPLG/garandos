@@ -2,11 +2,11 @@
 {
   environment.systemPackages = with pkgs; [
     virt-viewer
-    lazydocker
+    # lazydocker
     docker-client
-    distrobox
-    boxbuddy
-    freerdp
-    winboat
+    # distrobox
+    # boxbuddy
+    # freerdp
+    # winboat
   ];
 }
