@@ -157,13 +157,7 @@
                 icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                 urls = [
                   {
-                    template = "https://home-manager-options.extranix.com/release=master";
-                    params = [
-                      {
-                        name = "query";
-                        value = "{searchTerms}";
-                      }
-                    ];
+                    template = "https://home-manager-options.extranix.com/?query={searchTerms}&release=master";
                   }
                 ];
               };
