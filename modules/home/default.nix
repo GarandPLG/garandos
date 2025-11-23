@@ -2,28 +2,30 @@
   inherit (import ../../hosts/${host}/variables.nix) waybarChoice;
 in {
   imports = [
+    ./bash
+    ./chromium
     ./fastfetch
     ./hyprland
+    ./kitty
+    ./librewolf
     ./rofi
     ./scripts
+    ./swaync
+    ./vscodium
     waybarChoice
     ./wlogout
+    ./xdg
+    ./zed
     ./anki.nix
-    ./bash.nix
-    ./bash-aliases.nix
-    ./bash-functions.nix
     ./bat.nix
     ./btop.nix
     ./cava.nix
-    ./chromium.nix
     ./emoji.nix
     ./eza.nix
     ./fzf.nix
     ./git.nix
     ./gtk.nix
     ./kdeConnect.nix
-    ./kitty.nix
-    ./librewolf.nix
     ./lutris.nix
     ./nextcloud.nix
     ./obs-studio.nix
@@ -33,13 +35,9 @@ in {
     ./starship.nix
     ./stylix.nix
     ./swappy.nix
-    ./swaync.nix
     ./tealdeer.nix
     ./vesktop.nix
     ./virtmanager.nix
-    ./xdg.nix
     ./zoxide.nix
-    ./vscode.nix
-    ./zed.nix
   ];
 }

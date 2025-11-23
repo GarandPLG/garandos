@@ -28,7 +28,7 @@ in {
       home = {
         username = "${username}";
         homeDirectory = "/home/${username}";
-        stateVersion = "23.11";
+        stateVersion = "25.11";
       };
     };
   };
@@ -43,7 +43,7 @@ in {
       "lp"
       "networkmanager"
       "scanner"
-      "wheel" # subdo access
+      "wheel" # sudo access
       "vboxusers" # Virtual Box
       "gamemode"
     ];

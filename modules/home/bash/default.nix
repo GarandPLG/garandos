@@ -6,4 +6,8 @@ _: {
     #   fastfetch
     # '';
   };
+  imports = [
+    ./aliases.nix
+    ./functions.nix
+  ];
 }

@@ -1,0 +1,74 @@
+{pkgs, ...}: let
+  fetchIcon = url: sha256:
+    pkgs.fetchurl {
+      inherit url sha256;
+    };
+
+  makeEntry = app: {
+    name = app.displayName;
+    genericName = app.genericName or app.displayName;
+    exec = "chromium --profile-directory=Default --app=${app.url}";
+    icon = "${fetchIcon app.iconUrl app.iconSha}";
+    terminal = false;
+    type = "Application";
+  };
+
+  apps = [
+    {
+      name = "messenger";
+      displayName = "Messenger";
+      url = "https://www.messenger.com/";
+      iconUrl = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c526.png";
+      iconSha = "sha256-mQ7TAsLIWLZhun1DrJFgLkkwpqvWujhGT6Ig8Rf6vbc=";
+    }
+    {
+      name = "mastodon";
+      displayName = "Mastodon";
+      url = "https://metalhead.club/";
+      iconUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mastodon_logotype_%28simple%29_new_hue.svg/1200px-Mastodon_logotype_%28simple%29_new_hue.svg.png";
+      iconSha = "sha256-y31Pkl4iExgiM4yZ64t/elA7FYZM1daGQIvYzJdmWhw=";
+    }
+    {
+      name = "garandcloud";
+      displayName = "GarandCloud";
+      genericName = "Nextcloud";
+      url = "https://nextcloud.garandplg.com/";
+      iconUrl = "https://cdn.freelogovectors.net/wp-content/uploads/2020/02/nextcloud-logo.png";
+      iconSha = "sha256-vbe3Jz6oNCUlhK81LGlDDFbo6xpUXiDio40bYqJ4lf4=";
+    }
+    {
+      name = "chatgpt";
+      displayName = "ChatGPT";
+      url = "https://chatgpt.com/";
+      iconUrl = "https://static.vecteezy.com/system/resources/previews/031/110/149/large_2x/chatgpt-logo-transparent-free-png.png";
+      iconSha = "sha256-ZWmhchblQkksW02eduVrkUSPAlWPGC2fjqxrAGAF5jw=";
+    }
+    {
+      name = "claude";
+      displayName = "Claude";
+      url = "https://claude.ai/";
+      iconUrl = "https://registry.npmmirror.com/@lobehub/icons-static-png/1.65.0/files/dark/claude-color.png";
+      iconSha = "sha256-wmYmbmT2/bR4JrnZJu2stjRZm//O5TB9EPE2NQWdGkQ=";
+    }
+    {
+      name = "glance";
+      displayName = "Glance";
+      url = "https://glance.garandplg.com/";
+      iconUrl = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/glance.png";
+      iconSha = "sha256-xyFlmPpt+DABoGX5oBqj/aQVdxtmNflat9Jb2BE7SOY=";
+    }
+    {
+      name = "microsoftTeams";
+      displayName = "Microsoft Teams";
+      url = "https://teams.microsoft.com/v2/";
+      iconUrl = "https://i.pinimg.com/236x/e6/b6/28/e6b628706696320cd0ede93f7053abd8.jpg";
+      iconSha = "sha256-bZVmoWHeG8rycS8lj7LQaxFggXINjUx/7NWKPVhPTFw=";
+    }
+  ];
+in {
+  xdg.desktopEntries = builtins.listToAttrs (builtins.map (app: {
+      name = app.name;
+      value = makeEntry app;
+    })
+    apps);
+}

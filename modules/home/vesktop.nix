@@ -1,3 +1,6 @@
-_: {
-  programs.vesktop.enable = true;
+{pkgs, ...}: {
+  programs.vesktop = {
+    enable = true;
+    package = pkgs.vesktop;
+  };
 }

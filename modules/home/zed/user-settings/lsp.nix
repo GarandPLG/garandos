@@ -1,0 +1,34 @@
+{
+  pkgs,
+  lib,
+  username,
+  host,
+  ...
+}: {
+  programs.zed-editor.userSettings.lsp = {
+    rust-analyzer = {
+      binary = {
+        path = lib.getExe pkgs.bash;
+        arguments = [
+          "-c"
+          "if [ -e flake.nix ]; then nix develop --command rust-analyzer; else rust-analyzer; fi"
+        ];
+      };
+    };
+    nixd = {
+      initialization_options.formatting.command = [
+        "alejandra"
+        "--quiet"
+        "--"
+      ];
+      settings = {
+        nixpkgs.expr = "import <nixpkgs> { }";
+        formatting.command = ["alejandra"];
+        options = {
+          nixos.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options";
+          home-manager.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options.home-manager.users.type.getSubOptions []";
+        };
+      };
+    };
+  };
+}
