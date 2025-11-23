@@ -1,8 +1,4 @@
-{
-  inputs,
-  ...
-}:
-{
+{inputs, ...}: {
   imports = [
     ./packages
     ./auto-cpufreq.nix

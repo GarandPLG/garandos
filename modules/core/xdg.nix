@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   xdg.portal = {
     enable = true;
     wlr.enable = true;
@@ -7,6 +6,6 @@
       xdg-desktop-portal-hyprland
       xdg-desktop-portal-gtk
     ];
-    configPackages = [ pkgs.hyprland ];
+    configPackages = [pkgs.hyprland];
   };
 }

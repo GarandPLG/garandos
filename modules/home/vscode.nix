@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   nixpkgs.config.allowUnfree = true;
 
   programs.vscode = {
@@ -7,8 +6,7 @@
     package = pkgs.vscodium;
     profiles = {
       default = {
-        extensions =
-          with pkgs.vscode-extensions;
+        extensions = with pkgs.vscode-extensions;
           [
             batisteo.vscode-django
             bradlc.vscode-tailwindcss
@@ -409,26 +407,22 @@
           {
             "key" = "tab";
             "command" = "-editor.emmet.action.expandAbbreviation";
-            "when" =
-              "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus";
+            "when" = "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus";
           }
           {
             "key" = "tab";
             "command" = "-editor.action.inlineSuggest.jump";
-            "when" =
-              "inlineEditIsVisible && tabShouldJumpToInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible";
+            "when" = "inlineEditIsVisible && tabShouldJumpToInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible";
           }
           {
             "key" = "tab";
             "command" = "-Alignment Preserving Indent";
-            "when" =
-              "editorTextFocus && !editorReadOnly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion != 'on'";
+            "when" = "editorTextFocus && !editorReadOnly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion != 'on'";
           }
           {
             "key" = "tab";
             "command" = "-Alignment Preserving Indent";
-            "when" =
-              "editorTextFocus && !editorReadOnly && !editorTabMovesFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'";
+            "when" = "editorTextFocus && !editorReadOnly && !editorTabMovesFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'";
           }
         ];
       };

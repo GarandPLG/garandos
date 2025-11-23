@@ -1,7 +1,6 @@
-{ host, ... }:
-{
+{host, ...}: {
   stylix.targets = {
-    librewolf.profileNames = [ "${host}" ];
+    librewolf.profileNames = ["${host}"];
     waybar.enable = false;
     rofi.enable = false;
     hyprland.enable = false;

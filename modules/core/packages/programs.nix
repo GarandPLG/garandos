@@ -1,8 +1,8 @@
-{
-  # pkgs
-  ...
-}:
-{
+# {
+#   pkgs
+#   ...
+# }
+_: {
   programs = {
     nano.enable = true;
     hyprland = {

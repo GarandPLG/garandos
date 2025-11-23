@@ -3,8 +3,7 @@
   # inputs,
   # system,
   ...
-}:
-{
+}: {
   environment.systemPackages = with pkgs; [
     # Video & image processing
     ffmpeg

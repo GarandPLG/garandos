@@ -1,5 +1,8 @@
-{ host, username, ... }:
 {
+  host,
+  username,
+  ...
+}: {
   programs.bash = {
     shellAliases = {
       # GarandOS aliases

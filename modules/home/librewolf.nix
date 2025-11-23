@@ -5,8 +5,7 @@
   system,
   host,
   ...
-}:
-{
+}: {
   programs = {
     librewolf = {
       enable = true;
@@ -61,12 +60,12 @@
             force = true;
             engines = {
               "garand's-search" = {
-                definedAliases = [ "@g" ];
-                urls = [ { template = "https://search.garandplg.com/search?q={searchTerms}"; } ];
+                definedAliases = ["@g"];
+                urls = [{template = "https://search.garandplg.com/search?q={searchTerms}";}];
                 suggestUrl = "https://search.garandplg.com/autocompleter?q={searchTerms}";
               };
               "youtube" = {
-                definedAliases = [ "@yt" ];
+                definedAliases = ["@yt"];
                 urls = [
                   {
                     template = "https://www.youtube.com/results";
@@ -80,7 +79,7 @@
                 ];
               };
               "wikipedia-pl" = {
-                definedAliases = [ "@w" ];
+                definedAliases = ["@w"];
                 urls = [
                   {
                     template = "https://pl.wikipedia.org/w/index.php";
@@ -94,7 +93,7 @@
                 ];
               };
               "stackoverflow" = {
-                definedAliases = [ "@so" ];
+                definedAliases = ["@so"];
                 urls = [
                   {
                     template = "https://stackoverflow.com/search";
@@ -108,7 +107,7 @@
                 ];
               };
               "nix-packages" = {
-                definedAliases = [ "@np" ];
+                definedAliases = ["@np"];
                 icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                 urls = [
                   {
@@ -123,7 +122,7 @@
                 ];
               };
               "nix-options" = {
-                definedAliases = [ "@no" ];
+                definedAliases = ["@no"];
                 icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                 urls = [
                   {
@@ -138,7 +137,7 @@
                 ];
               };
               "nix-wiki" = {
-                definedAliases = [ "@nw" ];
+                definedAliases = ["@nw"];
                 icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                 urls = [
                   {
@@ -153,7 +152,7 @@
                 ];
               };
               "home-manager-option" = {
-                definedAliases = [ "@hmo" ];
+                definedAliases = ["@hmo"];
                 icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                 urls = [
                   {
@@ -162,7 +161,7 @@
                 ];
               };
               "eneba" = {
-                definedAliases = [ "@en" ];
+                definedAliases = ["@en"];
                 icon = "https://static.eneba.games/branding/v2/logoFull.svg";
                 urls = [
                   {
@@ -177,7 +176,7 @@
                 ];
               };
               "kinguin" = {
-                definedAliases = [ "@ki" ];
+                definedAliases = ["@ki"];
                 icon = "https://static.kinguin.net/media/images/other/kinguin-mobile-logo.svg";
                 urls = [
                   {
@@ -192,7 +191,7 @@
                 ];
               };
               "instant-gaming" = {
-                definedAliases = [ "@ig" ];
+                definedAliases = ["@ig"];
                 icon = "https://asset.brandfetch.io/idCbLj4uOg/idGS61T0FV.jpeg";
                 urls = [
                   {
@@ -207,7 +206,7 @@
                 ];
               };
               "morele" = {
-                definedAliases = [ "@mo" ];
+                definedAliases = ["@mo"];
                 icon = "https://www.morele.net/static/img/shop/logo/image-logo-morele.svg";
                 urls = [
                   {
@@ -222,7 +221,7 @@
                 ];
               };
               "x-kom" = {
-                definedAliases = [ "@xk" ];
+                definedAliases = ["@xk"];
                 icon = "https://assets.x-kom.pl/public-spa/xkom/75062cb4b48a8510.svg";
                 urls = [
                   {
@@ -237,7 +236,7 @@
                 ];
               };
               "komputronik" = {
-                definedAliases = [ "@kp" ];
+                definedAliases = ["@kp"];
                 icon = "https://front.komputronik.pl/front-static/komputronik.Ceqagame-a.svg";
                 urls = [
                   {
@@ -252,7 +251,7 @@
                 ];
               };
               "allegro" = {
-                definedAliases = [ "@al" ];
+                definedAliases = ["@al"];
                 icon = "";
                 urls = [
                   {

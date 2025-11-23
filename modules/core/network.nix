@@ -2,11 +2,9 @@
   host,
   options,
   ...
-}:
-let
+}: let
   inherit (import ../../hosts/${host}/variables.nix) hostId;
-in
-{
+in {
   # Defensive assertion for hostname validity (clearer message at eval time)
   assertions = [
     {
@@ -19,7 +17,7 @@ in
     hostName = "${host}";
     hostId = hostId;
     networkmanager.enable = true;
-    timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
+    timeServers = options.networking.timeServers.default ++ ["pool.ntp.org"];
     firewall = {
       enable = true;
       allowedTCPPorts = [

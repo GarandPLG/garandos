@@ -2,11 +2,9 @@
   config,
   lib,
   ...
-}:
-let
+}: let
   accent = "#${config.lib.stylix.colors.base0D}";
-in
-{
+in {
   programs.starship = {
     enable = true;
     settings = {
@@ -107,7 +105,7 @@ in
           "docker-compose.yaml"
           "Dockerfile"
         ];
-        detect_extensions = [ "Dockerfile" ];
+        detect_extensions = ["Dockerfile"];
       };
 
       cmd_duration = {

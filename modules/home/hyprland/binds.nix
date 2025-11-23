@@ -1,9 +1,11 @@
-{ host, username, ... }:
-let
+{
+  host,
+  username,
+  ...
+}: let
   inherit (import ../../../hosts/${host}/variables.nix) browser terminal;
   desktopEntriesPath = "/home/${username}/.local/state/home-manager/gcroots/current-home/home-path/share/applications/";
-in
-{
+in {
   wayland.windowManager.hyprland.settings = {
     bind = [
       # =============================================================================

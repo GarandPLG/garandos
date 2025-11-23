@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   programs.auto-cpufreq = {
     enable = true;
     settings = {

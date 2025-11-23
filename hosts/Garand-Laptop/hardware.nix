@@ -6,9 +6,7 @@
   lib,
   modulesPath,
   ...
-}:
-
-{
+}: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
@@ -21,14 +19,14 @@
         "usb_storage"
         "sd_mod"
       ];
-      kernelModules = [ "dm-snapshot" ];
+      kernelModules = ["dm-snapshot"];
       luks.devices.cryptroot = {
         device = "/dev/disk/by-uuid/6abc2228-823e-42b0-94c7-48fda757732c";
         preLVM = true;
       };
     };
-    kernelModules = [ "kvm-amd" ];
-    extraModulePackages = [ ];
+    kernelModules = ["kvm-amd"];
+    extraModulePackages = [];
   };
 
   fileSystems = {
@@ -51,7 +49,7 @@
   };
 
   swapDevices = [
-    { device = "/dev/disk/by-uuid/5da7c845-7dd3-4882-93af-2d679cdb5e7a"; }
+    {device = "/dev/disk/by-uuid/5da7c845-7dd3-4882-93af-2d679cdb5e7a";}
   ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

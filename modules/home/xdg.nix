@@ -1,5 +1,8 @@
-{ pkgs, config, ... }:
-let
+{
+  pkgs,
+  config,
+  ...
+}: let
   messengerIcon = pkgs.fetchurl {
     url = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c526.png";
     sha256 = "sha256-mQ7TAsLIWLZhun1DrJFgLkkwpqvWujhGT6Ig8Rf6vbc=";
@@ -28,8 +31,7 @@ let
     url = "https://i.pinimg.com/236x/e6/b6/28/e6b628706696320cd0ede93f7053abd8.jpg";
     sha256 = "sha256-bZVmoWHeG8rycS8lj7LQaxFggXINjUx/7NWKPVhPTFw=";
   };
-in
-{
+in {
   xdg = {
     enable = true;
     mime.enable = true;
@@ -41,7 +43,7 @@ in
         xdg-desktop-portal-gtk
         kdePackages.xdg-desktop-portal-kde
       ];
-      configPackages = [ config.wayland.windowManager.hyprland.package ];
+      configPackages = [config.wayland.windowManager.hyprland.package];
       config = {
         common.default = "*";
         hyprland = {

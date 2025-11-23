@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   nixpkgs.config.allowUnfree = true;
   imports = [
     ./programs.nix

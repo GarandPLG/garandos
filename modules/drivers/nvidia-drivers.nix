@@ -4,18 +4,16 @@
   pkgs,
   ...
 }:
-with lib;
-let
+with lib; let
   cfg = config.drivers.nvidia;
-in
-{
+in {
   options.drivers.nvidia = {
     enable = mkEnableOption "Enable Nvidia Drivers";
   };
 
   config = mkIf cfg.enable {
-    services.xserver.videoDrivers = [ "nvidia" ];
-    environment.systemPackages = with pkgs; [ nvidia-docker ];
+    services.xserver.videoDrivers = ["nvidia"];
+    environment.systemPackages = with pkgs; [nvidia-docker];
     hardware = {
       nvidia-container-toolkit.enable = true;
       nvidia = {
@@ -43,7 +41,6 @@ in
     };
   };
 }
-
 # Making nvidia docker toolkit work:
 #
 # sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml
@@ -59,3 +56,4 @@ in
 # EOF
 #
 # docker run --device nvidia.com/gpu=all
+

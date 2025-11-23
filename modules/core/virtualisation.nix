@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   # Only enable either docker or podman -- Not both
   virtualisation = {
     docker.enable = true;

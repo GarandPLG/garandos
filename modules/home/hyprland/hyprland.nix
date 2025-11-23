@@ -3,11 +3,9 @@
   config,
   pkgs,
   ...
-}:
-let
+}: let
   inherit (import ../../../hosts/${host}/variables.nix) extraMonitorSettings keyboardLayout;
-in
-{
+in {
   systemd.user.targets.hyprland-session.Unit.Wants = [
     "xdg-desktop-autostart.target"
   ];
@@ -26,7 +24,7 @@ in
     systemd = {
       enable = true;
       enableXdgAutostart = true;
-      variables = [ "--all" ];
+      variables = ["--all"];
     };
     xwayland = {
       enable = true;
@@ -68,8 +66,7 @@ in
         gaps_out = 8;
         border_size = 2;
         resize_on_border = true;
-        "col.active_border" =
-          "rgb(${config.lib.stylix.colors.base08}) rgb(${config.lib.stylix.colors.base0C}) 45deg";
+        "col.active_border" = "rgb(${config.lib.stylix.colors.base08}) rgb(${config.lib.stylix.colors.base0C}) 45deg";
         "col.inactive_border" = "rgb(${config.lib.stylix.colors.base01})";
       };
 
@@ -154,9 +151,7 @@ in
     extraConfig = "
       monitor=,preferred,auto,auto
       monitor=Virtual-1,1920x1080@60,auto,1
-      ${
-            extraMonitorSettings
-          }
+      ${extraMonitorSettings}
       # To enable blur on waybar uncomment the line below
       # Thanks to SchotjeChrisman
       #layerrule = blur,waybar

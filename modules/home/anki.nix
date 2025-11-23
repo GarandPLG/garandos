@@ -1,5 +1,8 @@
-{ pkgs, username, ... }:
 {
+  pkgs,
+  username,
+  ...
+}: {
   programs.anki = {
     enable = true;
     package = pkgs.anki;

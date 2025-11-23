@@ -1,5 +1,10 @@
-{ pkgs, lib, ... }:
 {
+  pkgs,
+  lib,
+  username,
+  host,
+  ...
+}: {
   programs.zed-editor = {
     enable = true;
     package = pkgs.zed-editor;
@@ -31,7 +36,7 @@
       biome
       rust-analyzer
       nixd
-      nil
+      alejandra
       opencode
     ];
 
@@ -65,7 +70,7 @@
                 name = "llama-3.3-70b";
                 display_name = "Llama 3.3 70B";
                 max_tokens = 65000;
-                max_output_tokens = 32000;
+                max_output_tokens = 8000;
                 capabilities = {
                   tools = true;
                   images = true;
@@ -115,9 +120,28 @@
             ];
           };
         };
+        nixd = {
+          initialization_options.formatting.command = [
+            "alejandra"
+            "--quiet"
+            "--"
+          ];
+          settings = {
+            nixpkgs.expr = "import <nixpkgs> { }";
+            formatting.command = ["alejandra"];
+            options = {
+              nixos.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options";
+              home-manager.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options.home-manager.users.type.getSubOptions []";
+            };
+          };
+        };
       };
       languages = {
-        Python.language_servers = [ "!basedpyright" ];
+        Nix.language_servers = [
+          "nixd"
+          "!nil"
+        ];
+        Python.language_servers = ["!basedpyright"];
         YAML.tab_size = 2;
         JavaScript = {
           formatter.language_server.name = "biome";
@@ -177,6 +201,5 @@
         };
       };
     };
-
   };
 }

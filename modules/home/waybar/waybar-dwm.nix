@@ -2,8 +2,7 @@
   config,
   pkgs,
   ...
-}:
-{
+}: {
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
@@ -14,7 +13,7 @@
           "hyprland/workspaces"
           "hyprland/window"
         ];
-        "modules-center" = [ "clock" ];
+        "modules-center" = ["clock"];
         "modules-right" = [
           "tray"
           "cpu"
@@ -163,7 +162,7 @@
           "tooltip-format" = "{title}";
           "on-click" = "activate";
           "on-click-middle" = "close";
-          "ignore-list" = [ "Alacritty" ];
+          "ignore-list" = ["Alacritty"];
           "app_ids-mapping" = {
             firefoxdeveloperedition = "firefox-developer-edition";
           };

@@ -2,8 +2,7 @@
   pkgs,
   username,
   ...
-}:
-{
+}: {
   services.greetd = {
     enable = true;
     #vt = 3;
