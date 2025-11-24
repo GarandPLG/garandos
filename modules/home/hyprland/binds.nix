@@ -12,14 +12,19 @@ in {
       # APLIKACJE - GŁÓWNE
       # =============================================================================
       "$modifier, A, exec, anki"
+      "$modifier, B, exec, bitwarden"
       "$modifier, C, exec, chromium"
       "$modifier, D, exec, vesktop"
+      "$modifier, G, exec, affinity-v3"
       "$modifier, I, exec, iotas"
+      "$modifier, L, exec, logseq"
       "$modifier, M, exec, plexamp"
       "$modifier, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop"
+      "$modifier, O, exec, obs"
       "$modifier, Return, exec, ${terminal}"
       "$modifier, S, exec, steam"
       "$modifier, T, exec, thunar"
+      "$modifier, V, exec, codium"
       "$modifier, W, exec, ${browser}"
       "$modifier, Z, exec, zeditor"
 
@@ -42,11 +47,12 @@ in {
       "$modifier ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop"
       "$modifier ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop"
       "$modifier ALT, S, exec, slack"
-      "$modifier ALT, T, exec, gnome-text-editor"
+      "$modifier ALT, T, exec, gedit"
 
       # =============================================================================
       # APLIKACJE - Z CONTROL
       # =============================================================================
+      "$modifier CONTROL, G, exec, gimp"
       "$modifier CONTROL, M, exec, mattermost-desktop"
 
       # =============================================================================
@@ -142,12 +148,6 @@ in {
       # =============================================================================
       # NIEUŻYWANE KEYBINDY
       # =============================================================================
-      # "$modifier, B, exec, bitwarden"
-      # "$modifier, G, exec, affinity-v3"
-      # "$modifier, L, exec, logseq"
-      # "$modifier, O, exec, obs"
-      # "$modifier, V, exec, codium"
-
       # "$modifier SHIFT, N, exec, swaync-client -rs"
       # "$modifier, P, pseudo,"
       # "$modifier SHIFT,F, togglefloating,"

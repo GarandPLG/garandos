@@ -191,22 +191,35 @@ git add .
 - `waybarChoice` - system top bar style.
 - `animChoice` - system animation style.
 
-### 5. Copy the ready `hardware-configuration.nix` to host folder:
+### 5. Review module activation options  
+Open the module files for your host and adjust the `enable` options for the services you need:
+
+```bash
+# Home‑modules (enable/disable home-scoped applications)
+nano hosts/<your-system-hostname>/home-modules.nix
+
+# System‑modules (enable/disable system‑wide services)
+nano hosts/<your-system-hostname>/system-modules.nix
+```
+
+Set the options to `true` for the components you want active and `false` for those you don’t need.
+
+### 6. Copy the ready `hardware-configuration.nix` to host folder:
 ```bash
 sudo cp /etc/nixos/hardware-configuration.nix hosts/<your-system-hostname>/hardware.nix
 ```
 
-### 6. Enable `Flake` functionality in your system.
+### 7. Enable `Flake` functionality in your system.
 ```bash
 NIX_CONFIG="experimental-features = nix-command flakes"
 ```
 
-### 7. Build system (provide your hostname)
+### 8. Build system (provide your hostname)
 ```bash
 sudo nixos-rebuild switch --flake .#your-system-hostname
 ```
 
-### 8. After system rebuild you can use the following aliases instead of repeating the previous command
+### 9. After system rebuild you can use the following aliases instead of repeating the previous command
 
 - `pullos` - pull latest commits from my repository.
 - `upd` - rebuild system.

@@ -1,22 +1,27 @@
-{pkgs, ...}: {
-  programs = {
-    librewolf = {
-      enable = true;
-      package = pkgs.librewolf;
-      # nativeMessagingHosts = [pkgs.firefoxpwa];
-      languagePacks = [
-        "pl"
-        "en-US"
-      ];
-      settings = {
-        # LibreWolf settings
-        "network.http.referer.XOriginPolicy" = 2;
-        "privacy.resistFingerprinting.letterboxing" = true;
-        "privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts" = true;
-      };
-      policies = {
-        # Policies (about:policies#documentation)
-      };
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
+  options.librewolf.enable = lib.mkEnableOption "LibreWolf";
+
+  config.programs.librewolf = lib.mkIf config.librewolf.enable {
+    enable = true;
+    package = pkgs.librewolf;
+    # nativeMessagingHosts = [pkgs.firefoxpwa];
+    languagePacks = [
+      "pl"
+      "en-US"
+    ];
+    settings = {
+      # LibreWolf settings
+      "network.http.referer.XOriginPolicy" = 2;
+      "privacy.resistFingerprinting.letterboxing" = true;
+      "privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts" = true;
+    };
+    policies = {
+      # Policies (about:policies#documentation)
     };
   };
 

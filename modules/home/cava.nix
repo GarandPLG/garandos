@@ -1,6 +1,12 @@
-_: {
-  programs.cava = {
-    enable = false;
+{
+  lib,
+  config,
+  ...
+}: {
+  options.cava.enable = lib.mkEnableOption "Cava";
+
+  config.programs.cava = lib.mkIf config.cava.enable {
+    enable = true;
     settings = {
       general = {
         bar_spacing = 1;

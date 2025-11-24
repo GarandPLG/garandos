@@ -1,5 +1,12 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    mpv
+    pavucontrol
+    playerctl
+    cmatrix
+    cowsay
+    sl
+    fortune
     # File management
     trash-cli
     file-roller

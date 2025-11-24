@@ -24,7 +24,7 @@ in {
         ;
     };
     users.${username} = {
-      imports = [./../home];
+      imports = [./../home ../../hosts/${host}/home-modules.nix];
       home = {
         username = "${username}";
         homeDirectory = "/home/${username}";
@@ -32,23 +32,26 @@ in {
       };
     };
   };
-  users.mutableUsers = true;
-  users.users.${username} = {
-    isNormalUser = true;
-    description = "${gitUsername}";
-    extraGroups = [
-      "adbusers"
-      "docker" # access to docker as non-root
-      "libvirtd" # Virt manager/QEMU access
-      "lp"
-      "networkmanager"
-      "scanner"
-      "wheel" # sudo access
-      "vboxusers" # Virtual Box
-      "gamemode"
-    ];
-    shell = pkgs.bash;
-    ignoreShellProgramCheck = true;
+  users = {
+    mutableUsers = true;
+    users.${username} = {
+      isNormalUser = true;
+      description = "${gitUsername}";
+      extraGroups = [
+        "adbusers"
+        "docker" # access to docker as non-root
+        "libvirtd" # Virt manager/QEMU access
+        "lp"
+        "networkmanager"
+        "scanner"
+        "wheel" # sudo access
+        "vboxusers" # Virtual Box
+        "gamemode"
+      ];
+      shell = pkgs.bash;
+      ignoreShellProgramCheck = true;
+      linger = true;
+    };
   };
   nix.settings.allowed-users = ["${username}"];
 }

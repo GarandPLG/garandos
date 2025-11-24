@@ -1,13 +1,8 @@
 _: {
   nixpkgs.config.allowUnfree = true;
   imports = [
+    ./essentials.nix
+    ./packages.nix
     ./programs.nix
-    ./clients.nix
-    ./development.nix
-    ./gaming.nix
-    ./multimedia.nix
-    ./terminal.nix
-    ./tools.nix
-    ./virtualization.nix
   ];
 }

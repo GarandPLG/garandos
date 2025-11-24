@@ -3,6 +3,7 @@
     ./packages
     ./auto-cpufreq.nix
     ./boot.nix
+    ./docker.nix
     ./flatpak.nix
     ./fonts.nix
     ./hardware.nix
@@ -19,7 +20,6 @@
     ./system.nix
     ./thunar.nix
     ./user.nix
-    ./virtualisation.nix
     ./xdg.nix
     ./xserver.nix
     inputs.stylix.nixosModules.stylix

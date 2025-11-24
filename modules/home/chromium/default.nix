@@ -1,5 +1,12 @@
-{pkgs, ...}: {
-  programs.chromium = {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
+  options.ungoogled-chromium.enable = lib.mkEnableOption "Ungoogled Chromium";
+
+  config.programs.chromium = lib.mkIf config.ungoogled-chromium.enable {
     enable = true;
     package = pkgs.ungoogled-chromium;
     # commandLineArgs = [ ];

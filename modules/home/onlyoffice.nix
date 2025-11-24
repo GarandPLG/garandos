@@ -1,5 +1,12 @@
-{pkgs, ...}: {
-  programs.onlyoffice = {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
+  options.onlyoffice.enable = lib.mkEnableOption "OnlyOffice";
+
+  config.programs.onlyoffice = lib.mkIf config.onlyoffice.enable {
     enable = true;
     package = pkgs.onlyoffice-desktopeditors;
     settings = {

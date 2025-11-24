@@ -7,5 +7,6 @@
       xdg-desktop-portal-gtk
     ];
     configPackages = [pkgs.hyprland];
+    xdgOpenUsePortal = true;
   };
 }

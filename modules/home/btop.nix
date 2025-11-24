@@ -1,5 +1,12 @@
-{pkgs, ...}: {
-  programs.btop = {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
+  options.btop.enable = lib.mkEnableOption "Btop";
+
+  config.programs.btop = lib.mkIf config.btop.enable {
     enable = true;
     package = pkgs.btop.override {
       rocmSupport = true;

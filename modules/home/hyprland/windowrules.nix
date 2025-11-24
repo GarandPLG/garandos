@@ -54,7 +54,7 @@ _: {
         "float, tag:settings*"
         "float, class:^([Ff]erdium)$"
         "float, title:^(Picture-in-Picture)$"
-        "float, class:^(mpv|com.github.rafostar.Clapper)$"
+        "float, class:^(mpv)$"
         "float, title:^(Authentication Required)$"
         "float, title:^(War in Tunnels)$"
         "float, class:(codium|codium-url-handler|VSCodium), title:negative:(.*codium.*|.*VSCodium.*)"
@@ -71,6 +71,7 @@ _: {
         "size 70% 60%, initialTitle:(Add Folder to Workspace)"
         "size 70% 70%, tag:settings*"
         "size 60% 70%, class:^([Ff]erdium)$"
+        "size 70% 70%, class:^(mpv)$"
 
         # Tile rules
         "tile, class:^(affinity.exe)$"
