@@ -21,6 +21,7 @@ in {
       "$modifier, M, exec, plexamp"
       "$modifier, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop"
       "$modifier, O, exec, obs"
+      "$modifier, P, exec, plex-desktop"
       "$modifier, Return, exec, ${terminal}"
       "$modifier, S, exec, steam"
       "$modifier, T, exec, thunar"
@@ -60,8 +61,8 @@ in {
       # =============================================================================
       "$modifier, E, exec, emopicker9000"
       "$modifier, K, exec, galculator"
-      "$modifier, P, exec, hyprpicker -a"
       "$modifier ALT, W, exec, wallsetter"
+      "$modifier CONTROL, P, exec, hyprpicker -a"
       "$modifier SHIFT, K, exec, list-keybinds"
       "$modifier SHIFT, P, exec, pavucontrol"
       "$modifier SHIFT, S, exec, screenshootin"
