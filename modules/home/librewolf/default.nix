@@ -8,7 +8,7 @@
 
   config.programs.librewolf = lib.mkIf config.librewolf.enable {
     enable = true;
-    package = pkgs.librewolf;
+    package = pkgs.librewolf-bin;
     # nativeMessagingHosts = [pkgs.firefoxpwa];
     languagePacks = [
       "pl"
