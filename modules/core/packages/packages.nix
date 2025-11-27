@@ -25,6 +25,7 @@
     tutanota = tutanota-desktop;
     exercism = exercism;
     opencode = opencode;
+    jan = jan;
     lazygit = lazygit;
     prismlauncher = inputs.prismlauncher-cracked.packages.${system}.default;
     spaceCadetPinball = space-cadet-pinball;

@@ -17,6 +17,7 @@ in {
       "$modifier, D, exec, vesktop"
       "$modifier, G, exec, affinity-v3"
       "$modifier, I, exec, iotas"
+      "$modifier, J, exec, Jan"
       "$modifier, L, exec, logseq"
       "$modifier, M, exec, plexamp"
       "$modifier, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop"

@@ -2,16 +2,27 @@
   lib,
   config,
   ...
-}: {
+}: let
+  mkFlatpakPackage = name: pkgId: {
+    options.flatpak.packages.${name} = lib.mkEnableOption "Flatpak: ${name}";
+
+    config.services.flatpak.packages =
+      lib.mkIf config.flatpak.packages.${name} [pkgId];
+  };
+
+  flatpakPackages = {
+    sober = "org.vinegarhq.Sober";
+    warehouse = "io.github.flattool.Warehouse";
+    flatseal = "com.github.tchx84.Flatseal";
+  };
+in {
   options.flatpak.enable = lib.mkEnableOption "Flatpak";
 
   config.services.flatpak = lib.mkIf config.flatpak.enable {
     enable = true;
     update.onActivation = true;
-    packages = [
-      # "org.vinegarhq.Sober"
-      "io.github.flattool.Warehouse"
-      "com.github.tchx84.Flatseal"
-    ];
+    packages = [];
   };
+
+  imports = builtins.attrValues (builtins.mapAttrs mkFlatpakPackage flatpakPackages);
 }

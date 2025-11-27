@@ -2,65 +2,55 @@ _: {
   /*
   Development editors and IDEs
   */
-  # VSCodium: a free and open-source "demicrosofted" VSCode
-  vscodium.enable = false;
-  # Zed Editor: a modern, high‑performance code editor
+  vscodium.enable = false; # VSCodium: a free and open-source "demicrosofted" VSCode
+
   zed-editor = {
-    # Enable Zed Editor
-    enable = true;
-    # Remote Server: enable remote editing capabilities
-    remote-server = true;
+    enable = true; # Zed Editor: a modern, high‑performance code editor
+    remote-server = true; # Remote Server: enable remote editing capabilities
   };
 
   /*
   Web browsers
   */
-  # Librewolf: a privacy-focused Firefox fork
-  librewolf.enable = true;
-  # Ungoogled Chromium: a privacy-focused Chromium fork
-  ungoogled-chromium.enable = true;
+  librewolf.enable = true; # Librewolf: a privacy-focused Firefox fork
+
+  ungoogled-chromium.enable = true; # Ungoogled Chromium: a privacy-focused Chromium fork
 
   /*
   System utilities
   */
-  # Btop: a resource monitor for the terminal
-  btop.enable = true;
-  # Cava: terminal audio visualizer
-  cava.enable = false;
-  # Fastfetch: a fast system information tool
-  fastfetch.enable = true;
+  btop.enable = true; # Btop: a resource monitor for the terminal
+
+  cava.enable = false; # Cava: terminal audio visualizer
+
+  fastfetch.enable = true; # Fastfetch: a fast system information tool
 
   /*
   Communication and synchronization
   */
-  # KDE Connect: integrate your phone and desktop
-  kdeconnect.enable = false;
-  # Nextcloud Client: sync files with a Nextcloud server
-  nextcloud-client.enable = true;
-  # Vesktop: a community‑driven Discord client
-  vesktop.enable = true;
+  kdeconnect.enable = false; # KDE Connect: integrate your phone and desktop
+
+  nextcloud-client.enable = true; # Nextcloud Client: sync files with a Nextcloud server
+
+  vesktop.enable = true; # Vesktop: a community‑driven Discord client
 
   /*
   Gaming
   */
-  # Lutris: an open gaming platform
-  lutris.enable = false;
+  lutris.enable = false; # Lutris: an open gaming platform
 
   /*
   Media recording and streaming
   */
-  # OBS Studio: streaming and recording software
-  obs-studio.enable = false;
+  obs-studio.enable = false; # OBS Studio: streaming and recording software
 
   /*
   Office suite
   */
-  # OnlyOffice: an office suite compatible with Microsoft formats
-  onlyoffice.enable = true;
+  onlyoffice.enable = true; # OnlyOffice: an office suite compatible with Microsoft formats
 
   /*
   Learning tools
   */
-  # Anki: spaced‑repetition flashcard program
-  anki.enable = true;
+  anki.enable = true; # Anki: spaced‑repetition flashcard program
 }

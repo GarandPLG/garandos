@@ -2,86 +2,89 @@ _: {
   /*
   Container & Packaging
   */
-  # Docker: container runtime and management
-  docker.enable = true;
-  # Distrobox: containerized development environments
-  distrobox.enable = false;
-  # Flatpak: universal packaging system for Linux
-  flatpak.enable = true;
-  # Lazydocker: simple TUI for Docker
-  lazydocker.enable = false;
+  docker.enable = true; # Docker: container runtime and management
+
+  distrobox.enable = false; # Distrobox: containerized development environments
+
+  flatpak = {
+    enable = true; # Flatpak: universal packaging system for Linux
+
+    packages = {
+      sober = true; # Enable Roblox Client
+      warehouse = true; # Enable Flatpak manager
+      flatseal = true; # Enable Flatpak permissions manager
+    };
+  };
+
+  lazydocker.enable = false; # Lazydocker: simple TUI for Docker
 
   /*
   Gaming
   */
-  # GameMode: optimizes system performance for gaming
-  gamemode.enable = true;
-  # Gamescope: micro-compositor for games
-  gamescope.enable = false;
-  # Prism Launcher: Minecraft modded launcher
-  prismlauncher.enable = false;
-  # Steam: platform for buying and playing games
-  steam.enable = true;
-  # SpaceCadet Pinball: classic pinball game
-  spaceCadetPinball.enable = true;
-  # TTY Solitaire: terminal based solitaire game
-  ttySolitaire.enable = true;
+  gamemode.enable = true; # GameMode: optimizes system performance for gaming
+
+  gamescope.enable = false; # Gamescope: micro-compositor for games
+
+  prismlauncher.enable = false; # Prism Launcher: Minecraft modded launcher
+
+  steam.enable = true; # Steam: platform for buying and playing games
+
+  spaceCadetPinball.enable = true; # SpaceCadet Pinball: classic pinball game
+
+  ttySolitaire.enable = true; # TTY Solitaire: terminal based solitaire game
 
   /*
   Development Tools
   */
-  # Exercism: coding practice platform
-  exercism.enable = true;
-  # Gedit: GNOME text editor
-  gedit.enable = false;
-  # Lazygit: simple TUI for git
-  lazygit.enable = false;
-  # OpenCode: tools for coding and development
-  opencode.enable = true;
+  exercism.enable = true; # Exercism: coding practice platform
+
+  gedit.enable = false; # Gedit: GNOME text editor
+
+  lazygit.enable = false; # Lazygit: simple TUI for git
+
+  opencode.enable = true; # OpenCode: tools for coding and development
+
+  jan.enable = true; # Jan: AI chat UI
 
   /*
   Communication & Collaboration
   */
-  # Mattermost: open-source Slack alternative
-  mattermost.enable = true;
-  # Slack: team communication and collaboration tool
-  slack.enable = true;
-  # Tutanota: secure email client
-  tutanota.enable = true;
+  mattermost.enable = true; # Mattermost: open-source Slack alternative
+
+  slack.enable = true; # Slack: team communication and collaboration tool
+
+  tutanota.enable = true; # Tutanota: secure email client
 
   /*
   Productivity / Knowledge Management
   */
-  # Bitwarden: password manager (desktop)
-  bitwarden.enable = false;
-  # Iotas: lightweight notes manager
-  iotas.enable = true;
-  # Logseq: knowledge base and outliner
-  logseq.enable = false;
+  bitwarden.enable = false; # Bitwarden: password manager (desktop)
+
+  iotas.enable = true; # Iotas: lightweight notes manager
+
+  logseq.enable = false; # Logseq: knowledge base and outliner
 
   /*
   Media & Graphics
   */
-  # Affinity: professional graphics suite
-  affinity.enable = false;
-  # Eye of GNOME: image viewer
-  eyeOfGnome.enable = true;
-  # FreeTube: privacy‑friendly YouTube client
-  freetube.enable = false;
-  # GIMP: gnu image manipulation program
-  gimp.enable = false;
-  # Kdenlive: video editing software
-  kdenlive.enable = false;
-  # Plex: media player and server client
-  plex.enable = true;
+  affinity.enable = false; # Affinity: professional graphics suite
+
+  eyeOfGnome.enable = true; # Eye of GNOME: image viewer
+
+  freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
+
+  gimp.enable = false; # GIMP: gnu image manipulation program
+
+  kdenlive.enable = false; # Kdenlive: video editing software
+
+  plex.enable = true; # Plex: media player and server client
 
   /*
   Utilities / Misc
   */
-  # Eddie AirVPN: VPN client
-  eddieAirVPN.enable = true;
-  # Galculator: simple calculator
-  galculator.enable = true;
-  # Winboat: Windows remote desktop via RDP
-  winboat.enable = false;
+  eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
+
+  galculator.enable = true; # Galculator: simple calculator
+
+  winboat.enable = false; # Winboat: Windows remote desktop via RDP
 }

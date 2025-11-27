@@ -75,13 +75,7 @@
         icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
         urls = [
           {
-            template = "https://search.nixos.org/options";
-            params = [
-              {
-                name = "query";
-                value = "{searchTerms}";
-              }
-            ];
+            template = "https://search.nixos.org/options?channel=unstable&query={searchTerms}";
           }
         ];
       };
