@@ -14,6 +14,18 @@
           "if [ -e flake.nix ]; then nix develop --command rust-analyzer; else rust-analyzer; fi"
         ];
       };
+      initialization_options = {
+        inlayHints = {
+          maxLength = null;
+          lifetimeElisionHints = {
+            enable = "skip_trivial";
+            useParameterNames = true;
+          };
+          closureReturnTypeHints = {
+            enable = "always";
+          };
+        };
+      };
     };
     nixd = {
       initialization_options.formatting.command = [
