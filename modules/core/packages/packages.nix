@@ -7,9 +7,9 @@
   ...
 }: let
   mkPackage = name: pkgsOrList: {
-    options.${name}.enable = lib.mkEnableOption name;
+    options.packages.${name}.enable = lib.mkEnableOption name;
     config.environment.systemPackages =
-      lib.mkIf config.${name}.enable
+      lib.mkIf config.packages.${name}.enable
       (lib.toList pkgsOrList);
   };
 
