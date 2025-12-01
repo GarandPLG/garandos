@@ -62,5 +62,9 @@ _: {
       };
       tab_size = 2;
     };
+    "C++" = {
+      format_on_save = "on";
+      tab_size = 2;
+    };
   };
 }

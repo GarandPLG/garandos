@@ -6,13 +6,13 @@
 }: {
   options.zed-editor = {
     enable = lib.mkEnableOption "Zed Editor";
-    remote-server = lib.mkEnableOption "Zed Editor Remote Server";
+    remote-server.enable = lib.mkEnableOption "Zed Editor Remote Server";
   };
 
   config.programs.zed-editor = lib.mkIf config.zed-editor.enable {
     enable = true;
     package = pkgs.zed-editor;
-    installRemoteServer = lib.mkIf config.zed-editor.remote-server true;
+    installRemoteServer = lib.mkIf config.zed-editor.remote-server.enable true;
   };
 
   imports = [

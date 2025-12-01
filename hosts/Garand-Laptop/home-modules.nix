@@ -6,7 +6,7 @@ _: {
 
   zed-editor = {
     enable = true; # Zed Editor: a modern, high‑performance code editor
-    remote-server = true; # Remote Server: enable remote editing capabilities
+    remote-server.enable = true; # Remote Server: enable remote editing capabilities
   };
 
   /*

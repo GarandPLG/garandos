@@ -27,6 +27,27 @@
         };
       };
     };
+    clangd = {
+      binary = {
+        path = lib.getExe pkgs.bash;
+        arguments = [
+          "-c"
+          "if [ -e flake.nix ]; then nix develop --command clangd; else clangd; fi"
+        ];
+      };
+      initialization_options = {
+        inlayHints = {
+          maxLength = null;
+          lifetimeElisionHints = {
+            enable = "skip_trivial";
+            useParameterNames = true;
+          };
+          closureReturnTypeHints = {
+            enable = "always";
+          };
+        };
+      };
+    };
     nixd = {
       initialization_options.formatting.command = [
         "alejandra"

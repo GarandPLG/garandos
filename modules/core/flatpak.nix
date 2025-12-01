@@ -4,10 +4,10 @@
   ...
 }: let
   mkFlatpakPackage = name: pkgId: {
-    options.flatpak.packages.${name} = lib.mkEnableOption "Flatpak: ${name}";
+    options.flatpak.packages.${name}.enable = lib.mkEnableOption "Flatpak: ${name}";
 
     config.services.flatpak.packages =
-      lib.mkIf config.flatpak.packages.${name} [pkgId];
+      lib.mkIf config.flatpak.packages.${name}.enable [pkgId];
   };
 
   flatpakPackages = {
