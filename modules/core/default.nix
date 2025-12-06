@@ -6,6 +6,7 @@
     ./docker.nix
     ./flatpak.nix
     ./fonts.nix
+    ./garandos-tui.nix
     ./hardware.nix
     ./network.nix
     ./nfs.nix

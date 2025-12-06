@@ -191,7 +191,10 @@ git add .
 - `waybarChoice` - system top bar style.
 - `animChoice` - system animation style.
 
-### 5. Review module activation options  
+### 5. Review module activation options
+
+Also check my new project - [GarandOS TUI](https://gitea.garandplg.com/GarandPLG/garandos-tui)! It's an automated way of tweaking this settings. You can use it later *(simply type `tui` into the terminal)*, after the setup, or use it right now by cloning the repo.
+
 Open the module files for your host and adjust the `enable` options for the services you need:
 
 ```bash

@@ -12,6 +12,7 @@
     upd-bt = "nh os boot --hostname ${host}";
     upd-ts = "nh os test --hostname ${host}";
     upd-bd = "nh os build --hostname ${host}";
+    tui = "garandos-tui";
     ncg = "nh clean all";
 
     # Development aliases

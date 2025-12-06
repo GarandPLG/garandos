@@ -49,12 +49,18 @@
     };
 
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
+
+    garandos-tui = {
+      url = "git+https://gitea.garandplg.com/GarandPLG/garandos-tui?ref=main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     nix-flatpak,
     auto-cpufreq,
+    garandos-tui,
     ...
   } @ inputs: let
     hostDirs = builtins.attrNames (builtins.readDir ./hosts);
@@ -81,6 +87,7 @@
           ./profiles/${profile}
           nix-flatpak.nixosModules.nix-flatpak
           auto-cpufreq.nixosModules.default
+          garandos-tui.nixosModules.garandos-tui
         ];
       };
   in {
