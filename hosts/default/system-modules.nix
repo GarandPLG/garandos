@@ -47,6 +47,7 @@ _: {
     mattermost.enable = true; # Mattermost: open‑source Slack alternative
     slack.enable = true; # Slack: team communication and collaboration tool
     tutanota.enable = true; # Tutanota: secure email client
+    signal.enable = true; # Signal: secure messaging app
 
     /*
     Productivity / Knowledge Management

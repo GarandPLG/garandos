@@ -42,6 +42,7 @@
     lazydocker = lazydocker;
     distrobox = [distrobox pkgs.boxbuddy];
     winboat = [winboat freerdp];
+    signal = signal-desktop;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);

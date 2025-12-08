@@ -1,4 +1,9 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: let
   fetchIcon = url: sha256:
     pkgs.fetchurl {
       inherit url sha256;
@@ -66,9 +71,35 @@
     }
   ];
 in {
-  xdg.desktopEntries = builtins.listToAttrs (builtins.map (app: {
-      name = app.name;
-      value = makeEntry app;
-    })
-    apps);
+  options.xdgDesktopEntries = {
+    enable = lib.mkEnableOption "PWA Apps";
+    entries = builtins.listToAttrs (
+      builtins.map (app: {
+        name = app.name;
+        value = {
+          enable = lib.mkEnableOption "Enable ${app.displayName} PWA";
+        };
+      })
+      apps
+    );
+  };
+
+  config.xdg.desktopEntries = lib.mkIf config.xdgDesktopEntries.enable (
+    builtins.listToAttrs (
+      builtins.concatMap (
+        app: let
+          entryConfig = config.xdgDesktopEntries.entries.${app.name};
+        in
+          if entryConfig.enable
+          then [
+            {
+              name = app.name;
+              value = makeEntry app;
+            }
+          ]
+          else []
+      )
+      apps
+    )
+  );
 }

@@ -56,6 +56,7 @@ in {
       # =============================================================================
       "$modifier CONTROL, G, exec, gimp"
       "$modifier CONTROL, M, exec, mattermost-desktop"
+      "$modifier CONTROL, S, exec, signal-desktop"
 
       # =============================================================================
       # NARZĘDZIA SYSTEMOWE
