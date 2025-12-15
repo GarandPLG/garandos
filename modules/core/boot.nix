@@ -19,7 +19,7 @@
           wallpapers = [
             ./../../wallpapers/attack-on-titan-mikasa-ackerman.jpg
           ];
-          wallpaperStyle = lib.mkDefault "centered";
+          wallpaperStyle = lib.mkForce "centered";
           backdrop = "${config.stylix.base16Scheme.base00}";
           interface = {
             branding = "GarandOS Bootloader";
