@@ -44,6 +44,7 @@
     winboat = [winboat freerdp];
     signal = signal-desktop;
     pixieditor = pixieditor;
+    peaclock = peaclock;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);
