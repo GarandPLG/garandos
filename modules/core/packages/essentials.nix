@@ -12,6 +12,7 @@
     file-roller
     unrar
     unzip
+    p7zip
     # System monitoring & info
     inxi
     lm_sensors
