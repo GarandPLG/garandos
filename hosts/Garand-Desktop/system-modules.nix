@@ -25,6 +25,7 @@ _: {
     */
     distrobox.enable = false; # Distrobox: containerized development environments
     lazydocker.enable = false; # Lazydocker: simple TUI for Docker
+    bottles.enable = false; # Bottles: Easy-to-use wineprefix manager
 
     /*
     Gaming
@@ -32,6 +33,7 @@ _: {
     prismlauncher.enable = false; # Prism Launcher: Minecraft modded launcher
     spaceCadetPinball.enable = true; # SpaceCadet Pinball: classic pinball game
     ttySolitaire.enable = true; # TTY Solitaire: terminal‑based solitaire game
+    heroic.enable = false; # Native GOG, Epic, and Amazon Games Launcher for Linux, Windows and Mac
 
     /*
     Development Tools

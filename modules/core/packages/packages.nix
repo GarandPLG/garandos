@@ -45,6 +45,8 @@
     signal = signal-desktop;
     pixieditor = pixieditor;
     peaclock = peaclock;
+    bottles = bottles;
+    heroic = heroic;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);
