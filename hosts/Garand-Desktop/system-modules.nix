@@ -40,7 +40,7 @@ _: {
     */
     exercism.enable = true; # Exercism: coding practice platform
     lazygit.enable = false; # Lazygit: simple TUI for Git
-    opencode.enable = true; # OpenCode: tools for coding and development
+    opencode.enable = false; # OpenCode: tools for coding and development
     jan.enable = true; # Jan: AI chat UI
 
     /*
