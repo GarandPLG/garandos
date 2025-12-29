@@ -6,6 +6,15 @@
   ...
 }: {
   programs.zed-editor.userSettings.lsp = {
+    # biome = {
+    #   binary = {
+    #     path = lib.getExe pkgs.bash;
+    #     arguments = [
+    #       "-c"
+    #       "if [ -e flake.nix ]; then nix develop --command bun --bun run biome; else biome; fi"
+    #     ];
+    #   };
+    # };
     rust-analyzer = {
       binary = {
         path = lib.getExe pkgs.bash;

@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   programs.zed-editor.extraPackages = with pkgs; [
-    biome
+    # biome
     rust-analyzer
     nixd
     alejandra

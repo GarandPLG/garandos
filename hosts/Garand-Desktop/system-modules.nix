@@ -30,7 +30,7 @@ _: {
     /*
     Gaming
     */
-    prismlauncher.enable = false; # Prism Launcher: Minecraft modded launcher
+    prismlauncher.enable = true; # Prism Launcher: Minecraft modded launcher
     spaceCadetPinball.enable = true; # SpaceCadet Pinball: classic pinball game
     ttySolitaire.enable = true; # TTY Solitaire: terminal‑based solitaire game
     heroic.enable = false; # Native GOG, Epic, and Amazon Games Launcher for Linux, Windows and Mac
@@ -66,7 +66,7 @@ _: {
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
     gimp.enable = false; # GIMP: GNU Image Manipulation Program
     kdenlive.enable = false; # Kdenlive: video editing software
-    pixieditor.enable = false; # Pixieditor: Universal editor for all your 2D needs
+    pixieditor.enable = true; # Pixieditor: Universal editor for all your 2D needs
     plex.enable = true; # Plex: media player and server client
 
     /*
