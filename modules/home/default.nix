@@ -8,6 +8,7 @@ in {
     ./hyprland
     ./kitty
     ./librewolf
+    ./peaclock
     ./rofi
     ./scripts
     ./swaync

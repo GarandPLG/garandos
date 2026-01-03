@@ -44,7 +44,6 @@
     winboat = [winboat freerdp];
     signal = signal-desktop;
     pixieditor = pixieditor;
-    peaclock = peaclock;
     bottles = bottles;
     heroic = heroic;
   };

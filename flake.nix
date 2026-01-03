@@ -54,6 +54,11 @@
       url = "git+https://gitea.garandplg.com/GarandPLG/garandos-tui?ref=main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    wrappers = {
+      url = "github:lassulus/wrappers";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

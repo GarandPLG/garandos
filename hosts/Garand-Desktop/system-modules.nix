@@ -76,6 +76,5 @@ _: {
     galculator.enable = true; # Galculator: simple calculator
     gedit.enable = false; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
-    peaclock.enable = true; # Peaclock: Clock, timer, and stopwatch for the terminal
   };
 }

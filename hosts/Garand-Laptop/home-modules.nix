@@ -25,6 +25,8 @@ _: {
 
   fastfetch.enable = true; # Fastfetch: a fast system information tool
 
+  peaclock.enable = true; # Peaclock: Clock, timer, and stopwatch for the terminal
+
   /*
   Communication and synchronization
   */

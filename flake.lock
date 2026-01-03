@@ -570,7 +570,8 @@
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs",
         "prismlauncher-cracked": "prismlauncher-cracked",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "wrappers": "wrappers"
       }
     },
     "rust-analyzer-src": {
@@ -737,6 +738,26 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "wrappers": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1767440749,
+        "narHash": "sha256-HMPTjLM3vg5iLX/2ssqFIhAjoRLQJ6PHNqjzuyjj+No=",
+        "owner": "lassulus",
+        "repo": "wrappers",
+        "rev": "c10d90a8907b57a8c57c232562820a1352fa98d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lassulus",
+        "repo": "wrappers",
         "type": "github"
       }
     }
