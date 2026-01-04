@@ -19,6 +19,7 @@
     ./stylix.nix
     ./syncthing.nix
     ./system.nix
+    ./tailscale.nix
     ./thunar.nix
     ./user.nix
     ./xdg.nix

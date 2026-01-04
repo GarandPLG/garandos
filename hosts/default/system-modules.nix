@@ -13,6 +13,11 @@ _: {
   };
 
   /*
+  Networking
+  */
+  tailscale.enable = false; # Tailscale: secure network for remote access
+
+  /*
   Gaming
   */
   gamemode.enable = true; # GameMode: optimizes system performance for gaming

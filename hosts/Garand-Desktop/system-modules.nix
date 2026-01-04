@@ -19,6 +19,11 @@ _: {
   gamescope.enable = false; # Gamescope: micro‑compositor for games
   steam.enable = true; # Steam: platform for buying and playing games
 
+  /*
+  Networking
+  */
+  tailscale.enable = false; # Tailscale: secure network for remote access
+
   packages = {
     /*
     Container & Packaging
