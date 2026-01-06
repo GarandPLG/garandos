@@ -1,7 +1,3 @@
-# {
-#   pkgs
-#   ...
-# }
 _: {
   programs = {
     nano.enable = true;
@@ -13,7 +9,6 @@ _: {
     seahorse.enable = true;
     fuse.userAllowOther = true;
     mtr.enable = true;
-    adb.enable = true;
     hyprlock.enable = true;
     gnupg.agent = {
       enable = true;

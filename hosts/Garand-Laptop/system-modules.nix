@@ -78,8 +78,9 @@ _: {
     Utilities / Misc
     */
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
-    galculator.enable = true; # Galculator: simple calculator
+    galculator.enable = false; # Galculator: simple calculator
     gedit.enable = false; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
+    adb.enable = false; # ADB: Android SDK platform tools
   };
 }

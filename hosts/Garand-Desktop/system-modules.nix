@@ -13,16 +13,16 @@ _: {
   };
 
   /*
+  Networking
+  */
+  tailscale.enable = true; # Tailscale: secure network for remote access
+
+  /*
   Gaming
   */
   gamemode.enable = true; # GameMode: optimizes system performance for gaming
   gamescope.enable = false; # Gamescope: micro‑compositor for games
   steam.enable = true; # Steam: platform for buying and playing games
-
-  /*
-  Networking
-  */
-  tailscale.enable = false; # Tailscale: secure network for remote access
 
   packages = {
     /*
@@ -78,8 +78,9 @@ _: {
     Utilities / Misc
     */
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
-    galculator.enable = true; # Galculator: simple calculator
+    galculator.enable = false; # Galculator: simple calculator
     gedit.enable = false; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
+    adb.enable = false; # ADB: Android SDK platform tools
   };
 }

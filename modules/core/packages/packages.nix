@@ -46,6 +46,7 @@
     pixieditor = pixieditor;
     bottles = bottles;
     heroic = heroic;
+    adb = android-tools;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);

@@ -11,129 +11,129 @@ in {
       # =============================================================================
       # APLIKACJE - GŁÓWNE
       # =============================================================================
-      "$modifier, A, exec, anki"
-      "$modifier, B, exec, bitwarden"
-      "$modifier, C, exec, chromium"
-      "$modifier, D, exec, vesktop"
-      "$modifier, G, exec, affinity-v3"
-      "$modifier, I, exec, iotas"
-      "$modifier, J, exec, Jan"
-      "$modifier, L, exec, logseq"
-      "$modifier, M, exec, plexamp"
-      "$modifier, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop"
-      "$modifier, O, exec, obs"
-      "$modifier, P, exec, plex-desktop"
-      "$modifier, Return, exec, ${terminal}"
-      "$modifier, S, exec, steam"
-      "$modifier, T, exec, thunar"
-      "$modifier, V, exec, codium"
-      "$modifier, W, exec, ${browser}"
-      "$modifier, Z, exec, zeditor"
+      "SUPER, A, exec, anki"
+      "SUPER, B, exec, bitwarden"
+      "SUPER, C, exec, chromium"
+      "SUPER, D, exec, vesktop"
+      "SUPER, G, exec, affinity-v3"
+      "SUPER, I, exec, iotas"
+      "SUPER, J, exec, Jan"
+      "SUPER, L, exec, logseq"
+      "SUPER, M, exec, plexamp"
+      "SUPER, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop"
+      "SUPER, O, exec, obs"
+      "SUPER, P, exec, plex-desktop"
+      "SUPER, Return, exec, ${terminal}"
+      "SUPER, S, exec, steam"
+      "SUPER, T, exec, thunar"
+      "SUPER, V, exec, codium"
+      "SUPER, W, exec, ${browser}"
+      "SUPER, Z, exec, zeditor"
 
       # =============================================================================
       # APLIKACJE - Z SHIFT
       # =============================================================================
-      "$modifier SHIFT, B, exec, blueman-manager"
-      "$modifier SHIFT, C, exec, dex ${desktopEntriesPath}/claude.desktop"
-      "$modifier SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop"
-      "$modifier SHIFT, M, exec, dex ${desktopEntriesPath}/messenger.desktop"
-      "$modifier SHIFT, N, exec, nextcloud"
-      "$modifier SHIFT, O, exec, onlyoffice-desktopeditors"
-      "$modifier SHIFT, Return, exec, rofi-launcher"
-      "$modifier SHIFT, T, exec, tutanota-desktop"
-      "$modifier SHIFT, W, exec, web-search"
+      "SUPER SHIFT, B, exec, blueman-manager"
+      "SUPER SHIFT, C, exec, dex ${desktopEntriesPath}/claude.desktop"
+      "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop"
+      "SUPER SHIFT, M, exec, dex ${desktopEntriesPath}/messenger.desktop"
+      "SUPER SHIFT, N, exec, nextcloud"
+      "SUPER SHIFT, O, exec, onlyoffice-desktopeditors"
+      "SUPER SHIFT, Return, exec, rofi-launcher"
+      "SUPER SHIFT, T, exec, tutanota-desktop"
+      "SUPER SHIFT, W, exec, web-search"
 
       # =============================================================================
       # APLIKACJE - Z ALT
       # =============================================================================
-      "$modifier ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop"
-      "$modifier ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop"
-      "$modifier ALT, S, exec, slack"
-      "$modifier ALT, T, exec, gedit"
+      "SUPER ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop"
+      "SUPER ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop"
+      "SUPER ALT, S, exec, slack"
+      "SUPER ALT, T, exec, gedit"
 
       # =============================================================================
       # APLIKACJE - Z CONTROL
       # =============================================================================
-      "$modifier CONTROL, G, exec, gimp"
-      "$modifier CONTROL, M, exec, mattermost-desktop"
-      "$modifier CONTROL, S, exec, signal-desktop"
+      "SUPER CONTROL, G, exec, gimp"
+      "SUPER CONTROL, M, exec, mattermost-desktop"
+      "SUPER CONTROL, S, exec, signal-desktop"
 
       # =============================================================================
       # NARZĘDZIA SYSTEMOWE
       # =============================================================================
-      "$modifier, E, exec, emopicker9000"
-      "$modifier, K, exec, galculator"
-      "$modifier ALT, W, exec, wallsetter"
-      "$modifier CONTROL, P, exec, hyprpicker -a"
-      "$modifier SHIFT, K, exec, list-keybinds"
-      "$modifier SHIFT, P, exec, pavucontrol"
-      "$modifier SHIFT, S, exec, screenshootin"
+      "SUPER, E, exec, emopicker9000"
+      "SUPER, K, exec, galculator"
+      "SUPER ALT, W, exec, wallsetter"
+      "SUPER CONTROL, P, exec, hyprpicker -a"
+      "SUPER SHIFT, K, exec, list-keybinds"
+      "SUPER SHIFT, P, exec, pavucontrol"
+      "SUPER SHIFT, S, exec, screenshootin"
 
       # =============================================================================
       # ZARZĄDZANIE OKNAMI
       # =============================================================================
-      "$modifier, Escape, exec, hyprlock"
-      "$modifier, F, fullscreen,"
-      "$modifier, Q, killactive,"
-      "$modifier CONTROL, Escape, exec, wlogout"
-      "$modifier SHIFT, Escape, exit,"
-      "$modifier SHIFT, I, togglesplit,"
+      "SUPER, Escape, exec, hyprlock"
+      "SUPER, F, fullscreen,"
+      "SUPER, Q, killactive,"
+      "SUPER CONTROL, Escape, exec, wlogout"
+      "SUPER SHIFT, Escape, exit,"
+      "SUPER SHIFT, I, togglesplit,"
 
       # =============================================================================
       # FOKUS OKIEN
       # =============================================================================
-      "$modifier, down, movefocus, d"
-      "$modifier, left, movefocus, l"
-      "$modifier, right, movefocus, r"
-      "$modifier, up, movefocus, u"
+      "SUPER, down, movefocus, d"
+      "SUPER, left, movefocus, l"
+      "SUPER, right, movefocus, r"
+      "SUPER, up, movefocus, u"
 
       # =============================================================================
       # PRZEMIESZCZANIE OKIEN
       # =============================================================================
-      "$modifier SHIFT, down, movewindow, d"
-      "$modifier SHIFT, left, movewindow, l"
-      "$modifier SHIFT, right, movewindow, r"
-      "$modifier SHIFT, up, movewindow, u"
+      "SUPER SHIFT, down, movewindow, d"
+      "SUPER SHIFT, left, movewindow, l"
+      "SUPER SHIFT, right, movewindow, r"
+      "SUPER SHIFT, up, movewindow, u"
 
       # =============================================================================
       # ZAMIANA OKIEN
       # =============================================================================
-      "$modifier ALT, down, swapwindow, d"
-      "$modifier ALT, left, swapwindow, l"
-      "$modifier ALT, right, swapwindow, r"
-      "$modifier ALT, up, swapwindow, u"
+      "SUPER ALT, down, swapwindow, d"
+      "SUPER ALT, left, swapwindow, l"
+      "SUPER ALT, right, swapwindow, r"
+      "SUPER ALT, up, swapwindow, u"
 
       # =============================================================================
       # WORKSPACES - PRZEŁĄCZANIE
       # =============================================================================
-      "$modifier, 0, workspace, 10"
-      "$modifier, 1, workspace, 1"
-      "$modifier, 2, workspace, 2"
-      "$modifier, 3, workspace, 3"
-      "$modifier, 4, workspace, 4"
-      "$modifier, 5, workspace, 5"
-      "$modifier, 6, workspace, 6"
-      "$modifier, 7, workspace, 7"
-      "$modifier, 8, workspace, 8"
-      "$modifier, 9, workspace, 9"
-      "$modifier CONTROL, left, workspace, e-1"
-      "$modifier CONTROL, right, workspace, e+1"
-      "$modifier, mouse_down, workspace, e+1"
-      "$modifier, mouse_up, workspace, e-1"
+      "SUPER, 0, workspace, 10"
+      "SUPER, 1, workspace, 1"
+      "SUPER, 2, workspace, 2"
+      "SUPER, 3, workspace, 3"
+      "SUPER, 4, workspace, 4"
+      "SUPER, 5, workspace, 5"
+      "SUPER, 6, workspace, 6"
+      "SUPER, 7, workspace, 7"
+      "SUPER, 8, workspace, 8"
+      "SUPER, 9, workspace, 9"
+      "SUPER CONTROL, left, workspace, e-1"
+      "SUPER CONTROL, right, workspace, e+1"
+      "SUPER, mouse_down, workspace, e+1"
+      "SUPER, mouse_up, workspace, e-1"
 
       # =============================================================================
       # WORKSPACES - PRZENOSZENIE OKIEN
       # =============================================================================
-      "$modifier SHIFT, 0, movetoworkspace, 10"
-      "$modifier SHIFT, 1, movetoworkspace, 1"
-      "$modifier SHIFT, 2, movetoworkspace, 2"
-      "$modifier SHIFT, 3, movetoworkspace, 3"
-      "$modifier SHIFT, 4, movetoworkspace, 4"
-      "$modifier SHIFT, 5, movetoworkspace, 5"
-      "$modifier SHIFT, 6, movetoworkspace, 6"
-      "$modifier SHIFT, 7, movetoworkspace, 7"
-      "$modifier SHIFT, 8, movetoworkspace, 8"
-      "$modifier SHIFT, 9, movetoworkspace, 9"
+      "SUPER SHIFT, 0, movetoworkspace, 10"
+      "SUPER SHIFT, 1, movetoworkspace, 1"
+      "SUPER SHIFT, 2, movetoworkspace, 2"
+      "SUPER SHIFT, 3, movetoworkspace, 3"
+      "SUPER SHIFT, 4, movetoworkspace, 4"
+      "SUPER SHIFT, 5, movetoworkspace, 5"
+      "SUPER SHIFT, 6, movetoworkspace, 6"
+      "SUPER SHIFT, 7, movetoworkspace, 7"
+      "SUPER SHIFT, 8, movetoworkspace, 8"
+      "SUPER SHIFT, 9, movetoworkspace, 9"
 
       # =============================================================================
       # MEDIA I KONTROLKI SYSTEMOWE
@@ -151,19 +151,19 @@ in {
       # =============================================================================
       # NIEUŻYWANE KEYBINDY
       # =============================================================================
-      # "$modifier SHIFT, N, exec, swaync-client -rs"
-      # "$modifier, P, pseudo,"
-      # "$modifier SHIFT,F, togglefloating,"
-      # "$modifier ALT,F, workspaceopt, allfloat"
-      # "$modifier SHIFT, SPACE, movetoworkspace, special"
-      # "$modifier, SPACE, togglespecialworkspace"
+      # "SUPER SHIFT, N, exec, swaync-client -rs"
+      # "SUPER, P, pseudo,"
+      # "SUPER SHIFT,F, togglefloating,"
+      # "SUPER ALT,F, workspaceopt, allfloat"
+      # "SUPER SHIFT, SPACE, movetoworkspace, special"
+      # "SUPER, SPACE, togglespecialworkspace"
       # "ALT,Tab,cyclenext"
       # "ALT,Tab,bringactivetotop"
     ];
 
     bindm = [
-      "$modifier, mouse:272, movewindow"
-      "$modifier, mouse:273, resizewindow"
+      "SUPER, mouse:272, movewindow"
+      "SUPER, mouse:273, resizewindow"
     ];
   };
 }
