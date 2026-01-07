@@ -26,9 +26,7 @@ in {
       enableXdgAutostart = true;
       variables = ["--all"];
     };
-    xwayland = {
-      enable = true;
-    };
+    xwayland.enable = true;
     settings = {
       input = {
         kb_layout = "${keyboardLayout}";
@@ -131,9 +129,7 @@ in {
         direct_scanout = 0;
       };
 
-      debug = {
-        full_cm_proto = true;
-      };
+      debug.full_cm_proto = true;
 
       master = {
         new_status = "master";
@@ -142,9 +138,7 @@ in {
       };
 
       # Ensure Xwayland windows render at integer scale; compositor scales them
-      xwayland = {
-        force_zero_scaling = true;
-      };
+      xwayland.force_zero_scaling = true;
     };
 
     extraConfig = "

@@ -47,6 +47,8 @@
     bottles = bottles;
     heroic = heroic;
     adb = android-tools;
+    teams = teams-for-linux;
+    ferdium = ferdium;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);

@@ -3,7 +3,6 @@ _: {
   Development editors and IDEs
   */
   vscodium.enable = false; # VSCodium: a free and open-source "demicrosofted" VSCode
-
   zed-editor = {
     enable = true; # Zed Editor: a modern, high‑performance code editor
     remote-server.enable = true; # Remote Server: enable remote editing capabilities
@@ -13,27 +12,21 @@ _: {
   Web browsers
   */
   librewolf.enable = true; # Librewolf: a privacy-focused Firefox fork
-
   ungoogled-chromium.enable = true; # Ungoogled Chromium: a privacy-focused Chromium fork
 
   /*
   System utilities
   */
   btop.enable = true; # Btop: a resource monitor for the terminal
-
   cava.enable = false; # Cava: terminal audio visualizer
-
   fastfetch.enable = true; # Fastfetch: a fast system information tool
-
   peaclock.enable = true; # Peaclock: Clock, timer, and stopwatch for the terminal
 
   /*
   Communication and synchronization
   */
   kdeconnect.enable = false; # KDE Connect: integrate your phone and desktop
-
   nextcloud-client.enable = true; # Nextcloud Client: sync files with a Nextcloud server
-
   vesktop.enable = true; # Vesktop: a community‑driven Discord client
 
   /*
@@ -68,7 +61,6 @@ _: {
       chatgpt.enable = true; # ChatGPT: a large language model
       claude.enable = true; # Claude: a large language model
       glance.enable = true; # Glance: my home server dashboard
-      microsoftTeams.enable = true; # Microsoft Teams: a collaboration tool
     };
   };
 }

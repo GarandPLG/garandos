@@ -62,19 +62,12 @@
       iconUrl = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/glance.png";
       iconSha = "sha256-xyFlmPpt+DABoGX5oBqj/aQVdxtmNflat9Jb2BE7SOY=";
     }
-    {
-      name = "microsoftTeams";
-      displayName = "Microsoft Teams";
-      url = "https://teams.microsoft.com/v2/";
-      iconUrl = "https://i.pinimg.com/236x/e6/b6/28/e6b628706696320cd0ede93f7053abd8.jpg";
-      iconSha = "sha256-bZVmoWHeG8rycS8lj7LQaxFggXINjUx/7NWKPVhPTFw=";
-    }
   ];
 in {
   options.xdgDesktopEntries = {
     enable = lib.mkEnableOption "PWA Apps";
     entries = builtins.listToAttrs (
-      builtins.map (app: {
+      map (app: {
         name = app.name;
         value = {
           enable = lib.mkEnableOption "Enable ${app.displayName} PWA";

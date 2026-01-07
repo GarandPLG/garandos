@@ -55,6 +55,8 @@ _: {
     slack.enable = true; # Slack: team communication and collaboration tool
     tutanota.enable = true; # Tutanota: secure email client
     signal.enable = true; # Signal: secure messaging app
+    teams.enable = true; # Teams-for-linux: Unofficial Microsoft Teams client for Linux
+    ferdium.enable = false; # Ferdium: All your services in one place built by the community
 
     /*
     Productivity / Knowledge Management
@@ -79,7 +81,7 @@ _: {
     */
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
     galculator.enable = false; # Galculator: simple calculator
-    gedit.enable = false; # Gedit: GNOME text editor
+    gedit.enable = true; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
     adb.enable = false; # ADB: Android SDK platform tools
   };
