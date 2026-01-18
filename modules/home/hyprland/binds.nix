@@ -78,6 +78,7 @@ in {
       "SUPER CONTROL, Escape, exec, wlogout"
       "SUPER SHIFT, Escape, exit,"
       "SUPER SHIFT, I, togglesplit,"
+      "SUPER SHIFT, F, togglefloating,"
 
       # =============================================================================
       # FOKUS OKIEN
@@ -153,7 +154,6 @@ in {
       # =============================================================================
       # "SUPER SHIFT, N, exec, swaync-client -rs"
       # "SUPER, P, pseudo,"
-      # "SUPER SHIFT,F, togglefloating,"
       # "SUPER ALT,F, workspaceopt, allfloat"
       # "SUPER SHIFT, SPACE, movetoworkspace, special"
       # "SUPER, SPACE, togglespecialworkspace"

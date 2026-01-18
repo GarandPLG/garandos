@@ -8,7 +8,7 @@
     pullos = "git -C /home/${username}/garandos pull";
     upd = "nh os switch --hostname ${host}";
     upg = "nh os switch --hostname ${host} --update";
-    upf = "sudo nix flake update";
+    upf = "sudo nix flake update --flake /home/${username}/garandos";
     upd-bt = "nh os boot --hostname ${host}";
     upd-ts = "nh os test --hostname ${host}";
     upd-bd = "nh os build --hostname ${host}";

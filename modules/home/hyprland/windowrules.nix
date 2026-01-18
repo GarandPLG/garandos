@@ -73,6 +73,7 @@ _: {
     # Tile rules
     "tile on, match:class affinity\.exe"
     "tile on, match:class dev\.zed\.Zed"
+    "tile on, match:class com-cburch-logisim-Main"
 
     # Opacity rules
     "opacity 1.0 1.0, match:tag browser*"

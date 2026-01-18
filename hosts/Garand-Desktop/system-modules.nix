@@ -47,6 +47,7 @@ _: {
     lazygit.enable = false; # Lazygit: simple TUI for Git
     opencode.enable = false; # OpenCode: tools for coding and development
     jan.enable = true; # Jan: AI chat UI
+    logisim-evolution.enable = true; # Logisim-Evolution: Digital logic designer and simulator
 
     /*
     Communication & Collaboration

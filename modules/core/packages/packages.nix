@@ -49,6 +49,7 @@
     adb = android-tools;
     teams = teams-for-linux;
     ferdium = ferdium;
+    logisim-evolution = logisim-evolution;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);
