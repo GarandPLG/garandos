@@ -123,7 +123,9 @@
     fc = "fortune | cowsay";
 
     # Network aliases
-    kssh-server = "kssh garand_plg@192.168.1.156 -i ~/.ssh/hp-t640-homeserver";
-    ssh-server = "ssh garand_plg@192.168.1.156 -i ~/.ssh/hp-t640-homeserver";
+    kssh-server = "kssh hp-t640-homeserver";
+    kssh-server-ts = "kssh hp-t640-homeserver-tailscale";
+    ssh-server = "ssh hp-t640-homeserver";
+    ssh-server-ts = "ssh hp-t640-homeserver-tailscale";
   };
 }
