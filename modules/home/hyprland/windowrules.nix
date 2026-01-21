@@ -52,7 +52,6 @@ _: {
     "float on, match:class [Ww]aypaper"
     "float on, match:tag settings*"
     "float on, match:title Picture-in-Picture"
-    "float on, match:class mpv"
     "float on, match:title Authentication Required"
     "float on, match:title War in Tunnels"
     "float on, match:class codium|codium-url-handler|VSCodium, match:title negative:.*(?:codium|VSCodium).*"
@@ -68,11 +67,11 @@ _: {
     "size 70% 60%, match:initial_title Open Files"
     "size 70% 60%, match:initial_title Add Folder to Workspace"
     "size 70% 70%, match:tag settings*"
-    "size 70% 70%, match:class mpv"
 
     # Tile rules
     "tile on, match:class affinity\.exe"
     "tile on, match:class dev\.zed\.Zed"
+    "tile on, match:class mpv"
     "tile on, match:class com-cburch-logisim-Main"
 
     # Opacity rules
