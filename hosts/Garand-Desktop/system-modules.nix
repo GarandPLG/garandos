@@ -83,7 +83,7 @@ _: {
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
     galculator.enable = false; # Galculator: simple calculator
     gedit.enable = true; # Gedit: GNOME text editor
-    winboat.enable = false; # Winboat: Windows remote desktop via RDP
+    winboat.enable = true; # Winboat: Windows remote desktop via RDP
     adb.enable = false; # ADB: Android SDK platform tools
   };
 }
