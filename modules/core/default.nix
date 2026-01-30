@@ -22,6 +22,7 @@
     ./tailscale.nix
     ./thunar.nix
     ./user.nix
+    ./virtualbox.nix
     ./xdg.nix
     ./xserver.nix
     inputs.stylix.nixosModules.stylix
