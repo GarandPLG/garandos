@@ -3,7 +3,7 @@ _: {
   Container & Packaging
   */
   docker.enable = true; # Docker: container runtime and management
-  virtualbox.enable = false; # VirtualBox: PC emulator
+  virtualbox.enable = true; # VirtualBox: PC emulator
   flatpak = {
     enable = true; # Flatpak: universal packaging system for Linux
     packages = {

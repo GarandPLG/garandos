@@ -9,6 +9,7 @@
     upd = "nh os switch --hostname ${host}";
     upg = "nh os switch --hostname ${host} --update";
     upf = "sudo nix flake update --flake /home/${username}/garandos";
+    upf-undo = "git -C /home/${username}/garandos restore /home/${username}/garandos/flake.lock";
     upd-bt = "nh os boot --hostname ${host}";
     upd-ts = "nh os test --hostname ${host}";
     upd-bd = "nh os build --hostname ${host}";
@@ -32,6 +33,12 @@
     nbd = "nix build .#develop";
     nrd = "nix run .#develop";
     nbrd = "nix build .#develop && nix run .#develop";
+
+    # Development aliases for docker
+    dcu = "docker compose up -d";
+    dcd = "docker compose down";
+    dcb = "docker compose build";
+    dcub = "docker compose up -d --build";
 
     # System aliases
     # flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";
