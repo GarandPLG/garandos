@@ -155,7 +155,7 @@ in {
       "SUPER SHIFT, Return, exec, noctalia-shell ipc call launcher toggle"
       # "SUPER, M, Noctalia Notifications, exec, noctalia-shell ipc call notifications toggleHistory"
       "SUPER SHIFT, V, exec, noctalia-shell ipc call launcher clipboard"
-      "SUPER SHIFT, comma, exec, noctalia-shell ipc call settings toggle"
+      "SUPER ALT, P, exec, noctalia-shell ipc call settings toggle"
       "SUPER ALT, L, exec, noctalia-shell ipc call sessionMenu lockAndSuspend"
       "SUPER SHIFT, W, exec, noctalia-shell ipc call wallpaper toggle"
       "SUPER, X, exec, noctalia-shell ipc call sessionMenu toggle"
