@@ -1,6 +1,4 @@
-{host, ...}: let
-  inherit (import ../../hosts/${host}/variables.nix) waybarChoice;
-in {
+_: {
   imports = [
     ./bash
     ./chromium
@@ -8,13 +6,9 @@ in {
     ./hyprland
     ./kitty
     ./librewolf
-    ./peaclock
-    ./rofi
+    ./noctalia
     ./scripts
-    ./swaync
     ./vscodium
-    waybarChoice
-    ./wlogout
     ./xdg
     ./zed
     ./anki.nix
@@ -29,10 +23,8 @@ in {
     ./kdeConnect.nix
     ./lutris.nix
     ./nextcloud.nix
-    ./noctalia.nix
     ./obs-studio.nix
     ./onlyoffice.nix
-    ./overview.nix
     ./qt.nix
     ./ssh.nix
     ./starship.nix

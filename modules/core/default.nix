@@ -1,7 +1,6 @@
 {inputs, ...}: {
   imports = [
     ./packages
-    ./auto-cpufreq.nix
     ./boot.nix
     ./docker.nix
     ./flatpak.nix

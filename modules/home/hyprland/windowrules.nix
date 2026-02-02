@@ -30,11 +30,10 @@ _: {
     "tag +settings, match:class gnome-disks|wihotspot(-gui)?"
     "tag +settings, match:class [Rr]ofi"
     "tag +settings, match:class file-roller|org\.gnome\.FileRoller"
-    "tag +settings, match:class nm-applet|nm-connection-editor|blueman-manager"
+    "tag +settings, match:class nm-applet|nm-connection-editor"
     "tag +settings, match:class pavucontrol|org\.pulseaudio\.pavucontrol|com\.saivert\.pwvucontrol"
     "tag +settings, match:class nwg-look|qt5ct|qt6ct|[Yy]ad"
     "tag +settings, match:class xdg-desktop-portal-gtk"
-    "tag +settings, match:class ?:blueman-manager-wrapped"
     "tag +settings, match:class nwg-displays"
 
     # Position and movement rules

@@ -1,9 +1,4 @@
-{
-  pkgs,
-  inputs,
-  system,
-  ...
-}: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     mpv
     pavucontrol
@@ -62,6 +57,16 @@
     matugen
     app2unit
     gpu-screen-recorder
-    power-profiles-daemon
+    # hyprland
+    swww
+    grim
+    slurp
+    wl-clipboard
+    swappy
+    ydotool
+    hyprpolkitagent
+    hyprland-qtutils # needed for banners and ANR messages
+    # pyprland
+    pyprland
   ];
 }

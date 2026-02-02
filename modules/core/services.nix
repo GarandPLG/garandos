@@ -1,4 +1,8 @@
-{profile, ...}: {
+{
+  profile,
+  pkgs,
+  ...
+}: {
   # Services to start
   services = {
     libinput.enable = true; # Input Handling
@@ -13,10 +17,11 @@
       };
       ports = [22];
     };
-    blueman.enable = true; # Bluetooth Support
     tumbler.enable = true; # Image/video preview
-    gnome.gnome-keyring.enable = true;
-
+    gnome = {
+      gnome-keyring.enable = true;
+      evolution-data-server.enable = true;
+    };
     smartd = {
       enable =
         if profile == "vm"
@@ -53,6 +58,13 @@
         ];
       };
     };
-    upower.enable = true; # noctalia shell battery
+    upower = {
+      enable = true;
+      package = pkgs.upower;
+    };
+    power-profiles-daemon = {
+      enable = true;
+      package = pkgs.power-profiles-daemon;
+    };
   };
 }

@@ -28,26 +28,6 @@
         "type": "github"
       }
     },
-    "auto-cpufreq": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1769608722,
-        "narHash": "sha256-yWUG0Emd9EuqIZ8jQ6fxqf7USw7Gtcqb4+sBhn+S+Wg=",
-        "owner": "AdnanHodzic",
-        "repo": "auto-cpufreq",
-        "rev": "a11a98c46bf6a77d0c2e0ea8d87acef78507cae5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "AdnanHodzic",
-        "repo": "auto-cpufreq",
-        "type": "github"
-      }
-    },
     "base16": {
       "inputs": {
         "fromYaml": "fromYaml"
@@ -583,7 +563,6 @@
     "root": {
       "inputs": {
         "affinity-nix": "affinity-nix",
-        "auto-cpufreq": "auto-cpufreq",
         "firefox-addons": "firefox-addons",
         "garandos-tui": "garandos-tui",
         "home-manager": "home-manager",
@@ -591,8 +570,7 @@
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
         "prismlauncher-cracked": "prismlauncher-cracked",
-        "stylix": "stylix",
-        "wrappers": "wrappers"
+        "stylix": "stylix"
       }
     },
     "rust-analyzer-src": {
@@ -759,26 +737,6 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "type": "github"
-      }
-    },
-    "wrappers": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1769799671,
-        "narHash": "sha256-b1LwqiIjgNLw6/aJlOwIqe1mfqc4PQqeRpKOo5sFWu0=",
-        "owner": "lassulus",
-        "repo": "wrappers",
-        "rev": "8bef93dddd89a0b45486d5cd9f0bdd5ce8aceced",
-        "type": "github"
-      },
-      "original": {
-        "owner": "lassulus",
-        "repo": "wrappers",
         "type": "github"
       }
     }

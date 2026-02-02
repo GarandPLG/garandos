@@ -1,3 +1,7 @@
+![GarandOS Logo](./GarandOS.svg)
+
+---
+
 # **GarandOS**
 Disclaimer: This configuration is a fork of [ZaneyOS](https://gitlab.com/Zaney/zaneyos), a wonderful configuration I had the pleasure of ~~stealing~~ forking almost a year ago for my laptop (version 2.2). Now that I've installed NIxOS on my main computer, I've installed the latest version (2.4), connected my repository, and am customizing it to suit my needs. My configuration won't be synchronized with the main project, as it serves as the foundation upon which I'm building my custom system. The original has been stripped of many unnecessary features, so I highly recommend checking out the original project and, like me, adapting it to your needs. If you like my configuration, fork it too and manage it yourself, as the project won't accept external pull requests.
 
@@ -183,13 +187,9 @@ git add .
 - `profile` - graphics card profile, choose the one most suitable for your hardware.
 - `gitUsername` and `gitEmail` - required for proper git usage.
 - `extraMonitorSettings` - specify your monitor (cable, resolution, refresh rate. You can leave the other two options).
-- `clock24h` - whether you want 24 or 12 hour clock.
-- `browser` - browser package name opened with shortcut **SUPER + W**.
-- `terminal` - terminal package name opened with shortcut **SUPER + Enter**
 - `keyboardLayout` and `consoleKeyMap` - keyboard layout (special characters ą,ę, etc.).
+- `location` - your location.
 - `stylixImage` - default system wallpaper, based on which the graphical theme (stylix) will be generated. You can browse them in the `wallpapers` folder.
-- `waybarChoice` - system top bar style.
-- `animChoice` - system animation style.
 
 ### 5. Review module activation options
 

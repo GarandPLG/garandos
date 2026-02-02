@@ -21,8 +21,8 @@
       };
     };
 
-    auto-cpufreq = {
-      url = "github:AdnanHodzic/auto-cpufreq";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -54,22 +54,11 @@
       url = "git+https://gitea.garandplg.com/GarandPLG/garandos-tui?ref=main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    wrappers = {
-      url = "github:lassulus/wrappers";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
     nixpkgs,
     nix-flatpak,
-    auto-cpufreq,
     garandos-tui,
     ...
   } @ inputs: let
@@ -96,7 +85,6 @@
         modules = [
           ./profiles/${profile}
           nix-flatpak.nixosModules.nix-flatpak
-          auto-cpufreq.nixosModules.default
           garandos-tui.nixosModules.garandos-tui
         ];
       };
