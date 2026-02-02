@@ -53,5 +53,20 @@
     hunspell
     hunspellDicts.pl_PL
     hunspellDicts.en_US
+    # Noctalia Shell Dependencies
+    matugen
+    app2unit
+    gpu-screen-recorder
+    # hyprland
+    swww
+    grim
+    slurp
+    wl-clipboard
+    swappy
+    ydotool
+    hyprpolkitagent
+    hyprland-qtutils # needed for banners and ANR messages
+    # pyprland
+    pyprland
   ];
 }

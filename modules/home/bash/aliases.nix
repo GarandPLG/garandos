@@ -22,8 +22,8 @@
     pm = "uv run manage.py";
     f8 = "uv run flake8 .";
     bbr = "bun --bun run";
+    "ga." = "git add .";
     mkgidf = "git add . --intent-to-add . && git diff > git-diff.txt";
-    zed = "MANGOHUD=0 /home/${username}/.local/bin/zed";
 
     # Development aliases for nix flake
     nd = "nix develop";

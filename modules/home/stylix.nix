@@ -1,10 +1,7 @@
 {host, ...}: {
   stylix.targets = {
     librewolf.profileNames = ["${host}"];
-    waybar.enable = false;
-    rofi.enable = false;
     hyprland.enable = false;
-    hyprlock.enable = false;
     vscode.enable = false;
     zed.enable = false;
     vesktop.enable = false;
@@ -12,5 +9,6 @@
       enable = true;
       platform = "qtct";
     };
+    noctalia-shell.enable = true;
   };
 }

@@ -94,10 +94,12 @@ in {
 
       decoration = {
         rounding = 10;
+        rounding_power = 2;
         blur = {
           enabled = true;
           size = 5;
           passes = 3;
+          vibrancy = 0.1696;
           ignore_opacity = false;
           new_optimizations = true;
         };
@@ -145,9 +147,7 @@ in {
       monitor=,preferred,auto,auto
       monitor=Virtual-1,1920x1080@60,auto,1
       ${extraMonitorSettings}
-      # To enable blur on waybar uncomment the line below
-      # Thanks to SchotjeChrisman
-      #layerrule = blur,waybar
+      layerrule = blur on, blur_popups on, ignore_alpha 0.5, match:namespace noctalia-background-\.*$
     ";
   };
 }

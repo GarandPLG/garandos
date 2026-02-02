@@ -8,25 +8,7 @@ in {
   # Styling Options
   stylix = {
     enable = true;
-    image = stylixImage;
-    # base16Scheme = {
-    #   base00 = "282936";
-    #   base01 = "3a3c4e";
-    #   base02 = "4d4f68";
-    #   base03 = "626483";
-    #   base04 = "62d6e8";
-    #   base05 = "e9e9f4";
-    #   base06 = "f1f2f8";
-    #   base07 = "f7f7fb";
-    #   base08 = "ea51b2";
-    #   base09 = "b45bcf";
-    #   base0A = "00f769";
-    #   base0B = "ebff87";
-    #   base0C = "a1efe4";
-    #   base0D = "62d6e8";
-    #   base0E = "b45bcf";
-    #   base0F = "00f769";
-    # };
+    image = ../../wallpapers/${stylixImage};
     polarity = "dark";
     opacity.terminal = 1.0;
     cursor = {
@@ -36,16 +18,16 @@ in {
     };
     fonts = {
       monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrains Mono";
+        package = pkgs.nerd-fonts.fira-mono;
+        name = "FiraCode Nerd Font Mono";
       };
       sansSerif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.nerd-fonts.fira-code;
+        name = "FiraCode Nerd Font Propo";
       };
       serif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.nerd-fonts.fira-code;
+        name = "FiraCode Nerd Font";
       };
       sizes = {
         applications = 12;

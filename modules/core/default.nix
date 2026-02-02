@@ -1,7 +1,6 @@
 {inputs, ...}: {
   imports = [
     ./packages
-    ./auto-cpufreq.nix
     ./boot.nix
     ./docker.nix
     ./flatpak.nix
@@ -12,6 +11,7 @@
     ./nfs.nix
     ./nh.nix
     ./printing.nix
+    ./quickshell.nix
     ./greetd.nix
     ./security.nix
     ./services.nix

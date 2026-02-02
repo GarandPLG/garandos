@@ -24,7 +24,11 @@ in {
         ;
     };
     users.${username} = {
-      imports = [./../home ../../hosts/${host}/home-modules.nix];
+      imports = [
+        ./../home
+        ../../hosts/${host}/home-modules.nix
+        inputs.noctalia.homeModules.default
+      ];
       home = {
         username = "${username}";
         homeDirectory = "/home/${username}";

@@ -9,7 +9,6 @@ _: {
     seahorse.enable = true;
     fuse.userAllowOther = true;
     mtr.enable = true;
-    hyprlock.enable = true;
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
