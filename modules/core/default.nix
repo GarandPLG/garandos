@@ -12,6 +12,7 @@
     ./nfs.nix
     ./nh.nix
     ./printing.nix
+    ./quickshell.nix
     ./greetd.nix
     ./security.nix
     ./services.nix

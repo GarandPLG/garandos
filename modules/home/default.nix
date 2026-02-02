@@ -29,8 +29,10 @@ in {
     ./kdeConnect.nix
     ./lutris.nix
     ./nextcloud.nix
+    ./noctalia.nix
     ./obs-studio.nix
     ./onlyoffice.nix
+    ./overview.nix
     ./qt.nix
     ./ssh.nix
     ./starship.nix

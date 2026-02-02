@@ -30,5 +30,6 @@
       inherit username;
     })
     (import ./web-search.nix {inherit pkgs;})
+    (import ./restart.noctalia.nix {inherit pkgs;})
   ];
 }

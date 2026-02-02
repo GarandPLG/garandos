@@ -53,5 +53,6 @@
         ];
       };
     };
+    upower.enable = true; # noctalia shell battery
   };
 }

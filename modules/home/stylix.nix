@@ -12,5 +12,6 @@
       enable = true;
       platform = "qtct";
     };
+    noctalia-shell.enable = true;
   };
 }

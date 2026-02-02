@@ -39,9 +39,9 @@ in {
       "SUPER SHIFT, M, exec, dex ${desktopEntriesPath}/messenger.desktop"
       "SUPER SHIFT, N, exec, nextcloud"
       "SUPER SHIFT, O, exec, onlyoffice-desktopeditors"
-      "SUPER SHIFT, Return, exec, rofi-launcher"
+      # "SUPER SHIFT, Return, exec, rofi-launcher"
       "SUPER SHIFT, T, exec, tutanota-desktop"
-      "SUPER SHIFT, W, exec, web-search"
+      # "SUPER SHIFT, W, exec, web-search"
 
       # =============================================================================
       # APLIKACJE - Z ALT
@@ -148,6 +148,20 @@ in {
       ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
       ",XF86MonBrightnessUp, exec, brightnessctl set +5%"
+
+      # =============================================================================
+      # NOCTALIA SHELL
+      # =============================================================================
+      "SUPER SHIFT, Return, exec, noctalia-shell ipc call launcher toggle"
+      # "SUPER, M, Noctalia Notifications, exec, noctalia-shell ipc call notifications toggleHistory"
+      "SUPER SHIFT, V, exec, noctalia-shell ipc call launcher clipboard"
+      "SUPER SHIFT, comma, exec, noctalia-shell ipc call settings toggle"
+      "SUPER ALT, L, exec, noctalia-shell ipc call sessionMenu lockAndSuspend"
+      "SUPER SHIFT, W, exec, noctalia-shell ipc call wallpaper toggle"
+      "SUPER, X, exec, noctalia-shell ipc call sessionMenu toggle"
+      "SUPER ALT, C, exec, noctalia-shell ipc call controlCenter toggle"
+      "SUPER CTRL, R, exec, noctalia-shell ipc call screenRecorder toggle"
+      "SUPER SHIFT, R, exec, restart.noctalia"
 
       # =============================================================================
       # NIEUŻYWANE KEYBINDY

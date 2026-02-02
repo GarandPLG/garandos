@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  system,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     mpv
     pavucontrol
@@ -53,5 +58,10 @@
     hunspell
     hunspellDicts.pl_PL
     hunspellDicts.en_US
+    # Noctalia Shell Dependencies
+    matugen
+    app2unit
+    gpu-screen-recorder
+    power-profiles-daemon
   ];
 }
