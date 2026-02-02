@@ -31,6 +31,7 @@
 
   shiftBinds = [
     "SUPER SHIFT, C, exec, dex ${desktopEntriesPath}/claude.desktop #\"Claude AI chat\""
+    "SUPER SHIFT, Escape, exec, noctalia-shell ipc call sessionMenu toggle #\"Open Session Menu\""
     "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop #\"ChatGPT AI chat\""
     "SUPER SHIFT, K, exec, noctalia-shell ipc call plugin:keybind-cheatsheet toggle #\"Toggle keybind cheatsheet\""
     "SUPER SHIFT, M, exec, dex ${desktopEntriesPath}/messenger.desktop #\"Facebook Messenger client\""
