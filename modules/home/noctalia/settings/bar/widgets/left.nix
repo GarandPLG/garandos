@@ -25,7 +25,7 @@ _: {
       showDiskUsage = true;
       showGpuTemp = false;
       showLoadAverage = false;
-      showMemoryAsPercent = false;
+      showMemoryAsPercent = true;
       showMemoryUsage = true;
       showNetworkStats = true;
       showSwapUsage = false;
