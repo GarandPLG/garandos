@@ -2,7 +2,9 @@
   right = [
     {
       id = "Tray";
-      blacklist = [];
+      blacklist = [
+        "nm-applet"
+      ];
       colorizeIcons = false;
       drawerEnabled = false;
       hidePassive = false;
@@ -44,10 +46,10 @@
       displayMode = "alwaysShow";
       middleClickCommand = "pwvucontrol || pavucontrol";
     }
-    # {
-    #   "id" = "Brightness";
-    #   "displayMode" = "onhover";
-    # }
+    {
+      id = "Network";
+      displayMode = "onhover";
+    }
     {
       id = "ControlCenter";
       colorizeDistroLogo = false;
