@@ -16,7 +16,7 @@ _: {
     }
     {
       id = "SystemMonitor";
-      compactMode = true;
+      compactMode = false;
       diskPath = "/home";
       showCpuFreq = false;
       showCpuTemp = false;
