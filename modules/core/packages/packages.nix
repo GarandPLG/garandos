@@ -35,7 +35,8 @@
     eyeOfGnome = eog;
     kdenlive = kdePackages.kdenlive;
     plex = [
-      (plex-desktop.override {extraEnv = {QT_QPA_PLATFORM = "xcb";};})
+      # (plex-desktop.override {extraEnv = {QT_QPA_PLATFORM = "xcb";};})
+      plex-desktop
       plexamp
     ];
     freetube = freetube;
