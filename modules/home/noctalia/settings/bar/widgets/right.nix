@@ -34,11 +34,11 @@
     {
       id = "Battery";
       deviceNativePath = "__default__";
-      displayMode = "onhover";
+      displayMode = "alwaysShow";
       hideIfIdle = false;
       hideIfNotDetected = true;
-      showNoctaliaPerformance = false;
-      showPowerProfiles = false;
+      showNoctaliaPerformance = true;
+      showPowerProfiles = true;
       warningThreshold = 30;
     }
     {
