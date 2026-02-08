@@ -19,6 +19,5 @@ _: {
       #   biome
       # ];
     };
-    evolution.enable = true;
   };
 }

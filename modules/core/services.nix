@@ -18,10 +18,7 @@
       ports = [22];
     };
     tumbler.enable = true; # Image/video preview
-    gnome = {
-      gnome-keyring.enable = true;
-      evolution-data-server.enable = true;
-    };
+    gnome.gnome-keyring.enable = true;
     smartd = {
       enable =
         if profile == "vm"

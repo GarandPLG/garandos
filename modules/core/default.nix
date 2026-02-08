@@ -3,6 +3,7 @@
     ./packages
     ./boot.nix
     ./docker.nix
+    ./evolution.nix
     ./flatpak.nix
     ./fonts.nix
     ./garandos-tui.nix

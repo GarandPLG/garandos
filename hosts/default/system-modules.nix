@@ -19,6 +19,11 @@ _: {
   tailscale.enable = false; # Tailscale: secure network for remote access
 
   /*
+  Calendar & Contacts
+  */
+  evolution.enable = true; # Evolution: calendar and contacts application
+
+  /*
   Gaming
   */
   gamemode.enable = true; # GameMode: optimizes system performance for gaming
