@@ -32,7 +32,8 @@
         hyprlandConfigPath = "~/.config/hypr/hyprland.conf";
         modKeyVariable = "SUPER";
         windowHeight = 850;
-        windowWidth = 1400;
+        windowWidth = 1100;
+        columnCount = 2;
         autoHeight = true;
       };
     };

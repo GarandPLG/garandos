@@ -10,7 +10,7 @@
       calendarSupport = true;
     };
     systemd.enable = true;
-    settings.settingsVersion = lib.mkForce 46;
+    # settings.settingsVersion = lib.mkForce 46;
   };
 
   imports = [
