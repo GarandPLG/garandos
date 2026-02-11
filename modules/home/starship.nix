@@ -33,24 +33,24 @@ in {
         truncation_symbol = "…/";
         truncate_to_repo = false;
         substitutions = {
-          "Documents" = "󰈙 ";
-          "Downloads" = " ";
-          "Music" = " ";
-          "Pictures" = " ";
-          "Projects" = " ";
-          "nix" = " ";
-          "nixos" = " ";
+          "Documents" = "󰈙";
+          "Downloads" = "";
+          "Music" = "";
+          "Pictures" = "";
+          "Projects" = "";
+          "nix" = "";
+          "nixos" = "";
         };
       };
 
       character = {
-        success_symbol = "[ ](${accent})";
-        error_symbol = "[ ](red)";
+        success_symbol = "[](${accent})";
+        error_symbol = "[](red)";
       };
 
       nix_shell = {
         format = "[$symbol]($style) ";
-        symbol = " ";
+        symbol = "";
         style = "";
       };
 
