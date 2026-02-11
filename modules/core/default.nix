@@ -2,8 +2,8 @@
   imports = [
     ./packages
     ./boot.nix
+    ./calendar.nix
     ./docker.nix
-    ./evolution.nix
     ./flatpak.nix
     ./fonts.nix
     ./garandos-tui.nix

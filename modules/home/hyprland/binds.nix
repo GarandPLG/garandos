@@ -15,7 +15,7 @@
     "SUPER, G, exec, affinity-v3 #\"Graphics editor\""
     "SUPER, I, exec, iotas #\"Note-taking app\""
     "SUPER, J, exec, Jan #\"Local AI chat interface\""
-    "SUPER, K, exec, galculator #\"Scientific calculator\""
+    "SUPER, K, exec, gnome-calculator #\"Scientific calculator\""
     "SUPER, L, exec, logseq #\"Knowledge management tool\""
     "SUPER, M, exec, plexamp #\"Music player for Plex\""
     "SUPER, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop #\"GarandCloud client\""

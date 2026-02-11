@@ -16,7 +16,7 @@
   packages = with pkgs; {
     bitwarden = bitwarden-desktop;
     eddieAirVPN = eddie;
-    galculator = galculator;
+    gnomeCalculator = gnome-calculator;
     gedit = gedit;
     iotas = iotas;
     logseq = logseq;

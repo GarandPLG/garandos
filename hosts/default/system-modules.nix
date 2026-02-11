@@ -21,7 +21,7 @@ _: {
   /*
   Calendar & Contacts
   */
-  evolution.enable = true; # Evolution: calendar and contacts application
+  calendar.enable = true; # GNOME Calendar: calendar and contacts application
 
   /*
   Gaming
@@ -87,7 +87,7 @@ _: {
     Utilities / Misc
     */
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
-    galculator.enable = false; # Galculator: simple calculator
+    gnomeCalculator.enable = true; # gnomeCalculator: simple calculator
     gedit.enable = false; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
     adb.enable = false; # ADB: Android SDK platform tools

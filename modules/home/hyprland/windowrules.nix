@@ -41,6 +41,7 @@ _: {
     "center on, match:class pavucontrol|org\.pulseaudio\.pavucontrol|com\.saivert\.pwvucontrol"
     "center on, match:class [Tt]hunar, match:title negative:.*[Tt]hunar.*"
     "center on, match:title Authentication Required"
+    "center on, match:class org\.gnome\.Calculator"
 
     # Idle inhibit rules
     "idle_inhibit fullscreen, match:class .*"
@@ -61,11 +62,13 @@ _: {
     "float on, match:initial_title Add Folder to Workspace"
     "float on, match:initial_title Open Files"
     "float on, match:initial_title wants to save"
+    "float on, match:class org\.gnome\.Calculator"
 
     # Size rules
     "size 70% 60%, match:initial_title Open Files"
     "size 70% 60%, match:initial_title Add Folder to Workspace"
     "size 70% 70%, match:tag settings*"
+    "size 360 616, match:class org\.gnome\.Calculator"
 
     # Tile rules
     "tile on, match:class affinity\.exe"
@@ -84,6 +87,7 @@ _: {
     "opacity 0.8 0.7, match:class gedit|org\.gnome\.TextEditor|mousepad"
     "opacity 0.9 0.8, match:class seahorse # gnome-keyring gui"
     "opacity 0.95 0.75, match:title Picture-in-Picture"
+    "opacity 0.9 0.8, match:class org\.gnome\.Calculator"
 
     # Picture-in-Picture specific rules
     "pin on, match:title Picture-in-Picture"
