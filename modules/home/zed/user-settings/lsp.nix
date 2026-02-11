@@ -72,5 +72,27 @@
         };
       };
     };
+    ruff = {
+      binary = {
+        path = lib.getExe pkgs.bash;
+        arguments = [
+          "-c"
+          "if [ -e flake.nix ]; then nix develop --command ruff server; else ruff server; fi"
+        ];
+      };
+      initialization_options = {
+        check.command = "ruff check .";
+        inlayHints = {
+          maxLength = null;
+          lifetimeElisionHints = {
+            enable = "skip_trivial";
+            useParameterNames = true;
+          };
+          closureReturnTypeHints = {
+            enable = "always";
+          };
+        };
+      };
+    };
   };
 }

@@ -5,5 +5,8 @@
     nixd
     alejandra
     opencode
+    uv
+    python314
+    ruff
   ];
 }

@@ -4,7 +4,17 @@ _: {
       "nixd"
       "!nil"
     ];
-    Python.language_servers = ["!basedpyright"];
+    Python = {
+      format_on_save = "on";
+      formatter.language_server.name = "ruff";
+      code_actions_on_format."source.organizeImports.ruff" = true;
+      language_servers = [
+        "ruff"
+        "!ty"
+        "!basedpyright"
+      ];
+      tab_size = 4;
+    };
     YAML.tab_size = 2;
     JavaScript = {
       formatter.language_server.name = "biome";
