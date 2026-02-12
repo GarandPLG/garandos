@@ -16,8 +16,8 @@ in {
     memCriticalThreshold = 90;
     swapWarningThreshold = 80;
     swapCriticalThreshold = 90;
-    diskWarningThreshold = 80;
-    diskCriticalThreshold = 90;
+    diskWarningThreshold = 90;
+    diskCriticalThreshold = 95;
     cpuPollingInterval = 3000;
     tempPollingInterval = 3000;
     gpuPollingInterval = 3000;
