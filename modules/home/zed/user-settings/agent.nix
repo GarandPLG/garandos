@@ -3,7 +3,7 @@ _: {
     always_allow_tool_actions = true;
     default_profile = "ask";
     default_model = {
-      provider = "Cerebras";
+      provider = "Cerebras PAUG";
       model = "gpt-oss-120b";
     };
   };
