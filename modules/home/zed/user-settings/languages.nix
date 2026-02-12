@@ -5,7 +5,7 @@ _: {
       "!nil"
     ];
     Python = {
-      format_on_save = "on";
+      format_on_save = "off";
       formatter.language_server.name = "ruff";
       code_actions_on_format."source.organizeImports.ruff" = true;
       language_servers = [
