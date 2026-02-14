@@ -26,6 +26,7 @@
     ./virtualbox.nix
     ./xdg.nix
     ./xserver.nix
+    ./zram.nix
     inputs.stylix.nixosModules.stylix
   ];
 }
