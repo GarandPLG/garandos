@@ -17,11 +17,19 @@
     ncg = "nh clean all";
 
     # Development aliases
+    ## Django
     srvenv = "source .venv/bin/activate";
     "..srvenv" = "source ../.venv/bin/activate";
+    uv-add = "uv add -r requirements.txt";
     pm = "uv run manage.py";
+    pm-rs = "uv run manage.py runserver";
+    pm-mg = "uv run manage.py migrate";
+    pm-mm = "uv run manage.py makemigrations";
+    pm-sq = "uv run manage.py sqlmigrate";
     f8 = "uv run flake8 .";
+    ## JavaScript/TypeScript
     bbr = "bun --bun run";
+    ## Git
     "ga." = "git add .";
     mkgidf = "git add . --intent-to-add . && git diff > git-diff.txt";
 
