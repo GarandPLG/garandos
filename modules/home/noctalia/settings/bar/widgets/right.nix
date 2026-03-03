@@ -34,7 +34,7 @@
     {
       id = "Battery";
       deviceNativePath = "__default__";
-      displayMode = "alwaysShow";
+      displayMode = "graphic";
       hideIfIdle = false;
       hideIfNotDetected = true;
       showNoctaliaPerformance = true;

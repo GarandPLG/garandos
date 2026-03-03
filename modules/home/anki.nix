@@ -12,6 +12,6 @@
     package = pkgs.anki;
     language = "pl_PL";
     style = "native";
-    sync.username = username;
+    profiles."${username}".sync.username = username;
   };
 }
