@@ -24,7 +24,7 @@ _: {
   /*
   Communication and synchronization
   */
-  kdeconnect.enable = false; # KDE Connect: integrate your phone and desktop
+  kdeconnect.enable = true; # KDE Connect: integrate your phone and desktop
   nextcloud-client.enable = true; # Nextcloud Client: sync files with a Nextcloud server
   vesktop.enable = true; # Vesktop: a community‑driven Discord client
 

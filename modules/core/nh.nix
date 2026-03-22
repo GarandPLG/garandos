@@ -1,6 +1,11 @@
-{username, ...}: {
+{
+  username,
+  pkgs,
+  ...
+}: {
   programs.nh = {
     enable = true;
+    package = pkgs.nh;
     clean = {
       enable = true;
       extraArgs = "--keep-since 7d --keep 5";

@@ -28,9 +28,21 @@ in {
         59011
         8080
       ];
+      allowedTCPPortRanges = [
+        {
+          from = 1714;
+          to = 1764;
+        }
+      ];
       allowedUDPPorts = [
         59010
         59011
+      ];
+      allowedUDPPortRanges = [
+        {
+          from = 1714;
+          to = 1764;
+        }
       ];
     };
   };

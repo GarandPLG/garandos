@@ -1,28 +1,34 @@
-{lib, ...}: {
+{lib, ...}: let
+  sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+in {
   programs.noctalia-shell = lib.mkForce {
     plugins = {
       sources = [
         {
           enabled = true;
           name = "Noctalia Plugins";
-          url = "https://github.com/noctalia-dev/noctalia-plugins";
+          url = sourceUrl;
         }
       ];
       states = {
         mini-docker = {
           enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+          sourceUrl = sourceUrl;
         };
         timer = {
           enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+          sourceUrl = sourceUrl;
         };
         keybind-cheatsheet = {
           enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+          sourceUrl = sourceUrl;
+        };
+        kde-connect = {
+          enabled = true;
+          sourceUrl = sourceUrl;
         };
       };
-      version = 1;
+      version = 2;
     };
     pluginSettings = {
       mini-docker.refreshInterval = 5000;
@@ -35,6 +41,9 @@
         windowWidth = 1100;
         columnCount = 2;
         autoHeight = true;
+      };
+      kde-connect = {
+        hideIfNoDeviceConnected = true;
       };
     };
   };

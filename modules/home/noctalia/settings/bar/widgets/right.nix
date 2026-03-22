@@ -28,6 +28,9 @@
       unreadBadgeColor = "primary";
     }
     {
+      id = "plugin:kde-connect";
+    }
+    {
       id = "Bluetooth";
       displayMode = "onhover";
     }
