@@ -3,7 +3,7 @@ _: {
   Container & Packaging
   */
   docker.enable = true; # Docker: container runtime and management
-  virtualbox.enable = false; # VirtualBox: PC emulator
+  virtualbox.enable = true; # VirtualBox: PC emulator
   flatpak = {
     enable = true; # Flatpak: universal packaging system for Linux
     packages = {
@@ -75,7 +75,7 @@ _: {
     /*
     Media & Graphics
     */
-    affinity.enable = false; # Affinity: professional graphics suite
+    affinity.enable = true; # Affinity: professional graphics suite
     eyeOfGnome.enable = true; # Eye of GNOME: image viewer
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
     gimp.enable = false; # GIMP: GNU Image Manipulation Program

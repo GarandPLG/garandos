@@ -125,9 +125,9 @@
   systemMediaAndControllsBinds = [
     ",XF86AudioLowerVolume, exec, noctalia-shell ipc call volume decrease #\"Lower system volume\""
     ",XF86AudioMute, exec, noctalia-shell ipc call volume muteOutput #\"Mute audio output\""
+    ",XF86AudioMicMute, exec, noctalia-shell ipc call volume muteInput #\"Mute audio input\""
     ",XF86AudioNext, exec, noctalia-shell ipc call media next #\"Next media track\""
-    ",XF86AudioPause, exec, noctalia-shell ipc call media pause #\"Pause media playback\""
-    ",XF86AudioPlay, exec, noctalia-shell ipc call media play #\"Play media\""
+    ",XF86AudioPlay, exec, noctalia-shell ipc call media playPause #\"Play/Pause media\""
     ",XF86AudioPrev, exec, noctalia-shell ipc call media previous #\"Previous media track\""
     ",XF86AudioRaiseVolume, exec, noctalia-shell ipc call volume increase #\"Raise system volume\""
     ",XF86MonBrightnessDown, exec, noctalia-shell ipc call brightness decrease #\"Decrease screen brightness\""
