@@ -3,7 +3,7 @@ _: {
   Container & Packaging
   */
   docker.enable = true; # Docker: container runtime and management
-  virtualbox.enable = false; # VirtualBox: PC emulator
+  virtualbox.enable = true; # VirtualBox: PC emulator
   flatpak = {
     enable = true; # Flatpak: universal packaging system for Linux
     packages = {
@@ -89,7 +89,7 @@ _: {
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
     gnomeCalculator.enable = true; # gnomeCalculator: simple calculator
     gedit.enable = true; # Gedit: GNOME text editor
-    winboat.enable = true; # Winboat: Windows remote desktop via RDP
+    winboat.enable = false; # Winboat: Windows remote desktop via RDP
     adb.enable = false; # ADB: Android SDK platform tools
   };
 }

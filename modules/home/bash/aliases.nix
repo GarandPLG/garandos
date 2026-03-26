@@ -6,13 +6,13 @@
   programs.bash.shellAliases = {
     # GarandOS aliases
     pullos = "git -C /home/${username}/garandos pull";
-    upd = "nh os switch --hostname ${host}";
-    upg = "nh os switch --hostname ${host} --update";
+    upd = "nh os switch -H ${host} -d always";
+    upg = "nh os switch -H ${host} --update  -d always";
     upf = "sudo nix flake update --flake /home/${username}/garandos";
     upf-undo = "git -C /home/${username}/garandos restore /home/${username}/garandos/flake.lock";
-    upd-bt = "nh os boot --hostname ${host}";
-    upd-ts = "nh os test --hostname ${host}";
-    upd-bd = "nh os build --hostname ${host}";
+    upd-bt = "nh os boot -H ${host} -d always";
+    upd-ts = "nh os test -H ${host} -d always";
+    upd-bd = "nh os build -H ${host} -d always";
     tui = "garandos-tui";
     ncg = "nh clean all";
 
