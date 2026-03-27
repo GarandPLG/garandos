@@ -1,5 +1,5 @@
-_: {
-  flake.nixosModules.variables = {
+{self, inputs, ...}: {
+  flake.modules.nixos.variables = {
     # CPU Architecture
     # Available options: "x86_64-linux", "aarch64-linux", etc.
     system = "x86_64-linux";
