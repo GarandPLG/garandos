@@ -51,6 +51,7 @@
     teams = teams-for-linux;
     ferdium = ferdium;
     logisim-evolution = logisim-evolution;
+    notify = notify-client;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);

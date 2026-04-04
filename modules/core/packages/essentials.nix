@@ -58,7 +58,7 @@
     app2unit
     gpu-screen-recorder
     # hyprland
-    swww
+    awww
     grim
     slurp
     wl-clipboard
