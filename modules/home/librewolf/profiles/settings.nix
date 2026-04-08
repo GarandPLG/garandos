@@ -37,6 +37,6 @@
     "privacy.clearOnShutdown.history" = true;
 
     "network.trr.mode" = 3;
-    "network.trr.uri" = "https://dns.mullvad.net/dns-query";
+    "network.trr.uri" = "https://dns.quad9.net/dns-query";
   };
 }
