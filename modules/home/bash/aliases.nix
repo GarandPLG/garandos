@@ -35,9 +35,9 @@
 
     # Development aliases for nix flake
     nd = "nix develop";
-    nb = "nix build";
-    nr = "nix run";
-    nbr = "nix build && nix run";
+    nb = "nix build .";
+    nr = "nix run .";
+    nbr = "nix build . && nix run .";
     nbd = "nix build .#develop";
     nrd = "nix run .#develop";
     nbrd = "nix build .#develop && nix run .#develop";
