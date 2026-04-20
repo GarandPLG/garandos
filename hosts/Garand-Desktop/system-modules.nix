@@ -3,7 +3,7 @@ _: {
   Container & Packaging
   */
   docker.enable = true; # Docker: container runtime and management
-  virtualbox.enable = true; # VirtualBox: PC emulator
+  virtualbox.enable = false; # VirtualBox: PC emulator
   flatpak = {
     enable = true; # Flatpak: universal packaging system for Linux
     packages = {
@@ -49,11 +49,11 @@ _: {
     /*
     Development Tools
     */
-    exercism.enable = true; # Exercism: coding practice platform
+    exercism.enable = false; # Exercism: coding practice platform
     lazygit.enable = false; # Lazygit: simple TUI for Git
     opencode.enable = false; # OpenCode: tools for coding and development
     jan.enable = true; # Jan: AI chat UI
-    logisim-evolution.enable = true; # Logisim-Evolution: Digital logic designer and simulator
+    logisim-evolution.enable = false; # Logisim-Evolution: Digital logic designer and simulator
 
     /*
     Communication & Collaboration

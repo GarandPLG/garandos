@@ -5,7 +5,7 @@ _: {
   vscodium.enable = false; # VSCodium: a free and open-source "demicrosofted" VSCode
   zed-editor = {
     enable = true; # Zed Editor: a modern, high‑performance code editor
-    remote-server.enable = true; # Remote Server: enable remote editing capabilities
+    remote-server.enable = false; # Remote Server: enable remote editing capabilities
   };
 
   /*
@@ -57,7 +57,7 @@ _: {
       messenger.enable = true; # Messenger: Facebook Messenger
       mastodon.enable = true; # Mastodon: a decentralized social network
       garandcloud.enable = true; # GarandCloud: my Nextcloud instance
-      chatgpt.enable = true; # ChatGPT: a large language model
+      chatgpt.enable = false; # ChatGPT: a large language model
       claude.enable = true; # Claude: a large language model
       glance.enable = true; # Glance: my home server dashboard
     };
