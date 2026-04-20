@@ -3,7 +3,7 @@ _: {
   Container & Packaging
   */
   docker.enable = true; # Docker: container runtime and management
-  virtualbox.enable = true; # VirtualBox: PC emulator
+  virtualbox.enable = false; # VirtualBox: PC emulator
   flatpak = {
     enable = true; # Flatpak: universal packaging system for Linux
     packages = {
@@ -49,7 +49,7 @@ _: {
     /*
     Development Tools
     */
-    exercism.enable = true; # Exercism: coding practice platform
+    exercism.enable = false; # Exercism: coding practice platform
     lazygit.enable = false; # Lazygit: simple TUI for Git
     opencode.enable = false; # OpenCode: tools for coding and development
     jan.enable = true; # Jan: AI chat UI
@@ -81,7 +81,7 @@ _: {
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
     gimp.enable = false; # GIMP: GNU Image Manipulation Program
     kdenlive.enable = false; # Kdenlive: video editing software
-    pixieditor.enable = false; # Pixieditor: Universal editor for all your 2D needs
+    pixieditor.enable = true; # Pixieditor: Universal editor for all your 2D needs
     plex.enable = true; # Plex: media player and server client
 
     /*
@@ -89,7 +89,7 @@ _: {
     */
     eddieAirVPN.enable = true; # Eddie AirVPN: VPN client
     gnomeCalculator.enable = true; # gnomeCalculator: simple calculator
-    gedit.enable = false; # Gedit: GNOME text editor
+    gedit.enable = true; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
     adb.enable = false; # ADB: Android SDK platform tools
   };

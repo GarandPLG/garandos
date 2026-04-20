@@ -5,7 +5,7 @@ _: {
   vscodium.enable = false; # VSCodium: a free and open-source "demicrosofted" VSCode
   zed-editor = {
     enable = true; # Zed Editor: a modern, high‑performance code editor
-    remote-server.enable = true; # Remote Server: enable remote editing capabilities
+    remote-server.enable = false; # Remote Server: enable remote editing capabilities
   };
 
   /*
