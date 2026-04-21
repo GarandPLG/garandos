@@ -35,6 +35,7 @@
     brightnessctl
     killall
     dex
+    ffmpeg
     # Desktop environment
     networkmanagerapplet
     tuigreet
