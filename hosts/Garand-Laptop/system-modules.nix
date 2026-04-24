@@ -30,6 +30,11 @@ _: {
   gamescope.enable = false; # Gamescope: micro‑compositor for games
   steam.enable = true; # Steam: platform for buying and playing games
 
+  /*
+  Media & Graphics
+  */
+  affinity.enable = true; # Affinity: professional graphics suite
+
   packages = {
     /*
     Container & Packaging
@@ -76,7 +81,6 @@ _: {
     /*
     Media & Graphics
     */
-    affinity.enable = true; # Affinity: professional graphics suite
     eyeOfGnome.enable = true; # Eye of GNOME: image viewer
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
     gimp.enable = false; # GIMP: GNU Image Manipulation Program

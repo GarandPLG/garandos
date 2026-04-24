@@ -45,6 +45,31 @@
       warningThreshold = 30;
     }
     {
+      id = "plugin:screen-recorder";
+      defaultSettings = {
+        hideInactive = true;
+        iconColor = "none";
+        directory = "";
+        filenamePattern = "recording_yyyyMMdd_HHmmss";
+        frameRate = 60;
+        audioCodec = "aac";
+        videoCodec = "hevc";
+        quality = "ultra";
+        colorRange = "full";
+        showCursor = true;
+        copyToClipboard = false;
+        audioSource = "default_output";
+        videoSource = "portal";
+        resolution = "1920x1080";
+        replayEnabled = true;
+        replayDuration = 60;
+        customReplayDuration = 30;
+        replayStorage = "disk";
+        restorePortalSession = true;
+        customFrameRate = 6;
+      };
+    }
+    {
       id = "Volume";
       displayMode = "alwaysShow";
       middleClickCommand = "pwvucontrol || pavucontrol";

@@ -31,7 +31,6 @@
     spaceCadetPinball = space-cadet-pinball;
     ttySolitaire = tty-solitaire;
     gimp = gimp;
-    affinity = inputs.affinity-nix.packages.${system}.v3;
     eyeOfGnome = eog;
     kdenlive = kdePackages.kdenlive;
     plex = [

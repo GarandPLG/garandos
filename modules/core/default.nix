@@ -1,6 +1,7 @@
 {inputs, ...}: {
   imports = [
     ./packages
+    ./affinity.nix
     ./boot.nix
     ./calendar.nix
     ./docker.nix
