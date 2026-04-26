@@ -18,6 +18,7 @@ _: {
   System utilities
   */
   btop.enable = true; # Btop: a resource monitor for the terminal
+  easyeffects.enable = true; # EasyEffects: Audio effects for PipeWire applications
   cava.enable = false; # Cava: terminal audio visualizer
   fastfetch.enable = true; # Fastfetch: a fast system information tool
 

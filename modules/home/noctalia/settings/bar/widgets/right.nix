@@ -4,6 +4,7 @@
       id = "Tray";
       blacklist = [
         "nm-applet"
+        "Easy Effects"
       ];
       colorizeIcons = false;
       drawerEnabled = false;
@@ -58,7 +59,7 @@
         colorRange = "full";
         showCursor = true;
         copyToClipboard = false;
-        audioSource = "default_output";
+        audioSource = "both";
         videoSource = "portal";
         resolution = "1920x1080";
         replayEnabled = true;
