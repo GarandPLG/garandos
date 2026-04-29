@@ -10,6 +10,7 @@ _: {
       sober.enable = false; # Roblox client
       warehouse.enable = true; # Flatpak manager
       flatseal.enable = true; # Flatpak permissions manager
+      upscaler.enable = true; # Upscaler: Upscale and enhance images
     };
   };
 

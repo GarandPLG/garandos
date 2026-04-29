@@ -14,6 +14,7 @@
     sober = "org.vinegarhq.Sober";
     warehouse = "io.github.flattool.Warehouse";
     flatseal = "com.github.tchx84.Flatseal";
+    upscaler = "io.gitlab.theevilskeleton.Upscaler";
   };
 in {
   options.flatpak.enable = lib.mkEnableOption "Flatpak";
