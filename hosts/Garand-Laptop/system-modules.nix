@@ -87,6 +87,7 @@ _: {
     kdenlive.enable = false; # Kdenlive: video editing software
     pixieditor.enable = true; # Pixieditor: Universal editor for all your 2D needs
     plex.enable = true; # Plex: media player and server client
+    jellyfin.enable = true; # Jellyfin: foss media player
 
     /*
     Utilities / Misc

@@ -38,6 +38,10 @@
       # plex-desktop
       plexamp
     ];
+    jellyfin = [
+      delfin
+      finamp
+    ];
     freetube = freetube;
     lazydocker = lazydocker;
     distrobox = [distrobox pkgs.boxbuddy];

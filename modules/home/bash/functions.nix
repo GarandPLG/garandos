@@ -142,7 +142,6 @@ _: {
     }
 
     ffmpeg_dl() {
-      # Sprawdzenie liczby argumentów
       if [ "$#" -ne 3 ]; then
           echo "Usage: ffmpeg_dl <url> <name> <fs_path>"
           return 1
@@ -152,13 +151,10 @@ _: {
       local name="$2"
       local fs_path="$3"
 
-      # Tworzy katalog docelowy, jeśli nie istnieje
       mkdir -p "$fs_path"
 
-      # Pełna ścieżka do pliku wyjściowego
       local output="${"$"}{fs_path}/${"$"}{name}.mp4"
 
-      # Uruchamia ffmpeg – kopiowanie strumienia bez rekompresji
       ffmpeg -i "$url" -c copy "$output"
     }
   '';

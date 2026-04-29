@@ -17,7 +17,7 @@
     "SUPER, J, exec, Jan #\"Local AI chat interface\""
     "SUPER, K, exec, gnome-calculator #\"Scientific calculator\""
     "SUPER, L, exec, logseq #\"Knowledge management tool\""
-    "SUPER, M, exec, plexamp #\"Music player for Plex\""
+    "SUPER, M, exec, dex ${desktopEntriesPath}/messenger.desktop #\"Facebook Messenger client\""
     "SUPER, N, exec, dex ${desktopEntriesPath}/garandcloud.desktop #\"GarandCloud client\""
     "SUPER, O, exec, onlyoffice-desktopeditors #\"Office suite\""
     "SUPER, P, exec, plex-desktop #\"Plex media player\""
@@ -32,11 +32,12 @@
 
   shiftBinds = [
     "SUPER SHIFT, C, exec, dex ${desktopEntriesPath}/claude.desktop #\"Claude AI chat\""
+    "SUPER SHIFT, D, exec, delfin \"Jellyfin media client\""
     "SUPER SHIFT, E, exec, evolution #\"Personal information management application\""
     "SUPER SHIFT, Escape, exec, noctalia-shell ipc call sessionMenu toggle #\"Open Session Menu\""
     "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop #\"ChatGPT AI chat\""
     "SUPER SHIFT, K, exec, noctalia-shell ipc call plugin:keybind-cheatsheet toggle #\"Toggle keybind cheatsheet\""
-    "SUPER SHIFT, M, exec, dex ${desktopEntriesPath}/messenger.desktop #\"Facebook Messenger client\""
+    "SUPER SHIFT, M, exec, plexamp #\"Music player for Plex\""
     "SUPER SHIFT, N, exec, nextcloud #\"Nextcloud desktop sync client\""
     "SUPER SHIFT, O, exec, obs #\"Open Broadcaster Software\""
     "SUPER SHIFT, P, exec, noctalia-shell ipc call volume togglePanel #\"Toggle volume control panel\""
@@ -49,6 +50,7 @@
 
   altBinds = [
     "SUPER ALT, C, exec, noctalia-shell ipc call controlCenter toggle #\"Toggle control center\""
+    "SUPER ALT, F, exec, finamp \"Jellyfin music client\""
     "SUPER ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop #\"Glance server panel\""
     "SUPER ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop #\"Mastodon social network client\""
     "SUPER ALT, P, exec, noctalia-shell ipc call settings toggle #\"Open settings panel\""
