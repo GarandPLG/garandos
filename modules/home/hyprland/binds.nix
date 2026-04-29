@@ -32,7 +32,7 @@
 
   shiftBinds = [
     "SUPER SHIFT, C, exec, dex ${desktopEntriesPath}/claude.desktop #\"Claude AI chat\""
-    "SUPER SHIFT, D, exec, delfin #\"Jellyfin media client\""
+    "SUPER SHIFT, D, exec, jellyfin-desktop #\"Jellyfin media client\""
     "SUPER SHIFT, E, exec, evolution #\"Personal information management application\""
     "SUPER SHIFT, Escape, exec, noctalia-shell ipc call sessionMenu toggle #\"Open Session Menu\""
     "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop #\"ChatGPT AI chat\""

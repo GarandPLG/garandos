@@ -39,7 +39,8 @@
       plexamp
     ];
     jellyfin = [
-      delfin
+      jellyfin-desktop
+      # delfin
       finamp
     ];
     freetube = freetube;
