@@ -62,6 +62,13 @@
       iconUrl = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/glance.png";
       iconSha = "sha256-xyFlmPpt+DABoGX5oBqj/aQVdxtmNflat9Jb2BE7SOY=";
     }
+    {
+      name = "jellyfinClient";
+      displayName = "Jellyfin Client";
+      url = "https://jellyfin.garandplg.com";
+      iconUrl = "https://jellyfin.org/images/logo.svg";
+      iconSha = "sha256-sRSB2rxThd4+vMmdpRTz+bEKgdrmF5NG4I74I6kfCyY=";
+    }
   ];
 in {
   options.xdgDesktopEntries = {

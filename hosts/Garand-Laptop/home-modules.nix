@@ -61,6 +61,7 @@ _: {
       chatgpt.enable = true; # ChatGPT: a large language model
       claude.enable = true; # Claude: a large language model
       glance.enable = true; # Glance: my home server dashboard
+      jellyfinClient.enable = true; # Jellyfin: My Jellyfin
     };
   };
 }

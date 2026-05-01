@@ -34,7 +34,7 @@ _: {
   /*
   Media & Graphics
   */
-  affinity.enable = true; # Affinity: professional graphics suite
+  affinity.enable = false; # Affinity: professional graphics suite
 
   packages = {
     /*
