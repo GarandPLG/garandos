@@ -15,6 +15,13 @@
         port = 22;
         identityFile = "~/.ssh/hp-t640-homeserver";
       };
+      "gitssh.garandplg.com" = {
+        hostname = "gitssh.garandplg.com";
+        user = "git";
+        port = 222;
+        identityFile = "~/.ssh/id_ed25519_gitea";
+        identitiesOnly = true;
+      };
     };
   };
 }
