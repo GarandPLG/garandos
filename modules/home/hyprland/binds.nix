@@ -36,7 +36,7 @@
     "SUPER SHIFT, E, exec, evolution #\"Personal information management application\""
     "SUPER SHIFT, Escape, exec, noctalia-shell ipc call sessionMenu toggle #\"Open Session Menu\""
     "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop #\"ChatGPT AI chat\""
-    "SUPER SHIFT, J, exec, ${desktopEntriesPath}/jellyfinClient.desktop #\"Jellyfin PWA\""
+    "SUPER SHIFT, J, exec, dex ${desktopEntriesPath}/jellyfinClient.desktop #\"Jellyfin PWA\""
     "SUPER SHIFT, K, exec, noctalia-shell ipc call plugin:keybind-cheatsheet toggle #\"Toggle keybind cheatsheet\""
     "SUPER SHIFT, M, exec, plexamp #\"Music player for Plex\""
     "SUPER SHIFT, N, exec, nextcloud #\"Nextcloud desktop sync client\""
