@@ -1,7 +1,7 @@
 _: {
   nixpkgs.config.allowUnfree = true;
   imports = [
-    ./fluxer
+    ./appimages
     ./essentials.nix
     ./packages.nix
     ./programs.nix

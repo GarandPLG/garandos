@@ -12,7 +12,7 @@
   makeEntry = app: {
     name = app.displayName;
     genericName = app.genericName or app.displayName;
-    exec = "chromium --profile-directory=Default --app=${app.url}";
+    exec = "helium --profile-directory=Default --app=${app.url}";
     icon = "${fetchIcon app.iconUrl app.iconSha}";
     terminal = false;
     type = "Application";

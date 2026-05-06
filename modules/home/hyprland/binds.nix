@@ -13,6 +13,7 @@
     "SUPER, E, exec, noctalia-shell ipc call launcher emoji #\"Emoji picker\""
     "SUPER, Escape, exec, noctalia-shell ipc call lockScreen lock #\"Lock the screen\""
     "SUPER, G, exec, affinity-v3 #\"Graphics editor\""
+    "SUPER, H, exec, helium #\"Helium web browser\""
     "SUPER, I, exec, iotas #\"Note-taking app\""
     "SUPER, J, exec, Jan #\"Local AI chat interface\""
     "SUPER, K, exec, gnome-calculator #\"Scientific calculator\""
@@ -32,10 +33,10 @@
 
   shiftBinds = [
     "SUPER SHIFT, C, exec, dex ${desktopEntriesPath}/claude.desktop #\"Claude AI chat\""
-    "SUPER SHIFT, D, exec, jellyfin-desktop #\"Jellyfin media client\""
     "SUPER SHIFT, E, exec, evolution #\"Personal information management application\""
     "SUPER SHIFT, Escape, exec, noctalia-shell ipc call sessionMenu toggle #\"Open Session Menu\""
     "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop #\"ChatGPT AI chat\""
+    "SUPER SHIFT, J, exec, ${desktopEntriesPath}/jellyfinClient.desktop #\"Jellyfin PWA\""
     "SUPER SHIFT, K, exec, noctalia-shell ipc call plugin:keybind-cheatsheet toggle #\"Toggle keybind cheatsheet\""
     "SUPER SHIFT, M, exec, plexamp #\"Music player for Plex\""
     "SUPER SHIFT, N, exec, nextcloud #\"Nextcloud desktop sync client\""
@@ -65,6 +66,7 @@
     "SUPER CONTROL, G, exec, gimp #\"GNU Image Manipulation Program\""
     "SUPER CONTROL, M, exec, mattermost-desktop #\"Mattermost team chat client\""
     "SUPER CONTROL, S, exec, signal-desktop #\"Signal encrypted messaging\""
+    "SUPER CONTROL, T, exec, tsukimi #\"A simple Emby/Jellyfin Client\""
     "SUPER CONTROL, P, exec, hyprpicker -a #\"Pick color from screen\""
   ];
 
