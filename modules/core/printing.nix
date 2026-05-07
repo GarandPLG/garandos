@@ -1,18 +1,38 @@
-{host, ...}: let
-  inherit (import ../../hosts/${host}/variables.nix) printEnable;
+{
+  pkgs,
+  lib,
+  host,
+  ...
+}: let
+  inherit (import ../../hosts/${host}/printers.nix) printEnable ensureDefaultPrinter ensurePrinters;
 in {
-  services = {
+  services = lib.mkIf printEnable {
     printing = {
-      enable = printEnable;
-      drivers = [
-        # pkgs.hplipWithPlugin
+      enable = true;
+      drivers = with pkgs; [
+        cups-filters
+        cups-browsed
       ];
-    };
-    avahi = {
-      enable = printEnable;
-      nssmdns4 = true;
+      listenAddresses = ["*:631"];
+      allowFrom = ["all"];
+      browsing = true;
+      defaultShared = true;
       openFirewall = true;
     };
-    ipp-usb.enable = printEnable;
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+      publish = {
+        enable = true;
+        userServices = true;
+      };
+    };
+    ipp-usb.enable = true;
+  };
+
+  hardware.printers = lib.mkIf printEnable {
+    ensureDefaultPrinter = ensureDefaultPrinter;
+    ensurePrinters = ensurePrinters;
   };
 }

@@ -22,7 +22,7 @@
     {
       name = "messenger";
       displayName = "Messenger";
-      url = "https://www.messenger.com/";
+      url = "https://www.facebook.com/messages/";
       iconUrl = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c526.png";
       iconSha = "sha256-mQ7TAsLIWLZhun1DrJFgLkkwpqvWujhGT6Ig8Rf6vbc=";
     }

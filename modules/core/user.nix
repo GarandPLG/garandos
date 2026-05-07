@@ -51,6 +51,7 @@ in {
         "wheel" # sudo access
         "vboxusers" # Virtual Box
         "gamemode"
+        "lpadmin"
       ];
       shell = pkgs.bash;
       ignoreShellProgramCheck = true;

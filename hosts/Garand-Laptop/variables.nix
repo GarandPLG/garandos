@@ -33,10 +33,7 @@
   nvidiaID = "PCI:0:2:0";
 
   # Enable NFS
-  enableNFS = true;
-
-  # Enable Printing Support
-  printEnable = false;
+  enableNFS = false;
 
   # Set Stylix Image
   # This will set your color palette

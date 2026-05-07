@@ -35,7 +35,7 @@
   nvidiaID = "PCI:0:2:0";
 
   # Enable NFS
-  enableNFS = true;
+  enableNFS = false;
 
   # Enable Printing Support
   printEnable = false;
