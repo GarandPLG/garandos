@@ -14,7 +14,7 @@
     upd-ts = "nh os test -H ${host} -d always";
     upd-bd = "nh os build -H ${host} -d always";
     tui = "garandos-tui";
-    ncg = "nh clean all";
+    ncg = "nh clean all --optimise";
 
     # Development aliases
     ## Django

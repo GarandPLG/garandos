@@ -27,6 +27,7 @@
     duf
     dysk
     ncdu
+    smartmontools
     # Network & system utilities
     ripgrep
     wget

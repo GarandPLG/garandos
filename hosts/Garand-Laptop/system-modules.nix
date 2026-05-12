@@ -10,7 +10,7 @@ _: {
       sober.enable = false; # Roblox client
       warehouse.enable = true; # Flatpak manager
       flatseal.enable = true; # Flatpak permissions manager
-      upscaler.enable = false; # Upscaler: Upscale and enhance images
+      upscaler.enable = true; # Upscaler: Upscale and enhance images
     };
   };
 
@@ -47,7 +47,7 @@ _: {
     /*
     Gaming
     */
-    prismlauncher.enable = true; # Prism Launcher: Minecraft modded launcher
+    prismlauncher.enable = false; # Prism Launcher: Minecraft modded launcher
     spaceCadetPinball.enable = true; # SpaceCadet Pinball: classic pinball game
     ttySolitaire.enable = true; # TTY Solitaire: terminal‑based solitaire game
     heroic.enable = false; # Native GOG, Epic, and Amazon Games Launcher for Linux, Windows and Mac
