@@ -42,7 +42,7 @@
   # This will set your color palette
   # Default background
   # Add new images to ~/garandos/wallpapers
-  stylixImage = "attack-on-titan-mikasa-ackerman.jpg";
+  # stylixImage = "attack-on-titan-mikasa-ackerman.jpg";
   #stylixImage = "DW_Pacts.jpg";
   #stylixImage = "edward-elric-fullmetal-alchemist.jpg";
   #stylixImage = "fire-nation.jpg";
@@ -55,6 +55,7 @@
   #stylixImage = "rammstein-logo-three.jpg";
   #stylixImage = "rammstein-one.jpg";
   #stylixImage = "1346530.jpeg";
+  stylixImage = "The-Southern-Raiders.jpg";
 
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is

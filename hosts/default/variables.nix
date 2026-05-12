@@ -61,6 +61,7 @@
   #stylixImage = "rammstein-logo-three.jpg";
   #stylixImage = "rammstein-one.jpg";
   #stylixImage = "1346530.jpeg";
+  #stylixImage = "The-Southern-Raiders.jpg";
 
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is

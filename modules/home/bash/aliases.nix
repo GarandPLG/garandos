@@ -50,7 +50,8 @@
 
     # System aliases
     # flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";
-    kys = "shutdown now";
+    kys = "systemctl poweroff";
+    jezus = "systemctl reboot";
     ookla = "speedtest";
     hypr-cli = "hyprctl clients";
 
