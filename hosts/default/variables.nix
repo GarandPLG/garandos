@@ -48,20 +48,21 @@
   # This will set your color palette
   # Default background
   # Add new images to ~/garandos/wallpapers
-  stylixImage = "attack-on-titan-mikasa-ackerman.jpg";
-  #stylixImage = "DW_Pacts.jpg";
-  #stylixImage = "edward-elric-fullmetal-alchemist.jpg";
-  #stylixImage = "fire-nation.jpg";
-  #stylixImage = "four-elements.jpg";
-  #stylixImage = "fullmetal-alchemist-5120x2880-10399.png";
-  #stylixImage = "Grounded_Wallpaper_4K.jpg";
-  #stylixImage = "jablon.jpg";
-  #stylixImage = "rammstein-log-two.jpg";
-  #stylixImage = "rammstein-logo-one.jpg";
-  #stylixImage = "rammstein-logo-three.jpg";
-  #stylixImage = "rammstein-one.jpg";
-  #stylixImage = "1346530.jpeg";
-  #stylixImage = "The-Southern-Raiders.jpg";
+  stylixImage = "Attack-on-Titan-1.jpg";
+  # stylixImage = "Attack-on-Titan-2.jpg";
+  # stylixImage = "Attack-on-Titan-3.jpg";
+  # stylixImage = "Avatar-1.jpg";
+  # stylixImage = "Avatar-2.jpg";
+  # stylixImage = "Avatar-3.png";
+  # stylixImage = "Avatar-4.jpg";
+  # stylixImage = "Edge-of-Tomorrow-1.jpg";
+  # stylixImage = "Friren-1.jpg";
+  # stylixImage = "Friren-2.jpg";
+  # stylixImage = "Friren-3.jpg";
+  # stylixImage = "Jablon.png";
+  # stylixImage = "Song-of-the-Sea-1.jpg";
+  # stylixImage = "Wolfwalkers-1.jpg";
+  # stylixImage = "Wolfwalkers-2.jpg";
 
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is

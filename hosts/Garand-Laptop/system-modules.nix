@@ -36,6 +36,11 @@ _: {
   */
   affinity.enable = false; # Affinity: professional graphics suite
 
+  /*
+  Utilities / Misc
+  */
+  ventoy.enable = false; # Ventoy: New Bootable USB Solution with GUI support
+
   packages = {
     /*
     Container & Packaging

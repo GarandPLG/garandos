@@ -23,6 +23,7 @@
     ./tailscale.nix
     ./thunar.nix
     ./user.nix
+    ./ventoy.nix
     ./virtualbox.nix
     ./xdg.nix
     ./xserver.nix

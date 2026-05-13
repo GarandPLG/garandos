@@ -1,9 +1,12 @@
 {
   pkgs,
+  host,
   config,
   lib,
   ...
-}: {
+}: let
+  inherit (import ../../hosts/${host}/variables.nix) stylixImage;
+in {
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
     kernelModules = ["v4l2loopback"];
@@ -17,7 +20,7 @@
         enable = true;
         style = {
           wallpapers = [
-            ./../../wallpapers/attack-on-titan-mikasa-ackerman.jpg
+            ./../../wallpapers/${stylixImage}
           ];
           wallpaperStyle = lib.mkForce "centered";
           backdrop = "${config.stylix.base16Scheme.base00}";

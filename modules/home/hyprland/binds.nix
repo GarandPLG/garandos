@@ -42,7 +42,7 @@
     "SUPER SHIFT, N, exec, nextcloud #\"Nextcloud desktop sync client\""
     "SUPER SHIFT, O, exec, obs #\"Open Broadcaster Software\""
     "SUPER SHIFT, P, exec, noctalia-shell ipc call volume togglePanel #\"Toggle volume control panel\""
-    "SUPER SHIFT, R, exec, restart.noctalia #\"Restart Noctalia shell\""
+    # "SUPER SHIFT, R, exec, restart.noctalia #\"Restart Noctalia shell\""
     "SUPER SHIFT, Return, exec, noctalia-shell ipc call launcher toggle #\"Toggle application launcher\""
     "SUPER SHIFT, S, exec, screenshootin #\"Take screenshot\""
     "SUPER SHIFT, T, exec, tutanota-desktop #\"Tutanota encrypted email client\""
