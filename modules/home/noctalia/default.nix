@@ -14,7 +14,6 @@
 
   imports = [
     ./settings
-    ./colors.nix
     ./plugins.nix
   ];
 }

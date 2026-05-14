@@ -1,12 +1,8 @@
 {
   pkgs,
-  host,
   config,
-  lib,
   ...
-}: let
-  inherit (import ../../hosts/${host}/variables.nix) stylixImage;
-in {
+}: {
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
     kernelModules = ["v4l2loopback"];
@@ -18,16 +14,11 @@ in {
       efi.canTouchEfiVariables = true;
       limine = {
         enable = true;
-        style = {
-          wallpapers = [
-            ./../../wallpapers/${stylixImage}
-          ];
-          wallpaperStyle = lib.mkForce "centered";
-          backdrop = "${config.stylix.base16Scheme.base00}";
-          interface = {
-            branding = "GarandOS Bootloader";
-            resolution = "1920x1080";
-          };
+        package = pkgs.limine;
+        resolution = "1920x1080";
+        style.interface = {
+          branding = "GarandOS Bootloader";
+          brandingColor = "${config.stylix.base16Scheme.base01}";
         };
       };
     };

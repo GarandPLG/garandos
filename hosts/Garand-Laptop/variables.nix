@@ -39,21 +39,21 @@
   # This will set your color palette
   # Default background
   # Add new images to ~/garandos/wallpapers
-  stylixImage = "Attack-on-Titan-1.jpg";
-  # stylixImage = "Attack-on-Titan-2.jpg";
-  # stylixImage = "Attack-on-Titan-3.jpg";
-  # stylixImage = "Avatar-1.jpg";
-  # stylixImage = "Avatar-2.jpg";
-  # stylixImage = "Avatar-3.png";
-  # stylixImage = "Avatar-4.jpg";
-  # stylixImage = "Edge-of-Tomorrow-1.jpg";
-  # stylixImage = "Friren-1.jpg";
-  # stylixImage = "Friren-2.jpg";
-  # stylixImage = "Friren-3.jpg";
-  # stylixImage = "Jablon.png";
-  # stylixImage = "Song-of-the-Sea-1.jpg";
-  # stylixImage = "Wolfwalkers-1.jpg";
-  # stylixImage = "Wolfwalkers-2.jpg";
+  # stylixImage = "Attack-on-Titan-1.jpg"; # og/10
+  stylixImage = "Attack-on-Titan-2.jpg"; # 9/10
+  # stylixImage = "Attack-on-Titan-3.jpg"; # 7.5/10
+  # stylixImage = "Avatar-1.jpg"; # 5/10
+  # stylixImage = "Avatar-2.jpg"; # 4/10
+  # stylixImage = "Avatar-3.jpg"; # 2/10
+  # stylixImage = "Avatar-4.jpg"; # 3/10
+  # stylixImage = "Edge-of-Tomorrow-1.jpg"; # 2/10
+  # stylixImage = "Friren-1.jpg"; # 6.5/10
+  # stylixImage = "Friren-2.jpg"; # 2/10
+  # stylixImage = "Friren-3.jpg"; # 4/10
+  # stylixImage = "Jablon.png"; # 1/10
+  # stylixImage = "Song-of-the-Sea-1.jpg"; # 3/10
+  # stylixImage = "Wolfwalkers-1.jpg"; # 6/10
+  # stylixImage = "Wolfwalkers-2.jpg"; # 5/10
 
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is

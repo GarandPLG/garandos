@@ -1,11 +1,9 @@
 {
   lib,
-  host,
+  config,
   username,
   ...
-}: let
-  inherit (import ../../../../hosts/${host}/variables.nix) stylixImage;
-in {
+}: {
   programs.noctalia-shell.settings.wallpaper = lib.mkForce {
     enabled = true;
     overviewEnabled = false;
@@ -42,6 +40,6 @@ in {
   };
 
   home.file.".cache/noctalia/wallpapers.json".text = lib.mkForce (builtins.toJSON {
-    defaultWallpaper = ../../../../wallpapers/${stylixImage};
+    defaultWallpaper = config.stylix.image;
   });
 }

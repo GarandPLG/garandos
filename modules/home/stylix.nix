@@ -5,10 +5,10 @@
     vscode.enable = false;
     zed.enable = false;
     vesktop.enable = false;
+    noctalia-shell.enable = true;
     qt = {
       enable = true;
       platform = "qtct";
     };
-    noctalia-shell.enable = true;
   };
 }
