@@ -75,7 +75,7 @@ _: {
     signal.enable = true; # Signal: secure messaging app
     teams.enable = true; # Teams-for-linux: Unofficial Microsoft Teams client for Linux
     ferdium.enable = false; # Ferdium: All your services in one place built by the community
-    notify.enable = true; # notify-client: Ntfy client application to receive everyday's notifications
+    notify.enable = false; # notify-client: Ntfy client application to receive everyday's notifications
 
     /*
     Productivity / Knowledge Management

@@ -44,6 +44,7 @@
     waypaper
     uwsm
     hyprpicker
+    hyprshot
     cliphist
     # Development utilities
     pkg-config

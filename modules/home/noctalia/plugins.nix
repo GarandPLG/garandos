@@ -31,6 +31,14 @@ in {
           enabled = true;
           sourceUrl = sourceUrl;
         };
+        screenshot = {
+          enabled = true;
+          sourceUrl = sourceUrl;
+        };
+        ntfy-notifications = {
+          enabled = true;
+          sourceUrl = sourceUrl;
+        };
       };
       version = 2;
     };
@@ -71,6 +79,19 @@ in {
         restorePortalSession = true;
         customFrameRate = 6;
       };
+      screenshot.mode = "region";
+      # ntfy-notifications = {
+      #   serverUrl = "https://ntfy.garandplg.com";
+      #   topics = "beszel,dockhand,jellyfin,nixos-unstable,radarr,rss-feeds,seerr,sonarr";
+      #   authMethod = "basic";
+      #   authToken = "";
+      #   authUsername = ''$(cat ${config.sops.secrets."credentials/ntfy/username".path})'';
+      #   authPassword = ''$(cat ${config.sops.secrets."credentials/ntfy/password".path})'';
+      #   pollInterval = 30;
+      #   enableToasts = true;
+      #   maxMessages = 100;
+      #   readMessageIds = [];
+      # };
     };
   };
 }
