@@ -11,6 +11,8 @@
     sha256 = "sha256-GdoBK+Z/d2quEIY8INM4IQy5tzzIBBM+3CgJXQn0qAw=";
   };
   appimageContents = appimageTools.extract {inherit pname version src;};
+
+  iconSize = "512x512";
 in
   appimageTools.wrapType2 {
     inherit pname version src;
@@ -18,8 +20,8 @@ in
     extraInstallCommands = ''
       # mv $out/bin/${pname}-${version} $out/bin/${pname}
       install -m 444 -D ${appimageContents}/${pname}.desktop $out/share/applications/${pname}.desktop
-      install -m 444 -D ${appimageContents}/usr/share/icons/hicolor/512x512/apps/${pname}.png \
-        $out/share/icons/hicolor/512x512/apps/${pname}.png
+      install -m 444 -D ${appimageContents}/usr/share/icons/hicolor/${iconSize}/apps/${pname}.png \
+        $out/share/icons/hicolor/${iconSize}/apps/${pname}.png
       substituteInPlace $out/share/applications/${pname}.desktop \
         --replace-fail 'Exec=AppRun' 'Exec=${pname}'
     '';

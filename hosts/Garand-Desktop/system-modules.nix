@@ -43,6 +43,11 @@ _: {
 
   packages = {
     /*
+    Web browsers
+    */
+    appImages.helium.enable = true; # Helium: Better ungoogled-chromium
+
+    /*
     Container & Packaging
     */
     distrobox.enable = false; # Distrobox: containerized development environments
@@ -76,6 +81,7 @@ _: {
     teams.enable = true; # Teams-for-linux: Unofficial Microsoft Teams client for Linux
     ferdium.enable = false; # Ferdium: All your services in one place built by the community
     notify.enable = false; # notify-client: Ntfy client application to receive everyday's notifications
+    appImages.fluxer.enable = false; # Fluxer: Discord alternative
 
     /*
     Productivity / Knowledge Management

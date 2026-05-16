@@ -21,12 +21,13 @@ in {
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
+    configType = "hyprlang"; # TODO: hyprlang => lua migration.
+    xwayland.enable = true;
     systemd = {
       enable = true;
       enableXdgAutostart = true;
       variables = ["--all"];
     };
-    xwayland.enable = true;
     settings = {
       input = {
         kb_layout = "${keyboardLayout}";
@@ -76,7 +77,6 @@ in {
         disable_splash_rendering = true;
         enable_swallow = true;
         swallow_regex = "^(kitty)$";
-        vfr = true; # Variable Frame Rate
         vrr = 2; # Variable Refresh Rate  Might need to set to 0 for NVIDIA/AQ_DRM_DEVICES
         # Screen flashing to black momentarily or going black when app is fullscreen
         # Try setting vrr to 0
@@ -87,7 +87,7 @@ in {
       };
 
       dwindle = {
-        pseudotile = true;
+        # pseudotile = true;
         preserve_split = true;
         force_split = 2;
       };
@@ -131,7 +131,10 @@ in {
         direct_scanout = 0;
       };
 
-      debug.full_cm_proto = true;
+      debug = {
+        vfr = true; # Variable Frame Rate
+        full_cm_proto = true;
+      };
 
       master = {
         new_status = "master";

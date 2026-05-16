@@ -4,13 +4,15 @@
   fetchurl,
 }: let
   pname = "helium";
-  version = "0.12.1.1";
+  version = "0.12.3.1";
 
   src = fetchurl {
     url = "https://github.com/imputnet/helium-linux/releases/download/${version}/helium-${version}-x86_64.AppImage";
-    sha256 = "sha256-+UE+JqQtxbA5szPvAohapXlES21VBOdNsV6Ej1dRRfs=";
+    sha256 = "sha256-VnOhzhAulvFNBB/0AD1d+K/TzfFL9Zwtk/vcm5vWl+I=";
   };
   appimageContents = appimageTools.extract {inherit pname version src;};
+
+  iconSize = "256x256";
 in
   appimageTools.wrapType2 {
     inherit pname version src;
@@ -18,8 +20,8 @@ in
     extraInstallCommands = ''
       # mv $out/bin/${pname}-${version} $out/bin/${pname}
       install -m 444 -D ${appimageContents}/${pname}.desktop $out/share/applications/${pname}.desktop
-      install -m 444 -D ${appimageContents}/usr/share/icons/hicolor/256x256/apps/${pname}.png \
-        $out/share/icons/hicolor/256x256/apps/${pname}.png
+      install -m 444 -D ${appimageContents}/usr/share/icons/hicolor/${iconSize}/apps/${pname}.png \
+        $out/share/icons/hicolor/${iconSize}/apps/${pname}.png
       # substituteInPlace $out/share/applications/${pname}.desktop \
       #   --replace-fail 'Exec=AppRun' 'Exec=${pname}'
     '';

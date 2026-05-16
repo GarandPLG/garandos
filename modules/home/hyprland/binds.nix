@@ -75,7 +75,7 @@
   windowManagementBinds = [
     "SUPER, F, fullscreen, #\"Toggle fullscreen mode\""
     "SUPER, Q, killactive, #\"Close active window\""
-    "SUPER SHIFT, I, togglesplit, #\"Toggle split layout\""
+    # "SUPER SHIFT, I, togglesplit, #\"Toggle split layout\""
     "SUPER SHIFT, F, togglefloating, #\"Toggle floating mode\""
   ];
 
