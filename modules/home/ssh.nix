@@ -2,7 +2,7 @@
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
-    matchBlocks = {
+    settings = {
       "hp-t640-homeserver" = {
         hostname = "192.168.1.156";
         user = "${username}";
