@@ -53,6 +53,7 @@ _: {
     distrobox.enable = false; # Distrobox: containerized development environments
     lazydocker.enable = false; # Lazydocker: simple TUI for Docker
     bottles.enable = false; # Bottles: Easy-to-use wineprefix manager
+    boxes.enable = false; # Gnome-Boxes: virtual machine manager
 
     /*
     Gaming
@@ -94,6 +95,7 @@ _: {
     Media & Graphics
     */
     eyeOfGnome.enable = true; # Eye of GNOME: image viewer
+    switcheroo.enable = false; # Switcheroo: file conversion tool
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
     gimp.enable = false; # GIMP: GNU Image Manipulation Program
     kdenlive.enable = false; # Kdenlive: video editing software

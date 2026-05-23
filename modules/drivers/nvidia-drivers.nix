@@ -13,7 +13,9 @@ in {
 
   config = mkIf cfg.enable {
     services.xserver.videoDrivers = ["nvidia"];
-    environment.systemPackages = with pkgs; [nvidia-docker];
+    environment.systemPackages = with pkgs; [
+      nvidia-docker
+    ];
     hardware = {
       nvidia-container-toolkit.enable = true;
       nvidia = {

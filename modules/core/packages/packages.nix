@@ -32,10 +32,22 @@
     ttySolitaire = tty-solitaire;
     gimp = gimp;
     eyeOfGnome = eog;
-    kdenlive = kdePackages.kdenlive;
+    kdenlive = kdePackages.kdenlive.overrideAttrs (old: {
+      postInstall =
+        (old.postInstall or "")
+        + ''
+          wrapProgram $out/bin/kdenlive \
+            --set QT_SCALE_FACTOR 0.8
+        '';
+    });
     plex = [
-      (plex-desktop.override {extraEnv = {QT_QPA_PLATFORM = "xcb";};})
-      # plex-desktop
+      (
+        plex-desktop.override {
+          extraEnv = {
+            QT_QPA_PLATFORM = "xcb";
+          };
+        }
+      )
       plexamp
     ];
     jellyfin = [
@@ -44,8 +56,14 @@
     ];
     freetube = freetube;
     lazydocker = lazydocker;
-    distrobox = [distrobox pkgs.boxbuddy];
-    winboat = [winboat freerdp];
+    distrobox = [
+      distrobox
+      pkgs.boxbuddy
+    ];
+    winboat = [
+      winboat
+      freerdp
+    ];
     signal = signal-desktop;
     pixieditor = pixieditor;
     bottles = bottles;
@@ -55,6 +73,8 @@
     ferdium = ferdium;
     logisim-evolution = logisim-evolution;
     notify = notify-client;
+    boxes = gnome-boxes;
+    switcheroo = switcheroo;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);
