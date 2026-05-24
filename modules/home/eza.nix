@@ -1,10 +1,15 @@
-# Eza is a ls replacement
-{
+{shell, ...}: {
   programs.eza = {
     enable = true;
     icons = "auto";
-    enableFishIntegration = true;
-    enableBashIntegration = true;
+    enableFishIntegration =
+      if shell == "fish"
+      then true
+      else false;
+    enableBashIntegration =
+      if shell == "bash"
+      then true
+      else false;
     git = true;
 
     extraOptions = [

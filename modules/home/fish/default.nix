@@ -20,7 +20,10 @@
     nix-your-shell = {
       enable = true;
       package = pkgs.nix-your-shell;
-      enableFishIntegration = true;
+      enableFishIntegration =
+        if shell == "fish"
+        then true
+        else false;
       nix-output-monitor = {
         enable = true;
         package = pkgs.nix-output-monitor;

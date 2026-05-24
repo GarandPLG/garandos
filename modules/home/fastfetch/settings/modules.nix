@@ -122,29 +122,25 @@ _: {
     {
       type = "command";
       key = "│  IN";
-      text =
-        #bash
-        ''
-          birth_install=$(stat -c %W /)
-          if [ "$birth_install" -gt 0 ]; then
-            echo "Installed $(date -d @"$birth_install" +"%Y-%m-%d")"
-          else
-            echo "Installation date unknown"
-          fi
-        '';
+      text = ''
+        birth_install=$(stat -c %W /)
+        if [ "$birth_install" -gt 0 ]; then
+          echo "Installed $(date -d @"$birth_install" +"%Y-%m-%d")"
+        else
+          echo "Installation date unknown"
+        fi
+      '';
     }
     {
       type = "command";
       key = "│ ├  ";
-      text =
-        #bash
-        ''
-          birth_install=$(stat -c %W /)
-          current=$(date +%s)
-          delta=$((current - birth_install))
-          delta_days=$((delta / 86400))
-          echo $delta_days days
-        '';
+      text = ''
+        birth_install=$(stat -c %W /)
+        current=$(date +%s)
+        delta=$((current - birth_install))
+        delta_days=$((delta / 86400))
+        echo $delta_days days
+      '';
     }
     {
       type = "uptime";

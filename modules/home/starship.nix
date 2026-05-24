@@ -1,7 +1,14 @@
-{lib, ...}: {
+{
+  lib,
+  shell,
+  ...
+}: {
   programs.starship = {
     enable = true;
-    enableFishIntegration = true;
+    enableFishIntegration =
+      if shell == "fish"
+      then true
+      else false;
     settings = {
       add_newline = true;
       format = lib.concatStrings [

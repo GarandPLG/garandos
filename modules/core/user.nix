@@ -43,7 +43,10 @@
         username = "${username}";
         homeDirectory = "/home/${username}";
         stateVersion = "25.11";
-        shell.enableFishIntegration = true;
+        shell.enableFishIntegration =
+          if shell == "fish"
+          then true
+          else false;
       };
     };
   };

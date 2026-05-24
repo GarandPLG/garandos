@@ -1,4 +1,8 @@
-{host, ...}: {
+{
+  host,
+  shell,
+  ...
+}: {
   stylix.targets = {
     librewolf.profileNames = ["${host}"];
 
@@ -27,7 +31,10 @@
     };
 
     fish = {
-      enable = true;
+      enable =
+        if shell == "fish"
+        then true
+        else false;
       colors.enable = true;
       inputs.enable = true;
     };

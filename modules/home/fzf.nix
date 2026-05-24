@@ -1,8 +1,14 @@
-_: {
+{shell, ...}: {
   programs.fzf = {
     enable = true;
-    enableFishIntegration = true;
-    enableBashIntegration = true;
+    enableFishIntegration =
+      if shell == "fish"
+      then true
+      else false;
+    enableBashIntegration =
+      if shell == "bash"
+      then true
+      else false;
     defaultOptions = [
       "--margin=1"
       "--layout=reverse"

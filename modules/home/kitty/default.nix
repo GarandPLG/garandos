@@ -1,8 +1,15 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  shell,
+  ...
+}: {
   programs.kitty = {
     enable = true;
     package = pkgs.kitty;
-    shellIntegration.enableFishIntegration = true;
+    shellIntegration.enableFishIntegration =
+      if shell == "fish"
+      then true
+      else false;
   };
 
   imports = [

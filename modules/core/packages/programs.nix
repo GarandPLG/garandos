@@ -1,11 +1,14 @@
-_: {
+{shell, ...}: {
   programs = {
     nano.enable = true;
     hyprland = {
       enable = true;
       withUWSM = false;
     };
-    fish.enable = true;
+    fish.enable =
+      if shell == "fish"
+      then true
+      else false;
     dconf.enable = true;
     seahorse.enable = true;
     fuse.userAllowOther = true;
