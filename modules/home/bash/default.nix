@@ -1,6 +1,4 @@
-{host, ...}: let
-  inherit (import ../../../hosts/${host}/variables.nix) shell;
-in {
+{shell, ...}: {
   programs.bash = {
     enable =
       if shell == "bash"

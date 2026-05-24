@@ -5,10 +5,14 @@
   host,
   profile,
   system,
+  gitUsername,
+  shell,
+  extraMonitorSettings,
+  keyboardLayout,
+  gitEmail,
+  location,
   ...
-}: let
-  inherit (import ../../hosts/${host}/variables.nix) gitUsername shell;
-in {
+}: {
   imports = [inputs.home-manager.nixosModules.home-manager];
   home-manager = {
     useUserPackages = true;
@@ -21,6 +25,12 @@ in {
         host
         profile
         system
+        extraMonitorSettings
+        shell
+        keyboardLayout
+        gitEmail
+        gitUsername
+        location
         ;
     };
     users.${username} = {

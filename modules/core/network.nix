@@ -1,10 +1,9 @@
 {
   host,
+  hostId,
   options,
   ...
-}: let
-  inherit (import ../../hosts/${host}/variables.nix) hostId;
-in {
+}: {
   # Defensive assertion for hostname validity (clearer message at eval time)
   assertions = [
     {

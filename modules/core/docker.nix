@@ -2,11 +2,9 @@
   pkgs,
   lib,
   config,
-  host,
+  profile,
   ...
-}: let
-  inherit (import ../../hosts/${host}/variables.nix) profile;
-in {
+}: {
   options.docker.enable = lib.mkEnableOption "Docker";
 
   config.virtualisation.docker = lib.mkIf config.docker.enable {

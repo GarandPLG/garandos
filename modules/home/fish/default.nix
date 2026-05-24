@@ -1,10 +1,8 @@
 {
   pkgs,
-  host,
+  shell,
   ...
-}: let
-  inherit (import ../../../hosts/${host}/variables.nix) shell;
-in {
+}: {
   programs = {
     fish = {
       enable =

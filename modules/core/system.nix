@@ -1,10 +1,8 @@
 {
-  host,
+  consoleKeyMap,
   inputs,
   ...
-}: let
-  inherit (import ../../hosts/${host}/variables.nix) consoleKeyMap;
-in {
+}: {
   nix = {
     nixPath = ["nixpkgs=${inputs.nixpkgs}"];
     settings = {

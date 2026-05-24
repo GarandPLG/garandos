@@ -1,11 +1,9 @@
 {
   lib,
-  host,
+  keyboardLayout,
   username,
   ...
-}: let
-  inherit (import ../../../../hosts/${host}/variables.nix) keyboardLayout;
-in {
+}: {
   programs.noctalia-shell.settings.general = lib.mkForce {
     avatarImage = "/home/${username}/.face.icon";
     dimmerOpacity = 0.2;

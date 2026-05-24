@@ -39,9 +39,6 @@
   # Enable NFS
   enableNFS = false;
 
-  # Enable Printing Support
-  printEnable = true;
-
   # Set Stylix Image
   # This will set your color palette
   # Default background

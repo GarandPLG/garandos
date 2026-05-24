@@ -65,25 +65,14 @@
     hostDirs = builtins.attrNames (builtins.readDir ./hosts);
 
     mkHost = hostName: let
-      inherit
-        (import ./hosts/${hostName}/variables.nix)
-        host
-        username
-        profile
-        system
-        ;
+      hostVars = import ./hosts/${hostName}/variables.nix;
+      hostPrinterVars = import ./hosts/${hostName}/printers.nix;
     in
       nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {
-          inherit inputs;
-          inherit username;
-          inherit host;
-          inherit profile;
-          inherit system;
-        };
+        inherit (hostVars) system;
+        specialArgs = hostVars // hostPrinterVars // {inherit inputs;};
         modules = [
-          ./profiles/${profile}
+          ./profiles/${hostVars.profile}
           nix-flatpak.nixosModules.nix-flatpak
           garandos-tui.nixosModules.garandos-tui
         ];

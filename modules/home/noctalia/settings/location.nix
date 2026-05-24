@@ -1,10 +1,8 @@
 {
   lib,
-  host,
+  location,
   ...
-}: let
-  inherit (import ../../../../hosts/${host}/variables.nix) location;
-in {
+}: {
   programs.noctalia-shell.settings.location = lib.mkForce {
     name = "${location}";
     weatherEnabled = true;

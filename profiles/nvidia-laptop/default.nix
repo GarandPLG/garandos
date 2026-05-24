@@ -1,6 +1,9 @@
-{host, ...}: let
-  inherit (import ../../hosts/${host}/variables.nix) intelID nvidiaID;
-in {
+{
+  host,
+  intelID,
+  nvidiaID,
+  ...
+}: {
   imports = [
     ../../hosts/${host}
     ../../modules/drivers

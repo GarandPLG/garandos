@@ -1,11 +1,11 @@
 {
   pkgs,
   lib,
-  host,
+  printEnable,
+  ensureDefaultPrinter,
+  ensurePrinters,
   ...
-}: let
-  inherit (import ../../hosts/${host}/printers.nix) printEnable ensureDefaultPrinter ensurePrinters;
-in {
+}: {
   services = lib.mkIf printEnable {
     printing = {
       enable = true;

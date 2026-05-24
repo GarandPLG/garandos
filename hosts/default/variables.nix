@@ -41,9 +41,6 @@
   # Enable NFS
   enableNFS = false;
 
-  # Enable Printing Support
-  printEnable = false;
-
   # Themes, waybar and animation.
   #  Only uncomment your selection
   # The others much be commented out.

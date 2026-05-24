@@ -1,10 +1,9 @@
 {
-  host,
+  extraMonitorSettings,
+  keyboardLayout,
   pkgs,
   ...
-}: let
-  inherit (import ../../../hosts/${host}/variables.nix) extraMonitorSettings keyboardLayout;
-in {
+}: {
   systemd.user.targets.hyprland-session.Unit.Wants = [
     "xdg-desktop-autostart.target"
   ];
