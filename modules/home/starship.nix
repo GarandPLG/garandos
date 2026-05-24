@@ -1,12 +1,7 @@
-{
-  config,
-  lib,
-  ...
-}: let
-  accent = "#${config.lib.stylix.colors.base0D}";
-in {
+{lib, ...}: {
   programs.starship = {
     enable = true;
+    enableFishIntegration = true;
     settings = {
       add_newline = true;
       format = lib.concatStrings [
@@ -44,8 +39,8 @@ in {
       };
 
       character = {
-        success_symbol = "[](${accent})";
-        error_symbol = "[](red)";
+        success_symbol = "";
+        error_symbol = "";
       };
 
       nix_shell = {

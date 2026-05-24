@@ -3,6 +3,7 @@ _: {
     ./bash
     ./chromium
     ./fastfetch
+    ./fish
     ./hyprland
     ./kitty
     ./librewolf
@@ -16,7 +17,6 @@ _: {
     ./btop.nix
     ./cava.nix
     ./easyeffects.nix
-    ./emoji.nix
     ./eza.nix
     ./fzf.nix
     ./git.nix

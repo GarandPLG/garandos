@@ -19,5 +19,6 @@ _: {
     "deputy"
     "biome"
     "opencode"
+    "fish"
   ];
 }

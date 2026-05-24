@@ -7,7 +7,7 @@
   system,
   ...
 }: let
-  inherit (import ../../hosts/${host}/variables.nix) gitUsername;
+  inherit (import ../../hosts/${host}/variables.nix) gitUsername shell;
 in {
   imports = [inputs.home-manager.nixosModules.home-manager];
   home-manager = {
@@ -33,6 +33,7 @@ in {
         username = "${username}";
         homeDirectory = "/home/${username}";
         stateVersion = "25.11";
+        shell.enableFishIntegration = true;
       };
     };
   };
@@ -53,7 +54,11 @@ in {
         "gamemode"
         "lpadmin"
       ];
-      shell = pkgs.bash;
+      shell = with pkgs; (
+        if shell == "fish"
+        then fish
+        else bash
+      );
       ignoreShellProgramCheck = true;
       linger = true;
     };

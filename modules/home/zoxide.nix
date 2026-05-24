@@ -1,11 +1,10 @@
 _: {
-  programs = {
-    zoxide = {
-      enable = true;
-      enableBashIntegration = true;
-      options = [
-        "--cmd cd"
-      ];
-    };
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+    enableBashIntegration = true;
+    options = [
+      "--cmd cd"
+    ];
   };
 }

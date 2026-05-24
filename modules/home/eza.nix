@@ -3,6 +3,7 @@
   programs.eza = {
     enable = true;
     icons = "auto";
+    enableFishIntegration = true;
     enableBashIntegration = true;
     git = true;
 

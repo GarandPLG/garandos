@@ -15,6 +15,10 @@
   gitUsername = "GarandPLG";
   gitEmail = "my@email.com";
 
+  # User shell
+  # Availabe options: "fish", "bash"
+  shell = "fish";
+
   # Hyprland Settings
   # Examples:
   # extraMonitorSettings = "monitor = Virtual-1,1920x1080@60,auto,1";
