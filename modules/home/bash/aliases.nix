@@ -140,8 +140,8 @@
 
     # Network aliases
     kssh-server = "kssh hp-t640-homeserver";
-    kssh-server-ts = "kssh hp-t640-homeserver-tailscale";
+    kssh-server-hs = "kssh hp-t640-homeserver-headscale";
     ssh-server = "ssh hp-t640-homeserver";
-    ssh-server-ts = "ssh hp-t640-homeserver-tailscale";
+    ssh-server-hs = "ssh hp-t640-homeserver-headscale";
   };
 }

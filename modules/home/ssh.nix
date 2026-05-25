@@ -9,8 +9,8 @@
         port = 22;
         identityFile = "~/.ssh/hp-t640-homeserver";
       };
-      "hp-t640-homeserver-tailscale" = {
-        hostname = "100.106.225.106";
+      "hp-t640-homeserver-headscale" = {
+        hostname = "100.64.0.2";
         user = "${username}";
         port = 22;
         identityFile = "~/.ssh/hp-t640-homeserver";
