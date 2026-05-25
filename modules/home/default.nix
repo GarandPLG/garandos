@@ -19,13 +19,16 @@ _: {
     ./easyeffects.nix
     ./eza.nix
     ./fzf.nix
+    ./gh.nix
     ./git.nix
     ./gtk.nix
     ./kdeConnect.nix
     ./lutris.nix
     ./nextcloud.nix
     ./obs-studio.nix
+    ./ollama.nix
     ./onlyoffice.nix
+    ./opencode.nix
     ./qt.nix
     ./ssh.nix
     ./starship.nix

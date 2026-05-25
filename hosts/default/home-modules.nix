@@ -7,6 +7,8 @@ _: {
     enable = true; # Zed Editor: a modern, high‑performance code editor
     remote-server.enable = true; # Remote Server: enable remote editing capabilities
   };
+  opencode.enable = true; # OpenCode: terminal coding agent
+  ollama.enable = false; # Ollama: Local Llms
 
   /*
   Web browsers

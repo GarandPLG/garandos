@@ -68,7 +68,6 @@ _: {
     */
     exercism.enable = false; # Exercism: coding practice platform
     lazygit.enable = false; # Lazygit: simple TUI for Git
-    opencode.enable = false; # OpenCode: tools for coding and development
     jan.enable = true; # Jan: AI chat UI
     logisim-evolution.enable = false; # Logisim-Evolution: Digital logic designer and simulator
 

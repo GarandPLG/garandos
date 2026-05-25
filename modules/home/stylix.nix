@@ -73,5 +73,10 @@
       opacity.enable = true;
       variant256Colors = true;
     };
+
+    opencode = {
+      enable = true;
+      colors.enable = true;
+    };
   };
 }
