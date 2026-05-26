@@ -101,6 +101,7 @@ _: {
     pixieditor.enable = true; # Pixieditor: Universal editor for all your 2D needs
     plex.enable = true; # Plex: media player and server client
     jellyfin.enable = true; # Jellyfin: foss media player
+    appImages.losslesscut.enable = false; # Losslesscut: Swiss army knife of lossless video/audio editing
 
     /*
     Utilities / Misc

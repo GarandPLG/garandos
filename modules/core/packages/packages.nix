@@ -31,14 +31,16 @@
     ttySolitaire = tty-solitaire;
     gimp = gimp;
     eyeOfGnome = eog;
-    kdenlive = kdePackages.kdenlive.overrideAttrs (old: {
-      postInstall =
-        (old.postInstall or "")
-        + ''
-          wrapProgram $out/bin/kdenlive \
-            --set QT_SCALE_FACTOR 0.8
-        '';
-    });
+    kdenlive =
+      kdePackages.kdenlive.overrideAttrs
+      (old: {
+        postInstall =
+          (old.postInstall or "")
+          + ''
+            wrapProgram $out/bin/kdenlive \
+              --set QT_SCALE_FACTOR 0.8
+          '';
+      });
     plex = [
       (
         plex-desktop.override {

@@ -14,6 +14,7 @@
   appImagePackages = {
     fluxer = pkgs.callPackage ./fluxer.nix {};
     helium = pkgs.callPackage ./helium.nix {};
+    losslesscut = pkgs.callPackage ./losslesscut.nix {};
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkAppImagePackage appImagePackages);
