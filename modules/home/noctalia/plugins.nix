@@ -1,7 +1,21 @@
-{lib, ...}: let
+{
+  lib,
+  config,
+  ...
+}: let
   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
 in {
-  programs.noctalia-shell = lib.mkForce {
+  options.nooctalia-plugins = {
+    mini-docker.enable = lib.mkEnableOption "Mini docker plugin";
+    timer.enable = lib.mkEnableOption "Timer plugin";
+    keybind-cheatsheet.enable = lib.mkEnableOption "Keybind cheatsheet plugin";
+    kde-connect.enable = lib.mkEnableOption "KDE Connect plugin";
+    screen-recorder.enable = lib.mkEnableOption "Screen-recorder plugin";
+    screenshot.enable = lib.mkEnableOption "Screenshot plugin";
+    ntfy-notifications.enable = lib.mkEnableOption "ntfy notifications plugin";
+  };
+
+  config.programs.noctalia-shell = lib.mkForce {
     plugins = {
       sources = [
         {
@@ -11,31 +25,31 @@ in {
         }
       ];
       states = {
-        mini-docker = {
+        mini-docker = lib.mkIf config.nooctalia-plugins.mini-docker.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        timer = {
+        timer = lib.mkIf config.nooctalia-plugins.timer.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        keybind-cheatsheet = {
+        keybind-cheatsheet = lib.mkIf config.nooctalia-plugins.keybind-cheatsheet.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        kde-connect = {
+        kde-connect = lib.mkIf config.nooctalia-plugins.kde-connect.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        screen-recorder = {
+        screen-recorder = lib.mkIf config.nooctalia-plugins.screen-recorder.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        screenshot = {
+        screenshot = lib.mkIf config.nooctalia-plugins.screenshot.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        ntfy-notifications = {
+        ntfy-notifications = lib.mkIf config.nooctalia-plugins.ntfy-notifications.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
