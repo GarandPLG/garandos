@@ -22,8 +22,8 @@ in
       install -m 444 -D ${appimageContents}/${pname}.desktop $out/share/applications/${pname}.desktop
       install -m 444 -D ${appimageContents}/usr/share/icons/hicolor/${iconSize}/apps/${pname}.png \
         $out/share/icons/hicolor/${iconSize}/apps/${pname}.png
-      # substituteInPlace $out/share/applications/${pname}.desktop \
-      #   --replace-fail 'Exec=AppRun' 'Exec=${pname}'
+      substituteInPlace $out/share/applications/${pname}.desktop \
+        --replace-fail 'Exec=AppRun' 'Exec=${pname}'
     '';
 
     meta = with lib; {
