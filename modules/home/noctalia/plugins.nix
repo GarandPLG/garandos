@@ -13,6 +13,7 @@ in {
     screen-recorder.enable = lib.mkEnableOption "Screen-recorder plugin";
     screenshot.enable = lib.mkEnableOption "Screenshot plugin";
     ntfy-notifications.enable = lib.mkEnableOption "ntfy notifications plugin";
+    tailscale.enable = lib.mkEnableOption "Tailscale plugin";
   };
 
   config.programs.noctalia-shell = lib.mkForce {
@@ -50,6 +51,10 @@ in {
           sourceUrl = sourceUrl;
         };
         ntfy-notifications = lib.mkIf config.nooctalia-plugins.ntfy-notifications.enable {
+          enabled = true;
+          sourceUrl = sourceUrl;
+        };
+        tailscale = lib.mkIf config.nooctalia-plugins.tailscale.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
@@ -106,6 +111,23 @@ in {
       #   maxMessages = 100;
       #   readMessageIds = [];
       # };
+      tailscale = {
+        refreshInterval = 5000;
+        compactMode = true;
+        showIpAddress = false;
+        showPeerCount = false;
+        hideDisconnected = false;
+        hideMullvadExitNodes = true;
+        showSearchBar = false;
+        terminalCommand = "kitty";
+        sshUsername = "";
+        pingCount = 5;
+        defaultPeerAction = "copy-ip";
+        taildropEnabled = true;
+        taildropDownloadDir = "~/Downloads";
+        taildropReceiveMode = "operator";
+        loginServer = "https://hs.garandplg.com";
+      };
     };
   };
 }

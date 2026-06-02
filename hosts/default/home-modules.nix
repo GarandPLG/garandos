@@ -78,5 +78,6 @@ _: {
     screen-recorder.enable = false; # Screen Recorder: Hardware-accelerated screen recording using gpu-screen-recorder with customizable video and audio settings
     screenshot.enable = false; # Screenshot: Quick screenshot button in bar for Hyprland, Sway, and Niri
     ntfy-notifications.enable = false; # ntfy Notifications: Subscribe to ntfy topics and receive push notifications directly in your bar, with full theming support
+    tailscale.enable = false; # Tailscale: Show Tailscale status in the menu bar and send/receive files via Taildrop.
   };
 }

@@ -12,6 +12,9 @@
       pinned = [];
     }
     {
+      id = "plugin:tailscale";
+    }
+    {
       id = "plugin:keybind-cheatsheet";
     }
     {
