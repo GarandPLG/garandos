@@ -15,6 +15,16 @@
     #     ];
     #   };
     # };
+    deputy = {
+      binary = {
+        path = lib.getExe pkgs.deputy;
+        arguments = [
+          "serve"
+          "--github-token"
+          "$(gh auth token)"
+        ];
+      };
+    };
     rust-analyzer = {
       binary = {
         path = lib.getExe pkgs.bash;

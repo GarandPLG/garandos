@@ -8,5 +8,6 @@
     uv
     python314
     ruff
+    deputy
   ];
 }
