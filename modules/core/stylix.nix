@@ -34,13 +34,20 @@
         popups = 12;
       };
     };
-    targets.limine = {
-      enable = true;
-      colors.enable = true;
-      image.enable = true;
-      imageScalingMode = {
+    targets = {
+      limine = {
         enable = true;
-        override = "tile";
+        colors.enable = true;
+        image.enable = true;
+        imageScalingMode = {
+          enable = true;
+          override = "tile";
+        };
+      };
+      kmscon = {
+        enable = false;
+        colors.enable = true;
+        fonts.enable = true;
       };
     };
   };

@@ -4,7 +4,13 @@
   ...
 }: {
   stylix.targets = {
-    librewolf.profileNames = ["${host}"];
+    librewolf = {
+      profileNames = ["${host}"];
+      enable = true;
+      firefoxGnomeTheme.enable = true;
+      fonts.enable = true;
+      inputs.enable = true;
+    };
 
     hyprland = {
       enable = true;
@@ -24,6 +30,13 @@
     };
 
     noctalia-shell.enable = true;
+
+    gtk = {
+      enable = true;
+      colors.enable = true;
+      flatpakSupport.enable = true;
+      fonts.enable = true;
+    };
 
     qt = {
       enable = true;
