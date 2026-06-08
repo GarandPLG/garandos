@@ -99,7 +99,7 @@ _: {
     gimp.enable = false; # GIMP: GNU Image Manipulation Program
     kdenlive.enable = true; # Kdenlive: video editing software
     pixieditor.enable = true; # Pixieditor: Universal editor for all your 2D needs
-    plex.enable = true; # Plex: media player and server client
+    plex.enable = false; # Plex: media player and server client
     jellyfin.enable = true; # Jellyfin: foss media player
     appImages.losslesscut.enable = true; # Losslesscut: Swiss army knife of lossless video/audio editing
 

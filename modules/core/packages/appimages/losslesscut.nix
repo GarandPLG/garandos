@@ -4,11 +4,12 @@
   fetchurl,
 }: let
   pname = "losslesscut";
-  version = "3.68.0";
+  version = "3.69.0";
+  hash = "sha256-F56q4nv/viWmVJpKcUR0EmtXwojO/DBwRvycYxOhJnY=";
 
   src = fetchurl {
     url = "https://github.com/mifi/lossless-cut/releases/download/v${version}/LosslessCut-linux-x86_64.AppImage";
-    sha256 = "sha256-/d+j1/XAQOzmx7S2bVUPar/Bx130CumbzOf2sY2sCzo=";
+    sha256 = hash;
   };
   appimageContents = appimageTools.extract {inherit pname version src;};
 

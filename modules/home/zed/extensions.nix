@@ -20,5 +20,6 @@ _: {
     "biome"
     "opencode"
     "fish"
+    "tera"
   ];
 }

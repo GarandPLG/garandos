@@ -12,6 +12,13 @@
     package = pkgs.anki;
     language = "pl_PL";
     style = "native";
-    profiles."${username}".sync.username = username;
+    profiles."${username}" = {
+      default = true;
+      sync = {
+        username = username;
+        url = "https://ass.garandplg.com/";
+        autoSync = true;
+      };
+    };
   };
 }

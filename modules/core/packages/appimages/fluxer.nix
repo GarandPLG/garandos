@@ -5,10 +5,11 @@
 }: let
   pname = "fluxer";
   version = "canary";
+  hash = "sha256-GdoBK+Z/d2quEIY8INM4IQy5tzzIBBM+3CgJXQn0qAw=";
 
   src = fetchurl {
     url = "https://api.fluxer.app/dl/desktop/stable/linux/x64/latest/appimage";
-    sha256 = "sha256-GdoBK+Z/d2quEIY8INM4IQy5tzzIBBM+3CgJXQn0qAw=";
+    sha256 = hash;
   };
   appimageContents = appimageTools.extract {inherit pname version src;};
 
