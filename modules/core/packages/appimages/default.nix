@@ -14,6 +14,7 @@
   appImagePackages = {
     fluxer = pkgs.callPackage ./fluxer.nix {};
     helium = pkgs.callPackage ./helium.nix {};
+    # logseq = pkgs.callPackage ./logseq.nix {};
     losslesscut = pkgs.callPackage ./losslesscut.nix {};
   };
 in {

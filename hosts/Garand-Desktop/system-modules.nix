@@ -88,7 +88,7 @@ _: {
     */
     bitwarden.enable = false; # Bitwarden: password manager (desktop)
     iotas.enable = true; # Iotas: lightweight notes manager
-    logseq.enable = false; # Logseq: knowledge base and outliner
+    # appImages.logseq.enable = false; # Logseq: knowledge base and outliner
 
     /*
     Media & Graphics

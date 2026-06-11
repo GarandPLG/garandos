@@ -19,7 +19,7 @@
     gnomeCalculator = gnome-calculator;
     gedit = gedit;
     iotas = iotas;
-    logseq = logseq;
+    # logseq = logseq;
     mattermost = mattermost-desktop;
     slack = slack;
     tutanota = tutanota-desktop;
