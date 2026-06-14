@@ -18,10 +18,10 @@
       dedicatedServer.openFirewall = true;
       gamescopeSession = lib.mkIf config.gamescope.enable {
         enable = true;
-        args = [
-          "--rt"
-          "--expose-wayland"
-        ];
+        # args = [
+        #   "--rt"
+        #   "--expose-wayland"
+        # ];
       };
       extraCompatPackages = [pkgs.proton-ge-bin];
     };
@@ -29,10 +29,10 @@
     gamescope = lib.mkIf config.gamescope.enable {
       enable = true;
       capSysNice = true;
-      args = [
-        "--rt"
-        "--expose-wayland"
-      ];
+      # args = [
+      #   # "--rt"
+      #   # "--expose-wayland"
+      # ];
     };
 
     gamemode = lib.mkIf config.gamemode.enable {
@@ -41,3 +41,5 @@
     };
   };
 }
+# gamescope -W 1920 -H 1080 -r 144 --force-grab-cursor -f --mangoapp --rt --expose-wayland --
+

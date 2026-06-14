@@ -35,6 +35,7 @@ _: {
   Gaming
   */
   lutris.enable = false; # Lutris: an open gaming platform
+  mangohud.enable = true; # MangoHud: Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
 
   /*
   Media recording and streaming

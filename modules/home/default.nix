@@ -24,6 +24,7 @@ _: {
     ./gtk.nix
     ./kdeConnect.nix
     ./lutris.nix
+    ./mangohud.nix
     ./nextcloud.nix
     ./obs-studio.nix
     ./ollama.nix
