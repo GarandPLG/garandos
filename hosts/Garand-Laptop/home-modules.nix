@@ -53,6 +53,16 @@ _: {
   anki.enable = true; # Anki: spaced‑repetition flashcard program
 
   /*
+  Productivity / Knowledge Management
+  */
+  obsidian = {
+    enable = true; # Obsidian: Powerful knowledge base that works on top of a local folder of plain text Markdown files
+    vaults = {
+      "BoM".enable = true; # Blood of Mages: ttrpg session
+    };
+  };
+
+  /*
   XDG desktop entries (PWA)
   */
   xdgDesktopEntries = {

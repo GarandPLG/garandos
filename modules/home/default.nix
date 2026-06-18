@@ -8,6 +8,7 @@ _: {
     ./kitty
     ./librewolf
     ./noctalia
+    ./obsidian
     ./scripts
     ./vscodium
     ./xdg

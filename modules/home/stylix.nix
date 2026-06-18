@@ -91,5 +91,15 @@
       enable = true;
       colors.enable = true;
     };
+
+    obsidian = {
+      enable = true;
+      colors.enable = true;
+      fonts.enable = true;
+      polarity.enable = true;
+      vaultNames = [
+        "BoM"
+      ];
+    };
   };
 }
