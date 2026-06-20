@@ -13,7 +13,7 @@ _: {
   /*
   Web browsers
   */
-  librewolf.enable = true; # Librewolf: a privacy-focused Firefox fork
+  librewolf.enable = false; # Librewolf: a privacy-focused Firefox fork
   ungoogled-chromium.enable = false; # Ungoogled Chromium: a privacy-focused Chromium fork
 
   /*
