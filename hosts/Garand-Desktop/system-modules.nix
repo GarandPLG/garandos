@@ -69,7 +69,7 @@ _: {
     */
     exercism.enable = false; # Exercism: coding practice platform
     lazygit.enable = false; # Lazygit: simple TUI for Git
-    jan.enable = true; # Jan: AI chat UI
+    jan.enable = false; # Jan: AI chat UI
     logisim-evolution.enable = false; # Logisim-Evolution: Digital logic designer and simulator
 
     /*

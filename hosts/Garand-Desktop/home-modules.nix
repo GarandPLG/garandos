@@ -75,6 +75,7 @@ _: {
       claude.enable = true; # Claude: a large language model
       glance.enable = true; # Glance: my home server dashboard
       jellyfinClient.enable = true; # Jellyfin: My Jellyfin
+      openWebUI.enable = true; # Open WebUI: Comprehensive suite for LLMs with a user-friendly WebUI
     };
   };
 
