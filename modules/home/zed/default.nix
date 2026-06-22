@@ -19,5 +19,6 @@
     ./user-settings
     ./extensions.nix
     ./extra-packages.nix
+    ./skills.nix
   ];
 }

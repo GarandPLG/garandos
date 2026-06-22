@@ -11,6 +11,7 @@ _: {
       warehouse.enable = false; # Flatpak manager
       flatseal.enable = false; # Flatpak permissions manager
       upscaler.enable = false; # Upscaler: Upscale and enhance images
+      arduino.enable = false; # Arduino: Open-source electronics prototyping platform
     };
   };
 

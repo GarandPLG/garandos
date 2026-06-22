@@ -15,6 +15,7 @@
     warehouse = "io.github.flattool.Warehouse";
     flatseal = "com.github.tchx84.Flatseal";
     upscaler = "io.gitlab.theevilskeleton.Upscaler";
+    arduino = "cc.arduino.IDE2";
   };
 in {
   options.flatpak.enable = lib.mkEnableOption "Flatpak";

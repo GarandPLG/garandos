@@ -66,6 +66,7 @@
         "vboxusers" # Virtual Box
         "gamemode"
         "lpadmin"
+        "dialout"
       ];
       shell = with pkgs; (
         if shell == "fish"
