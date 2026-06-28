@@ -10,6 +10,8 @@
     upg = "nh os switch -H ${host} --update  -d always";
     upf = "sudo nix flake update --flake /home/${username}/garandos";
     upf-gh = "nix flake update --option access-tokens \"github.com=$(gh auth token)\" --flake /home/${username}/garandos";
+    upf-pkgs = "sudo nix flake update --flake /home/${username}/garandos nixpkgs";
+    upf-pkgs-gh = "nix flake update --option access-tokens \"github.com=$(gh auth token)\" --flake /home/${username}/garandos nixpkgs";
     upf-undo = "git -C /home/${username}/garandos restore /home/${username}/garandos/flake.lock";
     upd-bt = "nh os boot -H ${host} -d always";
     upd-ts = "nh os test -H ${host} -d always";
