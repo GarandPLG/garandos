@@ -69,7 +69,7 @@
     "SUPER CONTROL, G, exec, gimp #\"GNU Image Manipulation Program\""
     "SUPER CONTROL, M, exec, mattermost-desktop #\"Mattermost team chat client\""
     "SUPER CONTROL, N, exec, noctalia-shell ipc call plugin:ntfy-notifications refresh #\"Refresh ntfy\""
-    "SUPER CONTROL, O, exec, flatpak run com.openwebui.open-webui #\"My own AI chat interface\""
+    "SUPER CONTROL, O, exec, dex ${desktopEntriesPath}/openWebUI.desktop #\"My own AI chat interface\""
     "SUPER CONTROL, R, exec, noctalia-shell ipc call plugin:screen-recorder toggle #\"Toogle screen recording\""
     "SUPER CONTROL, S, exec, signal-desktop #\"Signal encrypted messaging\""
     "SUPER CONTROL, T, exec, tsukimi #\"A simple Emby/Jellyfin Client\""

@@ -16,7 +16,6 @@
     flatseal = "com.github.tchx84.Flatseal";
     upscaler = "io.gitlab.theevilskeleton.Upscaler";
     arduino = "cc.arduino.IDE2";
-    openWebUI = "com.openwebui.open-webui";
   };
 in {
   options.flatpak.enable = lib.mkEnableOption "Flatpak";

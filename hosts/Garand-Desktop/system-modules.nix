@@ -12,7 +12,6 @@ _: {
       flatseal.enable = true; # Flatpak permissions manager
       upscaler.enable = true; # Upscaler: Upscale and enhance images
       arduino.enable = false; # Arduino: Open-source electronics prototyping platform
-      openWebUI.enable = true; # Open WebUI: Comprehensive suite for LLMs with a user-friendly WebUI
     };
   };
 

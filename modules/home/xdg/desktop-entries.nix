@@ -69,6 +69,13 @@
       iconUrl = "https://jellyfin.org/images/logo.svg";
       iconSha = "sha256-sRSB2rxThd4+vMmdpRTz+bEKgdrmF5NG4I74I6kfCyY=";
     }
+    {
+      name = "openWebUI";
+      displayName = "Open WebUI";
+      url = "https://ai.garandplg.com";
+      iconUrl = "https://ai.garandplg.com/static/favicon.png";
+      iconSha = "sha256-Vpij45UT57YwTslsMJNzqzrw9w/nlCk0Yd45WpTeqmU=";
+    }
   ];
 in {
   options.xdgDesktopEntries = {
