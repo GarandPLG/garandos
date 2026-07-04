@@ -56,6 +56,7 @@
     kys = "systemctl poweroff";
     jezus = "systemctl reboot";
     ookla = "speedtest";
+    ff = "fastfetch";
     hypr-cli = "hyprctl clients";
 
     # Navigation aliases
