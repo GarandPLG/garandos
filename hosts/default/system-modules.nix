@@ -4,6 +4,7 @@ _: {
   */
   docker.enable = false; # Docker: container runtime and management
   virtualbox.enable = false; # VirtualBox: PC emulator
+  virualization.enable = false; # GUI application for managing local and remote virtual machines through libvirt
   flatpak = {
     enable = false; # Flatpak: universal packaging system for Linux
     packages = {

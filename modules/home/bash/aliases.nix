@@ -6,16 +6,16 @@
   programs.bash.shellAliases = {
     # GarandOS aliases
     pullos = "git -C /home/${username}/garandos pull";
-    upd = "nh os switch -H ${host} -d always";
-    upg = "nh os switch -H ${host} --update  -d always";
-    upf = "sudo nix flake update --flake /home/${username}/garandos";
-    upf-gh = "nix flake update --option access-tokens \"github.com=$(gh auth token)\" --flake /home/${username}/garandos";
-    upf-pkgs = "sudo nix flake update --flake /home/${username}/garandos nixpkgs";
-    upf-pkgs-gh = "nix flake update --option access-tokens \"github.com=$(gh auth token)\" --flake /home/${username}/garandos nixpkgs";
-    upf-undo = "git -C /home/${username}/garandos restore /home/${username}/garandos/flake.lock";
-    upd-bt = "nh os boot -H ${host} -d always";
-    upd-ts = "nh os test -H ${host} -d always";
-    upd-bd = "nh os build -H ${host} -d always";
+    upd = "sudo nix flake update --flake /home/${username}/garandos";
+    upd-gh = "nix flake update --option access-tokens \"github.com=$(gh auth token)\" --flake /home/${username}/garandos";
+    upd-pkgs = "sudo nix flake update --flake /home/${username}/garandos nixpkgs";
+    upd-pkgs-gh = "nix flake update --option access-tokens \"github.com=$(gh auth token)\" --flake /home/${username}/garandos nixpkgs";
+    upd-undo = "git -C /home/${username}/garandos restore /home/${username}/garandos/flake.lock";
+    upg = "nh os switch -H ${host} -d always";
+    upg-upd = "nh os switch -H ${host} --update -d always";
+    upg-bt = "nh os boot -H ${host} -d always";
+    upg-ts = "nh os test -H ${host} -d always";
+    upg-bd = "nh os build -H ${host} -d always";
     tui = "garandos-tui";
     ncg = "nh clean all --optimise";
 

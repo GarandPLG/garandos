@@ -4,6 +4,7 @@ _: {
   */
   docker.enable = true; # Docker: container runtime and management
   virtualbox.enable = false; # VirtualBox: PC emulator
+  virualization.enable = true; # GUI application for managing local and remote virtual machines through libvirt
   flatpak = {
     enable = true; # Flatpak: universal packaging system for Linux
     packages = {
@@ -97,9 +98,9 @@ _: {
     eyeOfGnome.enable = true; # Eye of GNOME: image viewer
     switcheroo.enable = false; # Switcheroo: file conversion tool
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
-    gimp.enable = false; # GIMP: GNU Image Manipulation Program
+    gimp.enable = true; # GIMP: GNU Image Manipulation Program
     kdenlive.enable = true; # Kdenlive: video editing software
-    pixieditor.enable = true; # Pixieditor: Universal editor for all your 2D needs
+    pixieditor.enable = false; # Pixieditor: Universal editor for all your 2D needs
     plex.enable = false; # Plex: media player and server client
     jellyfin.enable = true; # Jellyfin: foss media player
     appImages.losslesscut.enable = true; # Losslesscut: Swiss army knife of lossless video/audio editing

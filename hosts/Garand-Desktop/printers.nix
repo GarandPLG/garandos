@@ -1,5 +1,5 @@
 {
-  printEnable = true;
+  printEnable = false;
 
   ensureDefaultPrinter = "Brother-T525W";
 

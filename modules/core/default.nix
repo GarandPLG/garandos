@@ -25,6 +25,7 @@
     ./user.nix
     ./ventoy.nix
     ./virtualbox.nix
+    ./virualization.nix
     ./xdg.nix
     ./xserver.nix
     ./zram.nix

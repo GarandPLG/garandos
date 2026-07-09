@@ -21,7 +21,7 @@
     };
     sounds = {
       enabled = true;
-      volume = 0.5;
+      volume = 0.1;
       separateSounds = false;
       criticalSoundFile = "/home/${username}/garandos/modules/home/noctalia/settings/notifications/payday-2-new-objective-sound-effect.mp3";
       normalSoundFile = "/home/${username}/garandos/modules/home/noctalia/settings/notifications/payday-2-new-objective-sound-effect.mp3";
