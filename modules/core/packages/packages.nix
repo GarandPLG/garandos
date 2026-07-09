@@ -76,6 +76,7 @@
     notify = notify-client;
     boxes = gnome-boxes;
     switcheroo = switcheroo;
+    simpleScan = simple-scan;
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);

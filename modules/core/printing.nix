@@ -31,8 +31,12 @@
     ipp-usb.enable = true;
   };
 
-  hardware.printers = lib.mkIf printEnable {
-    ensureDefaultPrinter = ensureDefaultPrinter;
-    ensurePrinters = ensurePrinters;
+  hardware = lib.mkIf printEnable {
+    printers = {
+      ensureDefaultPrinter = ensureDefaultPrinter;
+      ensurePrinters = ensurePrinters;
+    };
+
+    sane.enable = true;
   };
 }

@@ -113,5 +113,6 @@ _: {
     gedit.enable = false; # Gedit: GNOME text editor
     winboat.enable = false; # Winboat: Windows remote desktop via RDP
     adb.enable = false; # ADB: Android SDK platform tools
+    simpleScan.enable = false; # simple-scan: Simple scanning utility
   };
 }

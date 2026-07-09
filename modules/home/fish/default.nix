@@ -15,6 +15,9 @@
         set fish_greeting
         # fastfetch
       '';
+      shellInit = ''
+        set -gx LD_LIBRARY_PATH /etc/sane-libs $LD_LIBRARY_PATH
+      '';
     };
 
     nix-your-shell = {

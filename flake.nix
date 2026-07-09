@@ -66,11 +66,10 @@
 
     mkHost = hostName: let
       hostVars = import ./hosts/${hostName}/variables.nix;
-      hostPrinterVars = import ./hosts/${hostName}/printers.nix;
     in
       nixpkgs.lib.nixosSystem {
         inherit (hostVars) system;
-        specialArgs = hostVars // hostPrinterVars // {inherit inputs;};
+        specialArgs = hostVars // {inherit inputs;};
         modules = [
           ./profiles/${hostVars.profile}
           nix-flatpak.nixosModules.nix-flatpak

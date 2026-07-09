@@ -62,4 +62,24 @@
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is
   hostId = "5ab03f50";
+
+  # Whether printing services should be enabled.
+  printEnable = true;
+  # Name of the default printer.
+  ensureDefaultPrinter = "Brother_DCP-T510W";
+  # List of printers to ensure are configured.
+  ensurePrinters = [
+    {
+      deviceUri = "ipp://192.168.1.106/ipp";
+      location = "home";
+      name = "Brother_DCP-T525W";
+      model = "everywhere";
+    }
+    {
+      deviceUri = "ipp://192.168.1.159/ipp";
+      location = "home";
+      name = "Brother_DCP-T510W";
+      model = "everywhere";
+    }
+  ];
 }

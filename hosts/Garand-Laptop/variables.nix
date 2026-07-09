@@ -62,4 +62,21 @@
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is
   hostId = "7bc04e61";
+
+  printEnable = true;
+  ensureDefaultPrinter = "Brother_DCP-T510W";
+  ensurePrinters = [
+    {
+      deviceUri = "ipp://192.168.1.106/ipp";
+      location = "home";
+      name = "Brother_DCP-T525W";
+      model = "everywhere";
+    }
+    {
+      deviceUri = "ipp://192.168.1.159/ipp";
+      location = "home";
+      name = "Brother_DCP-T510W";
+      model = "everywhere";
+    }
+  ];
 }
