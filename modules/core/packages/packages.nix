@@ -76,7 +76,14 @@
     notify = notify-client;
     boxes = gnome-boxes;
     switcheroo = switcheroo;
-    simpleScan = simple-scan;
+    simpleScan = simple-scan.overrideAttrs (old: {
+      postFixup =
+        (old.postFixup or "")
+        + ''
+          wrapProgram $out/bin/simple-scan \
+            --prefix LD_LIBRARY_PATH : "/etc/sane-libs"
+        '';
+    });
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkPackage packages);

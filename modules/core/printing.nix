@@ -19,6 +19,7 @@
       defaultShared = true;
       openFirewall = true;
     };
+
     avahi = {
       enable = true;
       nssmdns4 = true;
@@ -28,7 +29,15 @@
         userServices = true;
       };
     };
+
     ipp-usb.enable = true;
+
+    udev = {
+      enable = true;
+      packages = with pkgs; [sane-airscan];
+    };
+
+    saned.enable = true;
   };
 
   hardware = lib.mkIf printEnable {
@@ -37,6 +46,10 @@
       ensurePrinters = ensurePrinters;
     };
 
-    sane.enable = true;
+    sane = {
+      enable = true;
+      extraBackends = with pkgs; [sane-airscan];
+      disabledDefaultBackends = ["escl"];
+    };
   };
 }
