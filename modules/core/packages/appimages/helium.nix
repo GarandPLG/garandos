@@ -4,8 +4,8 @@
   fetchurl,
 }: let
   pname = "helium";
-  version = "0.14.4.1";
-  hash = "sha256-91hO0NtjUxEZwUyMYe7RD1RfFIelYa8ExzLKRsLaZZo=";
+  version = "0.14.5.1";
+  hash = "sha256-JM4Tm4Le9Xcfq3fFMEu/DIK6817FEgBQ2rSwY093F04=";
 
   src = fetchurl {
     url = "https://github.com/imputnet/helium-linux/releases/download/${version}/helium-${version}-x86_64.AppImage";
