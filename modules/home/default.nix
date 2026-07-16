@@ -7,7 +7,7 @@ _: {
     ./hyprland
     ./kitty
     ./librewolf
-    ./noctalia
+    ./noctalia-shell
     ./obsidian
     ./scripts
     ./vscodium
