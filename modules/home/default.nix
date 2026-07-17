@@ -7,7 +7,8 @@ _: {
     ./hyprland
     ./kitty
     ./librewolf
-    ./noctalia-shell
+    ./noctalia
+    # ./noctalia-shell
     ./obsidian
     ./scripts
     ./vscodium
@@ -27,6 +28,7 @@ _: {
     ./lutris.nix
     ./mangohud.nix
     ./nextcloud.nix
+    ./nixpkgs.nix
     ./obs-studio.nix
     ./ollama.nix
     ./onlyoffice.nix

@@ -79,17 +79,17 @@ _: {
     };
   };
 
-  /*
-  Noctalia-shell plugins
-  */
-  nooctalia-plugins = {
-    mini-docker.enable = false; # Mini Docker: Manage Docker containers, images, volumes & networks
-    timer.enable = false; # Timer: A timer and stopwatch plugin for the bar & control center.
-    keybind-cheatsheet.enable = true; # Keybind Cheatsheet: Universal keyboard shortcuts keymap that automatically detects and displays keybindings for Hyprland, Niri, or MangoWC compositors.
-    kde-connect.enable = true; # KDE Connect: A Plugin integrating your mobile devices into a panel using KDEConnect
-    screen-recorder.enable = true; # Screen Recorder: Hardware-accelerated screen recording using gpu-screen-recorder with customizable video and audio settings
-    screenshot.enable = true; # Screenshot: Quick screenshot button in bar for Hyprland, Sway, and Niri
-    ntfy-notifications.enable = true; # ntfy Notifications: Subscribe to ntfy topics and receive push notifications directly in your bar, with full theming support
-    tailscale.enable = true; # Tailscale: Show Tailscale status in the menu bar and send/receive files via Taildrop.
-  };
+  # /*
+  # Noctalia-shell plugins
+  # */
+  # noctalia-plugins = {
+  #   mini-docker.enable = false; # Mini Docker: Manage Docker containers, images, volumes & networks
+  #   timer.enable = false; # Timer: A timer and stopwatch plugin for the bar & control center.
+  #   keybind-cheatsheet.enable = true; # Keybind Cheatsheet: Universal keyboard shortcuts keymap that automatically detects and displays keybindings for Hyprland, Niri, or MangoWC compositors.
+  #   kde-connect.enable = true; # KDE Connect: A Plugin integrating your mobile devices into a panel using KDEConnect
+  #   screen-recorder.enable = true; # Screen Recorder: Hardware-accelerated screen recording using gpu-screen-recorder with customizable video and audio settings
+  #   screenshot.enable = true; # Screenshot: Quick screenshot button in bar for Hyprland, Sway, and Niri
+  #   ntfy-notifications.enable = true; # ntfy Notifications: Subscribe to ntfy topics and receive push notifications directly in your bar, with full theming support
+  #   tailscale.enable = true; # Tailscale: Show Tailscale status in the menu bar and send/receive files via Taildrop.
+  # };
 }

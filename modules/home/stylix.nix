@@ -30,6 +30,7 @@
     };
 
     noctalia-shell.enable = true;
+    noctalia.enable = true;
 
     gtk = {
       enable = true;

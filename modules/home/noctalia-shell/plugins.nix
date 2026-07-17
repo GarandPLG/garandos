@@ -5,7 +5,7 @@
 }: let
   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
 in {
-  options.nooctalia-plugins = {
+  options.noctalia-plugins = {
     mini-docker.enable = lib.mkEnableOption "Mini docker plugin";
     timer.enable = lib.mkEnableOption "Timer plugin";
     keybind-cheatsheet.enable = lib.mkEnableOption "Keybind cheatsheet plugin";
@@ -26,35 +26,35 @@ in {
         }
       ];
       states = {
-        mini-docker = lib.mkIf config.nooctalia-plugins.mini-docker.enable {
+        mini-docker = lib.mkIf config.noctalia-plugins.mini-docker.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        timer = lib.mkIf config.nooctalia-plugins.timer.enable {
+        timer = lib.mkIf config.noctalia-plugins.timer.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        keybind-cheatsheet = lib.mkIf config.nooctalia-plugins.keybind-cheatsheet.enable {
+        keybind-cheatsheet = lib.mkIf config.noctalia-plugins.keybind-cheatsheet.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        kde-connect = lib.mkIf config.nooctalia-plugins.kde-connect.enable {
+        kde-connect = lib.mkIf config.noctalia-plugins.kde-connect.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        screen-recorder = lib.mkIf config.nooctalia-plugins.screen-recorder.enable {
+        screen-recorder = lib.mkIf config.noctalia-plugins.screen-recorder.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        screenshot = lib.mkIf config.nooctalia-plugins.screenshot.enable {
+        screenshot = lib.mkIf config.noctalia-plugins.screenshot.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        ntfy-notifications = lib.mkIf config.nooctalia-plugins.ntfy-notifications.enable {
+        ntfy-notifications = lib.mkIf config.noctalia-plugins.ntfy-notifications.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };
-        tailscale = lib.mkIf config.nooctalia-plugins.tailscale.enable {
+        tailscale = lib.mkIf config.noctalia-plugins.tailscale.enable {
           enabled = true;
           sourceUrl = sourceUrl;
         };

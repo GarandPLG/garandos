@@ -11,6 +11,7 @@
   keyboardLayout,
   gitEmail,
   location,
+  stylixImage,
   ...
 }: {
   imports = [inputs.home-manager.nixosModules.home-manager];
@@ -31,6 +32,7 @@
         gitEmail
         gitUsername
         location
+        stylixImage
         ;
     };
     users.${username} = {
@@ -43,6 +45,7 @@
         username = "${username}";
         homeDirectory = "/home/${username}";
         stateVersion = "25.11";
+        pointerCursor.enable = true;
         shell.enableFishIntegration =
           if shell == "fish"
           then true

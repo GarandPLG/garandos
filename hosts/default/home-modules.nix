@@ -82,7 +82,7 @@ _: {
   /*
   Noctalia-shell plugins
   */
-  nooctalia-plugins = {
+  noctalia-plugins = {
     mini-docker.enable = false; # Mini Docker: Manage Docker containers, images, volumes & networks
     timer.enable = false; # Timer: A timer and stopwatch plugin for the bar & control center.
     keybind-cheatsheet.enable = false; # Keybind Cheatsheet: Universal keyboard shortcuts keymap that automatically detects and displays keybindings for Hyprland, Niri, or MangoWC compositors.
