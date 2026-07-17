@@ -1,4 +1,6 @@
 _: {
+  programs.noctalia.settings.config_version = 2;
+
   imports = [
     ./notification
     ./plugins
