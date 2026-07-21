@@ -55,7 +55,7 @@
     "SUPER ALT, G, exec, dex ${desktopEntriesPath}/glance.desktop #\"Glance server panel\""
     "SUPER ALT, K, exec, kdenlive #\"Video editing software\""
     "SUPER ALT, M, exec, dex ${desktopEntriesPath}/mastodon.desktop #\"Mastodon social network client\""
-    # "SUPER ALT, N, exec, noctalia-shell ipc call plugin:ntfy-notifications toggle #\"Open ntfy panel\""
+    "SUPER ALT, N, exec, noctalia msg panel-toggle avivbintangaringga/nix-monitor:panel #\"Open nix-monitor\""
     "SUPER ALT, O, exec, obsidian #\"Notes app\""
     "SUPER ALT, P, exec, noctalia msg settings-open #\"Open settings panel\""
     "SUPER ALT, R, exec, noctalia msg plugin noctalia/screen_recorder:service all replay-toggle #\"Toggle Replay\""
@@ -66,6 +66,7 @@
 
   controlBinds = [
     "SUPER CONTROL, C, exec, noctalia msg power-cycle #\"Cycle through power profiles\""
+    "SUPER CONTROL, F, exec, noctalia msg panel-toggle nightwatch75/file-search:panel #\"File search\""
     "SUPER CONTROL, G, exec, gimp #\"GNU Image Manipulation Program\""
     "SUPER CONTROL, M, exec, mattermost-desktop #\"Mattermost team chat client\""
     # "SUPER CONTROL, N, exec, noctalia-shell ipc call plugin:ntfy-notifications refresh #\"Refresh ntfy\""
@@ -73,7 +74,7 @@
     "SUPER CONTROL, R, exec, noctalia msg plugin noctalia/screen_recorder:service all toggle #\"Toogle screen recording\""
     "SUPER CONTROL, S, exec, signal-desktop #\"Signal encrypted messaging\""
     "SUPER CONTROL, T, exec, tsukimi #\"A simple Emby/Jellyfin Client\""
-    "SUPER CONTROL, P, exec, hyprpicker -a #\"Pick color from screen\""
+    "SUPER CONTROL, P, exec, noctalia msg panel-toggle oldirtty/color_picker:panel #\"Pick color from screen\""
   ];
 
   windowManagementBinds = [
