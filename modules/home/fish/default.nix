@@ -10,7 +10,7 @@
         then true
         else false;
       package = pkgs.fish;
-      generateCompletions = false;
+      generateCompletions = true;
       interactiveShellInit = ''
         set fish_greeting
         # fastfetch

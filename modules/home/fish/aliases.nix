@@ -18,6 +18,7 @@
     upg-bd = "nh os build -H ${host} -d always";
     tui = "garandos-tui";
     ncg = "nh clean all --optimise";
+    nsf = "nix-search-tv print | fzf --multi --preview 'nix-search-tv preview {}' --scheme history --bind='enter:accept' | cut -d' ' -f2 | awk '{printf \"nixpkgs#%s \", $0}' | xargs -ro nix shell";
 
     # Development aliases
     ## Django

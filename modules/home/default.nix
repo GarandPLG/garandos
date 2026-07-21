@@ -28,6 +28,7 @@ _: {
     ./lutris.nix
     ./mangohud.nix
     ./nextcloud.nix
+    ./nix-search-tv.nix
     ./nixpkgs.nix
     ./obs-studio.nix
     ./ollama.nix
