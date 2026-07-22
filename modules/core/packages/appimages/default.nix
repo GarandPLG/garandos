@@ -16,6 +16,7 @@
     helium = pkgs.callPackage ./helium.nix {};
     # logseq = pkgs.callPackage ./logseq.nix {};
     losslesscut = pkgs.callPackage ./losslesscut.nix {};
+    omniget = pkgs.callPackage ./omniget.nix {};
   };
 in {
   imports = builtins.attrValues (builtins.mapAttrs mkAppImagePackage appImagePackages);

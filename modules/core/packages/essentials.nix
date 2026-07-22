@@ -7,6 +7,8 @@
     cowsay
     sl
     fortune
+    yt-dlp
+    pdfium-binaries
     # File management
     trash-cli
     file-roller
