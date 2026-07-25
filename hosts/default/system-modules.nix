@@ -64,6 +64,7 @@ _: {
     spaceCadetPinball.enable = false; # SpaceCadet Pinball: classic pinball game
     ttySolitaire.enable = false; # TTY Solitaire: terminal‑based solitaire game
     heroic.enable = false; # Native GOG, Epic, and Amazon Games Launcher for Linux, Windows and Mac
+    kmines.enable = false; # KMines: KMines is the classic Minesweeper game
 
     /*
     Development Tools

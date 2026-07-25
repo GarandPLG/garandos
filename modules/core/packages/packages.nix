@@ -75,6 +75,7 @@
     logisim-evolution = logisim-evolution;
     notify = notify-client;
     boxes = gnome-boxes;
+    kmines = kdePackages.kmines;
     switcheroo = switcheroo;
     simpleScan = simple-scan.overrideAttrs (old: {
       postFixup =
