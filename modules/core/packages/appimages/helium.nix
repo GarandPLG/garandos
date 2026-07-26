@@ -4,8 +4,8 @@
   fetchurl,
 }: let
   pname = "helium";
-  version = "0.14.8.2";
-  hash = "sha256-7Kde6Crsr6LdKnfER+6yE7JkU6+10xXtJ1GQEHhBtqg=";
+  version = "0.14.9.1";
+  hash = "sha256-cuQiMGhOPjE7ixuZiFGpRuGF9SdVcNPYUXSXhjZBLKQ=";
 
   src = fetchurl {
     url = "https://github.com/imputnet/helium-linux/releases/download/${version}/helium-${version}-x86_64.AppImage";
@@ -37,4 +37,3 @@ in
     };
   }
 # https://github.com/imputnet/helium-linux/releases/download/0.11.7.1/helium-0.11.7.1-x86_64.AppImage
-
