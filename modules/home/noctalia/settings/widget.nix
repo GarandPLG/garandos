@@ -38,9 +38,9 @@
     spacer_3.type = "spacer";
 
     sysmon = {
-      display = "text";
+      visualization = "text";
       path = "/home";
-      stat = "disk_pct";
+      stat = "disk_free_pct";
     };
 
     tray.hidden = ["nm-applet" "Easy Effects"];
