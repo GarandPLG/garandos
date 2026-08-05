@@ -24,6 +24,7 @@ _: {
       center = ["workspaces"];
       end = [
         "tray"
+        "keybinds"
         "notifications"
         "bluetooth"
         "battery"

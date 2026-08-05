@@ -7,7 +7,7 @@
 
   mainBinds = [
     "SUPER, A, exec, anki #\"Flashcard learning application\""
-    "SUPER, B, exec, bitwarden #\"Password manager\""
+    "SUPER, B, exec, noctalia msg panel-toggle launcher \"/bw \" #\"Password manager\""
     "SUPER, C, exec, chromium #\"Ungoogled Chromium\""
     "SUPER, D, exec, vesktop #\"Discord client\""
     "SUPER, E, exec, noctalia msg panel-toggle launcher \"/emo \" #\"Emoji picker\""
@@ -37,7 +37,7 @@
     "SUPER SHIFT, Escape, exec, noctalia msg panel-toggle session #\"Open Session Menu\""
     "SUPER SHIFT, G, exec, dex ${desktopEntriesPath}/chatgpt.desktop #\"ChatGPT AI chat\""
     "SUPER SHIFT, J, exec, dex ${desktopEntriesPath}/jellyfinClient.desktop #\"Jellyfin PWA\""
-    # "SUPER SHIFT, K, exec, noctalia-shell ipc call plugin:keybind-cheatsheet toggle #\"Toggle keybind cheatsheet\""
+    "SUPER SHIFT, K, exec, noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet #\"Toggle keybind cheatsheet\""
     "SUPER SHIFT, M, exec, plexamp #\"Music player for Plex\""
     "SUPER SHIFT, N, exec, nextcloud #\"Nextcloud desktop sync client\""
     "SUPER SHIFT, O, exec, obs #\"Open Broadcaster Software\""

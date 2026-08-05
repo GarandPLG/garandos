@@ -11,7 +11,7 @@
       scale = 1.3;
     };
 
-    cpu.display = "text";
+    cpu.visualization = "gauge";
 
     launcher.glyph = "rocket";
 
@@ -20,25 +20,27 @@
     network.show_label = false;
 
     network_rx = {
-      display = "text";
+      visualization = "gauge";
       network_speed_compact = true;
     };
 
     network_tx = {
-      display = "text";
+      visualization = "gauge";
       network_speed_compact = true;
     };
 
-    ram.display = "text";
+    ram.visualization = "gauge";
 
     recorder.type = "noctalia/screen_recorder:recorder";
+
+    keybinds.type = "kenn/keybind-cheatsheet:keybinds";
 
     spacer_2.type = "spacer";
 
     spacer_3.type = "spacer";
 
     sysmon = {
-      visualization = "text";
+      visualization = "gauge";
       path = "/home";
       stat = "disk_free_pct";
     };

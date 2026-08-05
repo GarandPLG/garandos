@@ -89,7 +89,6 @@ _: {
     /*
     Productivity / Knowledge Management
     */
-    bitwarden.enable = false; # Bitwarden: password manager (desktop)
     iotas.enable = true; # Iotas: lightweight notes manager
     # appImages.logseq.enable = false; # Logseq: knowledge base and outliner
 

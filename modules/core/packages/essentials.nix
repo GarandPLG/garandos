@@ -9,6 +9,9 @@
     fortune
     yt-dlp
     pdfium-binaries
+    bitwarden-cli
+    xdg-utils
+    gcc
     # File management
     trash-cli
     file-roller
