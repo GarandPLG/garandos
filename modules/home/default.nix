@@ -34,6 +34,7 @@ _: {
     ./ollama.nix
     ./onlyoffice.nix
     ./opencode.nix
+    ./prismlauncher.nix
     ./qt.nix
     ./ssh.nix
     ./starship.nix

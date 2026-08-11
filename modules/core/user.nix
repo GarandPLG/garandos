@@ -68,6 +68,7 @@
         "wheel" # sudo access
         "vboxusers" # Virtual Box
         "gamemode"
+        "video"
         "lpadmin"
         "dialout"
       ];

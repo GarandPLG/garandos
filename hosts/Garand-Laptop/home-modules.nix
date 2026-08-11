@@ -36,6 +36,7 @@ _: {
   */
   lutris.enable = false; # Lutris: an open gaming platform
   mangohud.enable = true; # MangoHud: Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
+  prismlauncher.enable = false; # Prism Launcher: Minecraft modded launcher
 
   /*
   Media recording and streaming

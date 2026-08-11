@@ -25,7 +25,6 @@
     exercism = exercism;
     jan = jan;
     lazygit = lazygit;
-    prismlauncher = inputs.prismlauncher-cracked.packages.${system}.default;
     spaceCadetPinball = space-cadet-pinball;
     ttySolitaire = tty-solitaire;
     gimp = gimp;

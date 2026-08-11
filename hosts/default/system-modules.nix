@@ -60,7 +60,6 @@ _: {
     /*
     Gaming
     */
-    prismlauncher.enable = false; # Prism Launcher: Minecraft modded launcher
     spaceCadetPinball.enable = false; # SpaceCadet Pinball: classic pinball game
     ttySolitaire.enable = false; # TTY Solitaire: terminal‑based solitaire game
     heroic.enable = false; # Native GOG, Epic, and Amazon Games Launcher for Linux, Windows and Mac
