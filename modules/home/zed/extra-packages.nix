@@ -9,5 +9,7 @@
     python314
     ruff
     deputy
+    tailwindcss-language-server
+    typescript-language-server
   ];
 }

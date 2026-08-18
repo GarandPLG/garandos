@@ -25,6 +25,8 @@ _: {
       tab_size = 2;
     };
     TypeScript = {
+      language_servers = ["typescript-language-server" "!vtsls"];
+      colorize_brackets = true;
       formatter.language_server.name = "biome";
       code_actions_on_format = {
         "source.fixAll.biome" = true;
@@ -33,6 +35,7 @@ _: {
       tab_size = 2;
     };
     Astro = {
+      language_servers = ["typescript-language-server" "!vtsls"];
       formatter.language_server.name = "biome";
       code_actions_on_format = {
         "source.fixAll.biome" = true;
@@ -41,6 +44,8 @@ _: {
       tab_size = 2;
     };
     "Vue.js" = {
+      language_servers = ["vue-language-server" "!vetur" "typescript-language-server" "!vtsls"];
+      colorize_brackets = true;
       formatter.language_server.name = "biome";
       code_actions_on_format = {
         "source.fixAll.biome" = true;
@@ -65,6 +70,10 @@ _: {
       tab_size = 2;
     };
     CSS = {
+      language_servers = [
+        "tailwindcss-intellisense-css"
+        "!vscode-css-language-server"
+      ];
       formatter.language_server.name = "biome";
       code_actions_on_format = {
         "source.fixAll.biome" = true;

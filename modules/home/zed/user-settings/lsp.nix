@@ -15,6 +15,62 @@
     #     ];
     #   };
     # };
+    vue-language-server = {
+      initialization_options = {
+        vue.hybridMode = true;
+        typescript.tsdk = "./node_modules/typescript/lib";
+      };
+      settings = {
+        "vue.inlayHints.inlineHandlerLeading" = true;
+        "vue.inlayHints.missingProps" = true;
+        "vue.inlayHints.optionsWrapper" = true;
+        "vue.inlayHints.vBindShorthand" = true;
+        "vue.inlayHints.destructuredProps" = true;
+
+        "vue.format.template.initialIndent" = true;
+        "vue.format.script.initialIndent" = true;
+        "vue.format.style.initialIndent" = true;
+
+        "vue.editor.focusMode" = true;
+        "vue.editor.reactivityVisualization" = true;
+        "vue.editor.templateInterpolationDecorators" = true;
+
+        "vue.hover.rich" = true;
+        "vue.autoInsert.bracketSpacing" = true;
+      };
+    };
+    typescript-language-server.initialization_options.preferences = {
+      includeInlayParameterNameHints = "all";
+      includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+      includeInlayFunctionParameterTypeHints = true;
+      includeInlayVariableTypeHints = true;
+      includeInlayVariableTypeHintsWhenTypeMatchesName = true;
+      includeInlayPropertyDeclarationTypeHints = true;
+      includeInlayFunctionLikeReturnTypeHints = true;
+      includeInlayEnumMemberValueHints = true;
+    };
+    tailwindcss-language-server = {
+      settings = {
+        includeLanguages.vue = "html";
+        classFunctions = ["cva" "cx" "cn"];
+      };
+      experimental.classRegex = [
+        "class=\"([^\"]*)\""
+        "class='([^']*)'"
+        ":class=\"([^\"]*)\""
+        ":class='([^']*)'"
+        "\\.className\\s*[+]?=\\s*['\"]([^'\"]*)['\"]"
+        "\\.setAttributeNS\\(.*,\\s*['\"]class['\"],\\s*['\"]([^'\"]*)['\"]"
+        "\\.setAttribute\\(['\"]class['\"],\\s*['\"]([^'\"]*)['\"]"
+        "\\.classList\\.add\\(['\"]([^'\"]*)['\"]"
+        "\\.classList\\.remove\\(['\"]([^'\"]*)['\"]"
+        "\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]"
+        "\\.classList\\.contains\\(['\"]([^'\"]*)['\"]"
+        "\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]"
+        "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
+        "[cls|cn|className]\\s\\:\\=\\s\"([^\"]*)"
+      ];
+    };
     deputy = {
       binary = {
         path = lib.getExe pkgs.deputy;

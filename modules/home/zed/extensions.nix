@@ -4,7 +4,7 @@ _: {
     "dockerfile"
     "git-firefly"
     "vue"
-    "astro"
+    # "astro"
     "docker-compose"
     "nix"
     "csv"
