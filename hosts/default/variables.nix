@@ -50,18 +50,29 @@
   # Default background
   # Add new images to ~/garandos/wallpapers
   # stylixImage = "Attack-on-Titan-1.jpg"; # og/10
-  stylixImage = "Attack-on-Titan-2.jpg"; # 9/10
+  # stylixImage = "Attack-on-Titan-2.jpg"; # 9/10
   # stylixImage = "Attack-on-Titan-3.jpg"; # 7.5/10
   # stylixImage = "Avatar-1.jpg"; # 5/10
   # stylixImage = "Avatar-2.jpg"; # 4/10
   # stylixImage = "Avatar-3.jpg"; # 2/10
   # stylixImage = "Avatar-4.jpg"; # 3/10
+  # stylixImage = "Avatar-5.jpg"; # 3/10
+  # stylixImage = "Avatar-6.jpg"; # 5/10
+  stylixImage = "Avatar-7.jpg"; # 7/10
   # stylixImage = "Edge-of-Tomorrow-1.jpg"; # 2/10
   # stylixImage = "Friren-1.jpg"; # 6.5/10
   # stylixImage = "Friren-2.jpg"; # 2/10
   # stylixImage = "Friren-3.jpg"; # 4/10
   # stylixImage = "Jablon.png"; # 1/10
+  # stylixImage = "Kapitan-bomba.jpg"; # 8/10
+  # stylixImage = "SoA-1.jpg"; # 4/10
+  # stylixImage = "SoA-2.jpg"; # 4/10
+  # stylixImage = "SoA-3.jpg"; # 3/10
+  # stylixImage = "SoA-4.jpg"; # 4/10
+  # stylixImage = "SoA-5.jpg"; # 5/10
+  # stylixImage = "SoA-6.jpg"; # 6/10
   # stylixImage = "Song-of-the-Sea-1.jpg"; # 3/10
+  # stylixImage = "V-for-vendetta.jpg"; # 7.5/10
   # stylixImage = "Wolfwalkers-1.jpg"; # 6/10
   # stylixImage = "Wolfwalkers-2.jpg"; # 5/10
 
