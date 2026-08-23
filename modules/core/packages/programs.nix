@@ -25,6 +25,8 @@
       enableSSHSupport = true;
     };
 
+    solaar.enable = false;
+
     nix-ld = {
       enable = true;
       # libraries = with pkgs; [
