@@ -8,7 +8,7 @@
     sl
     fortune
     yt-dlp
-    pdfium-binaries
+    pdfium
     bitwarden-cli
     xdg-utils
     gcc

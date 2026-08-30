@@ -41,7 +41,7 @@ _: {
   /*
   Media recording and streaming
   */
-  obs-studio.enable = true; # OBS Studio: streaming and recording software
+  obs-studio.enable = false; # OBS Studio: streaming and recording software
 
   /*
   Office suite
