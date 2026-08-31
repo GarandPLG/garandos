@@ -98,11 +98,11 @@ _: {
     switcheroo.enable = false; # Switcheroo: file conversion tool
     freetube.enable = false; # FreeTube: privacy‑friendly YouTube client
     gimp.enable = true; # GIMP: GNU Image Manipulation Program
-    kdenlive.enable = true; # Kdenlive: video editing software
+    kdenlive.enable = false; # Kdenlive: video editing software
     pixieditor.enable = false; # Pixieditor: Universal editor for all your 2D needs
     plex.enable = false; # Plex: media player and server client
     jellyfin.enable = true; # Jellyfin: foss media player
-    appImages.losslesscut.enable = true; # Losslesscut: Swiss army knife of lossless video/audio editing
+    appImages.losslesscut.enable = false; # Losslesscut: Swiss army knife of lossless video/audio editing
 
     /*
     Utilities / Misc
