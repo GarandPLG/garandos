@@ -17,6 +17,7 @@ _: {
     ./anki.nix
     ./bat.nix
     ./btop.nix
+    ./cargo.nix
     ./cava.nix
     ./easyeffects.nix
     ./eza.nix
