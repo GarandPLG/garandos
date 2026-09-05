@@ -12,10 +12,3 @@
     ./settings
   ];
 }
-# {
-#   ...
-# }: {
-#   programs.noctalia.settings = {
-#   };
-# }
-
