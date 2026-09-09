@@ -16,10 +16,10 @@ _: {
           };
         }
         {
-          name = "zai-glm-4.7";
-          display_name = "Z.ai GLM 4.7";
+          name = "qwen-3.8-27b";
+          display_name = "Qwen 3.8 27B";
           max_tokens = 64000;
-          max_output_tokens = 40000;
+          max_output_tokens = 32000;
           capabilities = {
             tools = true;
             images = true;
@@ -45,9 +45,9 @@ _: {
           };
         }
         {
-          name = "zai-glm-4.7";
-          display_name = "Z.ai GLM 4.7";
-          max_tokens = 131000;
+          name = "qwen-3.8-27b";
+          display_name = "Qwen 3.8 27B";
+          max_tokens = 128000;
           max_output_tokens = 40000;
           capabilities = {
             tools = true;
