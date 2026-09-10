@@ -22,8 +22,8 @@
 
     # Development aliases
     ## Django
-    srvenv = "source .venv/bin/activate";
-    "..srvenv" = "source ../.venv/bin/activate";
+    srvenv = "source .venv/bin/activate.fish";
+    "..srvenv" = "source ../.venv/bin/activate.fish";
     uv-add = "uv add -r requirements.txt";
     pm = "uv run manage.py";
     pm-rs = "uv run manage.py runserver";
