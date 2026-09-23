@@ -51,6 +51,8 @@
     dcd = "docker compose down";
     dcb = "docker compose build";
     dcub = "docker compose up -d --build";
+    dr = "docker compose down && docker compose up -d";
+    dbr = "docker compose down && docker compose up --build -d";
 
     # System aliases
     # flush-codium = "sudo killall codium && sudo rm -rf ~/.config/VSCodium/Cache && sudo rm -rf ~/.config/VSCodium/CachedData";

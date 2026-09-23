@@ -44,6 +44,8 @@
     nbd = "nix build .#develop";
     nrd = "nix run .#develop";
     nbrd = "nix build .#develop && nix run .#develop";
+    dr = "docker compose down && docker compose up -d";
+    dbr = "docker compose down && docker compose up --build -d";
 
     # Development aliases for docker
     dcu = "docker compose up -d";
