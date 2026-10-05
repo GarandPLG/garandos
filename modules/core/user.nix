@@ -39,7 +39,7 @@
       imports = [
         ./../home
         ../../hosts/${host}/home-modules.nix
-        inputs.noctalia.homeModules.default
+        # inputs.noctalia.homeModules.default
       ];
       home = {
         username = "${username}";
