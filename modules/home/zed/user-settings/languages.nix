@@ -1,9 +1,17 @@
 _: {
   programs.zed-editor.userSettings.languages = {
-    Nix.language_servers = [
-      "nixd"
-      "!nil"
-    ];
+    Nix = {
+      format_on_save = "on";
+      tab_size = 2;
+      language_servers = [
+        "nixd"
+        "!nil"
+      ];
+      formatter.external = {
+        command = "alejandra";
+        arguments = ["--quiet" "--"];
+      };
+    };
     Python = {
       format_on_save = "off";
       formatter.language_server.name = "ruff";
@@ -84,6 +92,11 @@ _: {
     "C++" = {
       format_on_save = "on";
       tab_size = 2;
+    };
+    CSharp = {
+      format_on_save = "on";
+      tab_size = 2;
+      language_servers = ["!csharp-ls" "!roslyn" "omnisharp"];
     };
   };
 }

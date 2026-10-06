@@ -123,19 +123,12 @@
         };
       };
     };
-    nixd = {
-      initialization_options.formatting.command = [
-        "alejandra"
-        "--quiet"
-        "--"
-      ];
-      settings = {
-        nixpkgs.expr = "import <nixpkgs> { }";
-        formatting.command = ["alejandra"];
-        options = {
-          nixos.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options";
-          home-manager.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options.home-manager.users.type.getSubOptions []";
-        };
+    nixd.settings = {
+      nixpkgs.expr = "import <nixpkgs> { }";
+      formatting.command = ["alejandra"];
+      options = {
+        nixos.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options";
+        home-manager.expr = "(builtins.getFlake (builtins.toString \"/home/${username}/garandos\")).nixosConfigurations.\"${host}\".options.home-manager.users.type.getSubOptions []";
       };
     };
     ruff = {
