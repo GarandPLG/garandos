@@ -19,6 +19,7 @@ _: {
     ./btop.nix
     ./cargo.nix
     ./cava.nix
+    ./codex.nix
     ./easyeffects.nix
     ./eza.nix
     ./fzf.nix
@@ -37,6 +38,7 @@ _: {
     ./opencode.nix
     ./prismlauncher.nix
     ./qt.nix
+    ./skills.nix
     ./ssh.nix
     ./starship.nix
     ./stylix.nix
