@@ -11,6 +11,7 @@ _: {
     ./noctalia
     # ./noctalia-shell
     ./obsidian
+    ./opencode
     ./scripts
     ./vscodium
     ./xdg
@@ -35,7 +36,6 @@ _: {
     ./obs-studio.nix
     ./ollama.nix
     ./onlyoffice.nix
-    ./opencode.nix
     ./prismlauncher.nix
     ./qt.nix
     ./skills.nix

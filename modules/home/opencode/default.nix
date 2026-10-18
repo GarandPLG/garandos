@@ -9,5 +9,15 @@
   config.programs.opencode = lib.mkIf config.opencode.enable {
     enable = true;
     package = pkgs.opencode;
+    validateFiles = {
+      config = true;
+      tui = true;
+    };
   };
+
+  imports = [
+    ./settings
+    ./skills
+    ./extra-packages.nix
+  ];
 }
