@@ -21,5 +21,6 @@ _: {
     "opencode"
     "fish"
     "tera"
+    "csharp"
   ];
 }

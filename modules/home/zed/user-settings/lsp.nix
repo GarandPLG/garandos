@@ -153,5 +153,9 @@
         };
       };
     };
+    omnisharp.binary = {
+      path = lib.getExe pkgs.omnisharp-roslyn;
+      arguments = ["-lsp"];
+    };
   };
 }
