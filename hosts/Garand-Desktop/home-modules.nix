@@ -73,7 +73,7 @@ _: {
       messenger.enable = true; # Messenger: Facebook Messenger
       mastodon.enable = true; # Mastodon: a decentralized social network
       garandcloud.enable = true; # GarandCloud: my Nextcloud instance
-      chatgpt.enable = false; # ChatGPT: a large language model
+      chatgpt.enable = true; # ChatGPT: a large language model
       claude.enable = true; # Claude: a large language model
       glance.enable = true; # Glance: my home server dashboard
       jellyfinClient.enable = true; # Jellyfin: My Jellyfin

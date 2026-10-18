@@ -2,6 +2,7 @@ _: {
   imports = [
     ./bash
     ./chromium
+    ./codex
     ./fastfetch
     ./fish
     ./hyprland
@@ -19,7 +20,6 @@ _: {
     ./btop.nix
     ./cargo.nix
     ./cava.nix
-    ./codex.nix
     ./easyeffects.nix
     ./eza.nix
     ./fzf.nix

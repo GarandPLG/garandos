@@ -46,7 +46,7 @@
       displayName = "ChatGPT";
       url = "https://chatgpt.com/";
       iconUrl = "https://static.vecteezy.com/system/resources/previews/031/110/149/large_2x/chatgpt-logo-transparent-free-png.png";
-      iconSha = "sha256-ZWmhchblQkksW02eduVrkUSPAlWPGC2fjqxrAGAF5jw=";
+      iconSha = "sha256-WXR/d28ynaBe+kZpnkUAaHcriDVSge98weS5Dza+AvQ=";
     }
     {
       name = "claude";
