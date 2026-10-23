@@ -9,10 +9,7 @@
   config.programs.opencode = lib.mkIf config.opencode.enable {
     enable = true;
     package = pkgs.opencode;
-    validateFiles = {
-      config = true;
-      tui = true;
-    };
+    validateFiles.config = true;
   };
 
   imports = [
