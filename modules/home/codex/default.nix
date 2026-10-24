@@ -7,8 +7,9 @@
   options.codex.enable = lib.mkEnableOption "Codex";
 
   config = lib.mkIf config.codex.enable {
-    home.packages = [
-      pkgs.nodejs
+    home.packages = with pkgs; [
+      nodejs
+      bubblewrap
     ];
 
     programs.codex = {

@@ -24,15 +24,11 @@
       enable = true;
       nssmdns4 = true;
       openFirewall = true;
-      publish = {
-        enable = true;
-        userServices = true;
+      settings.publish = {
+        disable-publishing = false;
+        disable-user-service-publishing = false;
+        publish-addresses = true;
       };
-      # settings.publish = {
-      #   disable-publishing = false;
-      #   disable-user-service-publishing = false;
-      #   publish-adresses = true;
-      # };
     };
 
     ipp-usb.enable = true;

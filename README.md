@@ -97,12 +97,7 @@ sudo nano /mnt/etc/nixos/hardware-configuration.nix
 
 **Add BEFORE `fileSystems` section (replace UUID with yours):**
 ```nix
-boot.initrd.luks.devices = {
-  cryptroot = {
-    device = "/dev/disk/by-uuid/YOUR-LUKS-UUID";
-    preLVM = true;
-  };
-};
+boot.initrd.luks.devices.cryptroot.device = "/dev/disk/by-uuid/YOUR-LUKS-UUID";
 ```
 
 **Also make sure SWAP is mounted**

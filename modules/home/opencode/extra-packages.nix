@@ -4,7 +4,6 @@
     ruff
     biome
     bun
-    beads
     rust-analyzer
     alejandra
     docker
