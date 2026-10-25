@@ -1,28 +1,112 @@
-_: {
+{...}: {
   wayland.windowManager.hyprland.settings.env = [
-    "NIXOS_OZONE_WL, 1"
-    "NIXPKGS_ALLOW_UNFREE, 1"
-    "XDG_CURRENT_DESKTOP, Hyprland"
-    "XDG_SESSION_TYPE, wayland"
-    "XDG_SESSION_DESKTOP, Hyprland"
-    "GDK_BACKEND, wayland, x11"
-    "CLUTTER_BACKEND, wayland"
-    "QT_QPA_PLATFORM=wayland;xcb"
-    "QT_WAYLAND_DISABLE_WINDOWDECORATION, 1"
-    "QT_AUTO_SCREEN_SCALE_FACTOR, 1"
-    "SDL_VIDEODRIVER, x11"
-    "MOZ_ENABLE_WAYLAND, 1"
-    # This is to make electron apps start in wayland
-    "ELECTRON_OZONE_PLATFORM_HINT,wayland"
-    # Disabling this by default as it can result in inop cfg
-    # Added card2 in case this gets enabled. For better coverage
-    # This is mostly needed by Hybrid laptops.
-    # but if you have multiple discrete GPUs this will set order
-    #"AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1:/dev/card2"
-    "GDK_SCALE,1"
-    "QT_SCALE_FACTOR,1"
-    "EDITOR,nano"
-    "TERMINAL,kitty"
-    "XDG_TERMINAL_EMULATOR,kitty"
+    {
+      _args = [
+        "NIXOS_OZONE_WL"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "NIXPKGS_ALLOW_UNFREE"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "XDG_CURRENT_DESKTOP"
+        "Hyprland"
+      ];
+    }
+    {
+      _args = [
+        "XDG_SESSION_TYPE"
+        "wayland"
+      ];
+    }
+    {
+      _args = [
+        "XDG_SESSION_DESKTOP"
+        "Hyprland"
+      ];
+    }
+    {
+      _args = [
+        "GDK_BACKEND"
+        "wayland, x11"
+      ];
+    }
+    {
+      _args = [
+        "CLUTTER_BACKEND"
+        "wayland"
+      ];
+    }
+    {
+      _args = [
+        "QT_QPA_PLATFORM"
+        "wayland;xcb"
+      ];
+    }
+    {
+      _args = [
+        "QT_WAYLAND_DISABLE_WINDOWDECORATION"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "QT_AUTO_SCREEN_SCALE_FACTOR"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "SDL_VIDEODRIVER"
+        "x11"
+      ];
+    }
+    {
+      _args = [
+        "MOZ_ENABLE_WAYLAND"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "ELECTRON_OZONE_PLATFORM_HINT"
+        "wayland"
+      ];
+    }
+    {
+      _args = [
+        "GDK_SCALE"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "QT_SCALE_FACTOR"
+        "1"
+      ];
+    }
+    {
+      _args = [
+        "EDITOR"
+        "nano"
+      ];
+    }
+    {
+      _args = [
+        "TERMINAL"
+        "kitty"
+      ];
+    }
+    {
+      _args = [
+        "XDG_TERMINAL_EMULATOR"
+        "kitty"
+      ];
+    }
   ];
 }

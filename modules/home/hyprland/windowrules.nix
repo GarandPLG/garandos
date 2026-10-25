@@ -1,100 +1,318 @@
-_: {
-  wayland.windowManager.hyprland.settings.windowrule = [
-    # XWayland specific rules
-    #"noblur, xwayland:1" # Helps prevent odd borders/shadows for xwayland apps
-    # downside it can impact other xwayland apps
-    # This rule is a template for a more targeted approach
-    "no_blur on, match:class resolve, match:xwayland 1" # Window rule for just resolve
-
-    # Application tags
-    "tag +file-manager, match:class [Tt]hunar|org\.gnome\.Nautilus|[Pp]cmanfm-qt"
-    "tag +terminal, match:class com\.mitchellh\.ghostty|org\.wezfurlong\.wezterm|Alacritty|kitty|kitty-dropterm"
-    "tag +browser, match:class [Ff]irefox|org\.mozilla\.firefox|[Ff]irefox-esr"
-    "tag +browser, match:class [Ll]ibrewolf|io\.gitlab\.librewolf-community"
-    "tag +browser, match:class [Gg]oogle-chrome(-beta|-dev|-unstable)?|[Cc]hromium-browser(-beta|-dev|-unstable)?"
-    "tag +projects, match:class VSCode|code|code-url-handler|codium|codium-url-handler|VSCodium|VSCodium-url-handler"
-    "tag +projects, match:class dev\.zed\.Zed"
-    "tag +im, match:class [Dd]iscord|[Ww]ebCord|[Vv]esktop"
-    "tag +im, match:class [Ff]erdium"
-    "tag +im, match:class [Ss]ignal"
-    "tag +im, match:class [Ss]lack"
-    "tag +im, match:class [Tt]eams-for-linux"
-    "tag +games, match:class gamescope"
-    "tag +games, match:class ?:steam_app_\d+"
-    "tag +games, match:class tf_linux64"
-    "tag +games, match:class Minecraft\*.*"
-    "tag +gamestore, match:class [Ss]team"
-    "tag +gamestore, match:title [Ll]utris"
-    "tag +gamestore, match:class com\.heroicgameslauncher\.hgl"
-    "tag +gamestore, match:class org\.prismlauncher\.PrismLauncher"
-    "tag +settings, match:class gnome-disks|wihotspot(-gui)?"
-    "tag +settings, match:class [Rr]ofi"
-    "tag +settings, match:class file-roller|org\.gnome\.FileRoller"
-    "tag +settings, match:class nm-applet|nm-connection-editor"
-    "tag +settings, match:class pavucontrol|org\.pulseaudio\.pavucontrol|com\.saivert\.pwvucontrol"
-    "tag +settings, match:class nwg-look|qt5ct|qt6ct|[Yy]ad"
-    "tag +settings, match:class xdg-desktop-portal-gtk"
-    "tag +settings, match:class nwg-displays"
-
-    # Position and movement rules
-    "move 72% 7%, match:title Picture-in-Picture"
-    "center on, match:class pavucontrol|org\.pulseaudio\.pavucontrol|com\.saivert\.pwvucontrol"
-    "center on, match:class [Tt]hunar, match:title negative:.*[Tt]hunar.*"
-    "center on, match:title Authentication Required"
-    "center on, match:class org\.gnome\.Calculator"
-
-    # Idle inhibit rules
-    "idle_inhibit fullscreen, match:class .*"
-    "idle_inhibit fullscreen, match:title .*"
-    "idle_inhibit fullscreen, match:fullscreen 1"
-
-    # Float rules
-    "float on, match:class [Ww]aypaper"
-    "float on, match:tag settings*"
-    "float on, match:title Picture-in-Picture"
-    "float on, match:title Authentication Required"
-    "float on, match:title War in Tunnels"
-    "float on, match:class codium|codium-url-handler|VSCodium, match:title negative:.*(?:codium|VSCodium).*"
-    "float on, match:class com\.heroicgameslauncher\.hgl, match:title negative Heroic Games Launcher"
-    "float on, match:class [Ss]team, match:title negative:[Ss]team"
-    "float on, match:class [Tt]hunar, match:title negative:.*[Tt]hunar.*"
-    "float on, match:class galculator"
-    "float on, match:initial_title Add Folder to Workspace"
-    "float on, match:initial_title Open Files"
-    "float on, match:initial_title wants to save"
-    "float on, match:class org\.gnome\.Calculator"
-
-    # Size rules
-    "size 70% 60%, match:initial_title Open Files"
-    "size 70% 60%, match:initial_title Add Folder to Workspace"
-    "size 70% 70%, match:tag settings*"
-    "size 360 616, match:class org\.gnome\.Calculator"
-
-    # Tile rules
-    "tile on, match:class affinity\.exe"
-    "tile on, match:class dev\.zed\.Zed"
-    "tile on, match:class mpv"
-    "tile on, match:class com-cburch-logisim-Main"
-
-    # Opacity rules
-    "opacity 1.0 1.0, match:tag browser*"
-    "opacity 0.9 0.8, match:tag projects*"
-    "opacity 0.94 0.86, match:tag im*"
-    "opacity 0.85 0.75, match:tag gamestore*"
-    "opacity 0.9 0.8, match:tag file-manager*"
-    "opacity 0.8 0.7, match:tag terminal*"
-    "opacity 0.8 0.7, match:tag settings*"
-    "opacity 0.8 0.7, match:class gedit|org\.gnome\.TextEditor|mousepad"
-    "opacity 0.9 0.8, match:class seahorse # gnome-keyring gui"
-    "opacity 0.95 0.75, match:title Picture-in-Picture"
-    "opacity 0.9 0.8, match:class org\.gnome\.Calculator"
-
-    # Picture-in-Picture specific rules
-    "pin on, match:title Picture-in-Picture"
-    "keep_aspect_ratio on, match:title Picture-in-Picture"
-
-    # Games specific rules
-    "no_blur on, match:tag games*"
-    "fullscreen on, match:tag games*"
+{...}: {
+  wayland.windowManager.hyprland.settings.window_rule = [
+    {
+      match = {
+        class = "resolve";
+        xwayland = 1;
+      };
+      no_blur = true;
+    }
+    {
+      match = {class = "[Tt]hunar|org\\.gnome\\.Nautilus|[Pp]cmanfm-qt";};
+      tag = "+file-manager";
+    }
+    {
+      match = {class = "com\\.mitchellh\\.ghostty|org\\.wezfurlong\\.wezterm|Alacritty|kitty|kitty-dropterm";};
+      tag = "+terminal";
+    }
+    {
+      match = {class = "[Ff]irefox|org\\.mozilla\\.firefox|[Ff]irefox-esr";};
+      tag = "+browser";
+    }
+    {
+      match = {class = "[Ll]ibrewolf|io\\.gitlab\\.librewolf-community";};
+      tag = "+browser";
+    }
+    {
+      match = {class = "[Gg]oogle-chrome(-beta|-dev|-unstable)?|[Cc]hromium-browser(-beta|-dev|-unstable)?";};
+      tag = "+browser";
+    }
+    {
+      match = {class = "VSCode|code|code-url-handler|codium|codium-url-handler|VSCodium|VSCodium-url-handler";};
+      tag = "+projects";
+    }
+    {
+      match = {class = "dev\\.zed\\.Zed";};
+      tag = "+projects";
+    }
+    {
+      match = {class = "[Dd]iscord|[Ww]ebCord|[Vv]esktop";};
+      tag = "+im";
+    }
+    {
+      match = {class = "[Ff]erdium";};
+      tag = "+im";
+    }
+    {
+      match = {class = "[Ss]ignal";};
+      tag = "+im";
+    }
+    {
+      match = {class = "[Ss]lack";};
+      tag = "+im";
+    }
+    {
+      match = {class = "[Tt]eams-for-linux";};
+      tag = "+im";
+    }
+    {
+      match = {class = "gamescope";};
+      tag = "+games";
+    }
+    {
+      match = {class = "steam_app_\\d+";};
+      tag = "+games";
+    }
+    {
+      match = {class = "tf_linux64";};
+      tag = "+games";
+    }
+    {
+      match = {class = "Minecraft\\*.*";};
+      tag = "+games";
+    }
+    {
+      match = {class = "[Ss]team";};
+      tag = "+gamestore";
+    }
+    {
+      match = {title = "[Ll]utris";};
+      tag = "+gamestore";
+    }
+    {
+      match = {class = "com\\.heroicgameslauncher\\.hgl";};
+      tag = "+gamestore";
+    }
+    {
+      match = {class = "org\\.prismlauncher\\.PrismLauncher";};
+      tag = "+gamestore";
+    }
+    {
+      match = {class = "gnome-disks|wihotspot(-gui)?";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "[Rr]ofi";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "file-roller|org\\.gnome\\.FileRoller";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "nm-applet|nm-connection-editor";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "pavucontrol|org\\.pulseaudio\\.pavucontrol|com\\.saivert\\.pwvucontrol";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "nwg-look|qt5ct|qt6ct|[Yy]ad";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "xdg-desktop-portal-gtk";};
+      tag = "+settings";
+    }
+    {
+      match = {class = "nwg-displays";};
+      tag = "+settings";
+    }
+    {
+      match = {title = "Picture-in-Picture";};
+      move = "72% 7%";
+    }
+    {
+      match = {class = "pavucontrol|org\\.pulseaudio\\.pavucontrol|com\\.saivert\\.pwvucontrol";};
+      center = true;
+    }
+    {
+      match = {
+        class = "[Tt]hunar";
+        title = "negative:.*[Tt]hunar.*";
+      };
+      center = true;
+    }
+    {
+      match = {title = "Authentication Required";};
+      center = true;
+    }
+    {
+      match = {class = "org\\.gnome\\.Calculator";};
+      center = true;
+    }
+    {
+      match = {class = ".*";};
+      idle_inhibit = "fullscreen";
+    }
+    {
+      match = {title = ".*";};
+      idle_inhibit = "fullscreen";
+    }
+    {
+      match = {fullscreen = 1;};
+      idle_inhibit = "fullscreen";
+    }
+    {
+      match = {class = "[Ww]aypaper";};
+      float = true;
+    }
+    {
+      match = {tag = "settings*";};
+      float = true;
+    }
+    {
+      match = {title = "Picture-in-Picture";};
+      float = true;
+    }
+    {
+      match = {title = "Authentication Required";};
+      float = true;
+    }
+    {
+      match = {title = "War in Tunnels";};
+      float = true;
+    }
+    {
+      match = {
+        class = "codium|codium-url-handler|VSCodium";
+        title = "negative:.*(?:codium|VSCodium).*";
+      };
+      float = true;
+    }
+    {
+      match = {
+        class = "com\\.heroicgameslauncher\\.hgl";
+        title = "negative:Heroic Games Launcher";
+      };
+      float = true;
+    }
+    {
+      match = {
+        class = "[Ss]team";
+        title = "negative:[Ss]team";
+      };
+      float = true;
+    }
+    {
+      match = {
+        class = "[Tt]hunar";
+        title = "negative:.*[Tt]hunar.*";
+      };
+      float = true;
+    }
+    {
+      match = {class = "galculator";};
+      float = true;
+    }
+    {
+      match = {initial_title = "Add Folder to Workspace";};
+      float = true;
+    }
+    {
+      match = {initial_title = "Open Files";};
+      float = true;
+    }
+    {
+      match = {initial_title = "wants to save";};
+      float = true;
+    }
+    {
+      match = {class = "org\\.gnome\\.Calculator";};
+      float = true;
+    }
+    {
+      match = {initial_title = "Open Files";};
+      size = "70% 60%";
+    }
+    {
+      match = {initial_title = "Add Folder to Workspace";};
+      size = "70% 60%";
+    }
+    {
+      match = {tag = "settings*";};
+      size = "70% 70%";
+    }
+    {
+      match = {class = "org\\.gnome\\.Calculator";};
+      size = "360 616";
+    }
+    {
+      match = {class = "affinity\\.exe";};
+      float = false;
+    }
+    {
+      match = {class = "dev\\.zed\\.Zed";};
+      float = false;
+    }
+    {
+      match = {class = "mpv";};
+      float = false;
+    }
+    {
+      match = {class = "com-cburch-logisim-Main";};
+      float = false;
+    }
+    {
+      match = {tag = "browser*";};
+      opacity = "1.0 1.0";
+    }
+    {
+      match = {tag = "projects*";};
+      opacity = "0.9 0.8";
+    }
+    {
+      match = {tag = "im*";};
+      opacity = "0.94 0.86";
+    }
+    {
+      match = {tag = "gamestore*";};
+      opacity = "0.85 0.75";
+    }
+    {
+      match = {tag = "file-manager*";};
+      opacity = "0.9 0.8";
+    }
+    {
+      match = {tag = "terminal*";};
+      opacity = "0.8 0.7";
+    }
+    {
+      match = {tag = "settings*";};
+      opacity = "0.8 0.7";
+    }
+    {
+      match = {class = "gedit|org\\.gnome\\.TextEditor|mousepad";};
+      opacity = "0.8 0.7";
+    }
+    {
+      match = {class = "seahorse";};
+      opacity = "0.9 0.8";
+    }
+    {
+      match = {title = "Picture-in-Picture";};
+      opacity = "0.95 0.75";
+    }
+    {
+      match = {class = "org\\.gnome\\.Calculator";};
+      opacity = "0.9 0.8";
+    }
+    {
+      match = {title = "Picture-in-Picture";};
+      pin = true;
+    }
+    {
+      match = {title = "Picture-in-Picture";};
+      keep_aspect_ratio = true;
+    }
+    {
+      match = {tag = "games*";};
+      no_blur = true;
+    }
+    {
+      match = {tag = "games*";};
+      fullscreen = true;
+    }
   ];
 }

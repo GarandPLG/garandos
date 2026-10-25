@@ -19,13 +19,16 @@
   # Availabe options: "fish", "bash"
   shell = "fish";
 
-  # Hyprland Settings
-  # Examples:
-  # extraMonitorSettings = "monitor = Virtual-1,1920x1080@60,auto,1";
-  # extraMonitorSettings = "monitor = HDMI-A-1,1920x1080@60,auto,1";
-  # You can configure multiple monitors.
-  # Inside the quotes, create a new line for each monitor.
-  extraMonitorSettings = "monitor = DP-1,1920x1080@144,auto,1";
+  # Hyprland monitors (Lua hl.monitor tables).
+  # Example: [{ output = "HDMI-A-1"; mode = "1920x1080@60"; position = "auto"; scale = 1; }]
+  extraMonitorSettings = [
+    {
+      output = "DP-1";
+      mode = "1920x1080@144";
+      position = "auto";
+      scale = 1;
+    }
+  ];
 
   keyboardLayout = "pl";
   consoleKeyMap = "pl";

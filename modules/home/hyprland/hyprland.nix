@@ -19,20 +19,17 @@
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
-    configType = "hyprlang"; # TODO: hyprlang => lua migration.
+    configType = "lua";
     xwayland.enable = true;
     systemd = {
       enable = true;
       enableXdgAutostart = true;
       variables = ["--all"];
     };
-    settings = {
+    settings.config = {
       input = {
         kb_layout = "${keyboardLayout}";
-        kb_options = [
-          "grp:alt_caps_toggle"
-          "caps:super"
-        ];
+        kb_options = "grp:alt_caps_toggle,caps:super";
         numlock_by_default = true;
         repeat_delay = 300;
         follow_mouse = 1;
@@ -144,11 +141,27 @@
       xwayland.force_zero_scaling = true;
     };
 
-    extraConfig = "
-      monitor=,preferred,auto,auto
-      monitor=Virtual-1,1920x1080@60,auto,1
-      ${extraMonitorSettings}
-      layerrule = blur on, blur_popups on, ignore_alpha 0.5, match:namespace noctalia-background-\.*$
-    ";
+    settings.monitor =
+      [
+        {
+          output = "";
+          mode = "preferred";
+          position = "auto";
+          scale = "auto";
+        }
+        {
+          output = "Virtual-1";
+          mode = "1920x1080@60";
+          position = "auto";
+          scale = 1;
+        }
+      ]
+      ++ extraMonitorSettings;
+    settings.layer_rule = {
+      match.namespace = "noctalia-background-\\..*$";
+      blur = true;
+      blur_popups = true;
+      ignore_alpha = 0.5;
+    };
   };
 }
