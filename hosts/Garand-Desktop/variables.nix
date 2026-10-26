@@ -49,12 +49,14 @@
   # stylixImage = "Attack-on-Titan-1.jpg"; # og/10
   # stylixImage = "Attack-on-Titan-2.jpg"; # 9/10
   # stylixImage = "Attack-on-Titan-3.jpg"; # 7.5/10
-  stylixImage = "Avatar-1.jpg"; # 7/10
+  # stylixImage = "Avatar-1.jpg"; # 7/10
   # stylixImage = "Dinozaurus-1.jpg"; # 6/10
   # stylixImage = "Friren-1.jpg"; # 6.5/10
   # stylixImage = "Jablon.png"; # 1/10
   # stylixImage = "Kapitan-bomba.jpg"; # 8/10
   # stylixImage = "SoA-1.jpg"; # 6/10
+  stylixImage = "SoTtE-1.jpg"; # 9/10
+  # stylixImage = "SoTtE-2.jpg"; # 7/10
   # stylixImage = "V-for-vendetta.jpg"; # 7.5/10
   # stylixImage = "Wolfwalkers-1.jpg"; # 6/10
   # stylixImage = "Wolfwalkers-2.jpg"; # 5/10
