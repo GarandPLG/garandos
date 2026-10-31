@@ -3,8 +3,8 @@
     name = "ponytail";
     owner = "DietrichGebert";
     repo = "ponytail";
-    tag = "v5.3.2";
-    sha256 = "sha256-IJlhfkdXI6pMZZCZO7XBRg88LBiNfzc5Gnm4ofGybL8=";
+    tag = "v5.3.3";
+    sha256 = "sha256-CY0EifTY0UVc6/FPGVJjEfYEf/8QLsINQmoYYKZYh98=";
   };
 
   context-mode = pkgs.fetchFromGitHub {

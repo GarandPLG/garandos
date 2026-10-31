@@ -73,7 +73,6 @@
     swappy
     ydotool
     hyprpolkitagent
-    hyprland-qtutils # needed for banners and ANR messages
     # pyprland
     pyprland
   ];
