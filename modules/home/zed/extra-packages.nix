@@ -12,5 +12,6 @@
     tailwindcss-language-server
     typescript-language-server
     omnisharp-roslyn
+    codex-acp
   ];
 }

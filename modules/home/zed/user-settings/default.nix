@@ -36,6 +36,7 @@ _: {
 
   imports = [
     ./agent.nix
+    ./agent-servers.nix
     ./language-models.nix
     ./languages.nix
     ./lsp.nix

@@ -13,6 +13,7 @@
     enable = true;
     package = pkgs.zed-editor;
     installRemoteServer = lib.mkIf config.zed-editor.remote-server.enable true;
+    mutableUserSettings = true;
   };
 
   imports = [
