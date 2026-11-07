@@ -32,6 +32,7 @@ _: {
     ./mangohud.nix
     ./nextcloud.nix
     ./nix-search-tv.nix
+    ./nixgl.nix
     ./nixpkgs.nix
     ./obs-studio.nix
     ./ollama.nix

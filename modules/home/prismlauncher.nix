@@ -24,5 +24,6 @@ in {
   config.programs.prismlauncher = lib.mkIf config.prismlauncher.enable {
     enable = true;
     package = prismlauncher-cracked-fixed;
+    # package = inputs.prismlauncher-cracked.packages.${system}.default;
   };
 }

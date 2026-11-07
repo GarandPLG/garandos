@@ -1,4 +1,5 @@
 {
+  config,
   pkgs,
   lib,
   printEnable,
@@ -6,6 +7,16 @@
   ensurePrinters,
   ...
 }: {
+  systemd.services.cups = lib.mkIf printEnable {
+    # IPP Everywhere provisioning needs online printers; failure must not stop CUPS.
+    serviceConfig.ExecStartPost = lib.mkForce [
+      "-${pkgs.writeShellScript "cups-provision-printers" ''
+        set -e
+        ${config.systemd.services.cups.postStart}
+      ''}"
+    ];
+  };
+
   services = lib.mkIf printEnable {
     printing = {
       enable = true;

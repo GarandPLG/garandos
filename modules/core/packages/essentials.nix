@@ -12,6 +12,7 @@
     bitwarden-cli
     xdg-utils
     gcc
+    vulkan-tools
     # File management
     trash-cli
     file-roller
