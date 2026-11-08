@@ -1,6 +1,5 @@
 {username, ...}: {
   programs.noctalia.settings.shell = {
-    app_icon_colorize = true;
     avatar_path = "/home/${username}/garandos/modules/home/hyprland/face.jpg";
     corner_radius_scale = 2.0;
     lang = "pl";
