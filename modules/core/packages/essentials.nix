@@ -13,6 +13,7 @@
     xdg-utils
     gcc
     vulkan-tools
+    xauth
     # File management
     trash-cli
     file-roller
