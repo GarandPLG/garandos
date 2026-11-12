@@ -13,7 +13,7 @@ _: {
       };
     };
     Python = {
-      format_on_save = "off";
+      format_on_save = "on";
       formatter.language_server.name = "ruff";
       code_actions_on_format."source.organizeImports.ruff" = true;
       language_servers = [
