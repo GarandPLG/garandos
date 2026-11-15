@@ -13,5 +13,14 @@ _: {
 
     [net]
     git-fetch-with-cli = true
+
+    [build]
+    rustflags = ["-Z", "threads=8"]
+
+    [unstable]
+    codegen-backend = true
+
+    [profile.dev]
+    codegen-backend = "cranelift"
   '';
 }
