@@ -10,6 +10,7 @@ _: {
   opencode.enable = false; # OpenCode: terminal coding agent
   codex.enable = false; # Codex: Lightweight coding agent that runs in your terminal
   ollama.enable = false; # Ollama: Local Llms
+  dbeaver.enable = false; # dbeaver: Universal SQL Client for developers, DBA and analysts
 
   /*
   Web browsers

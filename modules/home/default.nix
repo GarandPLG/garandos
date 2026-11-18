@@ -21,6 +21,7 @@ _: {
     ./btop.nix
     ./cargo.nix
     ./cava.nix
+    ./dbeaver.nix
     ./easyeffects.nix
     ./eza.nix
     ./fzf.nix

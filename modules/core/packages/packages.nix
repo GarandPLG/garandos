@@ -2,8 +2,6 @@
   pkgs,
   lib,
   config,
-  inputs,
-  system,
   ...
 }: let
   mkPackage = name: pkgsOrList: {
